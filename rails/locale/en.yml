@@ -2,60 +2,63 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Gwirio wedi methu: %{errors}'
+        record_invalid: 'Validace je neúspešná: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Nemůžu smazat položku protože existuje závislá/ý/é %{record}
+          has_many: Nemůžu smazat položku protože existuje závislé/ý %{record}
   date:
     abbr_day_names:
-      - Sul
-      - Llun
-      - Maw
-      - Mer
-      - Iau
-      - Gwe
-      - Sad
+      - Ne
+      - Po
+      - Út
+      - St
+      - Čt
+      - Pá
+      - So
     abbr_month_names:
       -
-      - Ion
-      - Chw
-      - Maw
-      - Ebr
-      - Mai
-      - Meh
-      - Gor
-      - Awst
-      - Med
-      - Hyd
-      - Tach
-      - Rha
+      - led
+      - úno
+      - bře
+      - dub
+      - kvě
+      - čvn
+      - čvc
+      - srp
+      - zář
+      - říj
+      - lis
+      - pro
     day_names:
-      - Dydd Sul
-      - Dydd Llun
-      - Dydd Mawrth
-      - Dydd Mercher
-      - Dydd Iau
-      - Dydd Gwener
-      - Dydd Sadwrn
+      - neděle
+      - pondělí
+      - úterý
+      - středa
+      - čtvrtek
+      - pátek
+      - sobota
     formats:
-      default: "%d-%m-%Y"
-      long: "%B %d, %Y"
-      short: "%b %d"
+      default: "%d. %m. %Y"
+      long: "%d. %B %Y"
+      short: "%d %b"
     month_names:
       -
-      - Ionawr
-      - Chwefror
-      - Mawrth
-      - Ebrill
-      - Mai
-      - Mehefin
-      - Gorffennaf
-      - Awst
-      - Medi
-      - Hydref
-      - Tachwedd
-      - Rhagfyr
+      - leden
+      - únor
+      - březen
+      - duben
+      - květen
+      - červen
+      - červenec
+      - srpen
+      - září
+      - říjen
+      - listopad
+      - prosinec
     order:
-      - :year
-      - :month
       - :day
+      - :month
+      - :year
   datetime:
     distance_in_words:
       about_x_hours:
@@ -70,7 +73,7 @@ en:
       almost_x_years:
         one:
         other:
-      half_a_minute: hanner munud
+      half_a_minute: půl minutou
       less_than_x_minutes:
         one:
         other:
@@ -93,78 +96,81 @@ en:
         one:
         other: ""
     prompts:
-      day: Diwrnod
-      hour: Awr
-      minute: Munud
-      month: Mis
-      second: Eiliad
-      year: Blwyddyn
+      day: Den
+      hour: Hodina
+      minute: Minuta
+      month: Měsíc
+      second: Sekunda
+      year: Rok
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: angen ei dderbyn
-      blank: methu bod yn wag
-      confirmation: heb fod yn gyfateb
-      empty: methu bod yn wag
-      equal_to: angen bod yn %{count}
-      even: rhaid bod yn eilrif
-      exclusion: wedi cadw
-      greater_than: angen bod yn fwy na %{count}
-      greater_than_or_equal_to: angen bod yr un maint neu fwy na %{count}
-      inclusion: heb fod yn y rhestr
-      invalid: heb fod yn nheilwng
-      less_than: angen bod yn llai na %{count}
-      less_than_or_equal_to: angen bod yr un maint neu lai na %{count}
-      not_a_number: heb fod yn rhif
-      not_an_integer: heb fod yn rhif llawn
-      odd: rhaid bod yn odrif
-      taken: wedi'i gymryd yn barod
-      too_long: yn rhy hir (cewch %{count} llythyren ar y fwyaf)
-      too_short: yn rhy fyr (rhaid am o leiaf %{count} llythyren)
-      wrong_length: gyda maint anghywir o lythrennau (dylai fod yn %{count} llythyren)
+      accepted: musí být potvrzeno
+      blank: je povinná položka
+      present: musí být prázdný/á/é
+      confirmation: nebylo potvrzeno
+      empty: nesmí být prázdný/á/é
+      equal_to: musí být rovno %{count}
+      even: musí být sudé číslo
+      exclusion: je vyhrazeno pro jiný účel
+      greater_than: musí být větší než %{count}
+      greater_than_or_equal_to: musí být větší nebo rovno %{count}
+      inclusion: není v seznamu povolených hodnot
+      invalid: není platná hodnota
+      less_than: musí být méně než %{count}
+      less_than_or_equal_to: musí být méně nebo rovno %{count}
+      not_a_number: není číslo
+      not_an_integer: musí být celé číslo
+      odd: musí být liché číslo
+      required: musí existovat
+      taken: již databáze obsahuje
+      too_long: je příliš dlouhý/á/é (max. %{count} znaků)
+      too_short: je příliš krátký/á/é (min. %{count} znaků)
+      wrong_length: nemá správnou délku (očekáváno %{count} znaků)
+      other_than: musí být rozdílný/á/é od %{count}
     template:
-      body: 'Cafwyd broblemau gyda''r meysydd canlynol:'
+      body: 'Následující pole obsahují chybně vyplněné údaje: '
       header:
         one:
         other:
   helpers:
     select:
-      prompt: Dewiswch
+      prompt: Prosím vyberte si
     submit:
-      create: Creu %{model}
-      submit: Cadw %{model}
-      update: Diweddaru %{model}
+      create: Vytvořit %{model}
+      submit: Uložit %{model}
+      update: Aktualizovat %{model}
   number:
     currency:
       format:
-        delimiter: ","
-        format: "%u%n"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: "£"
+        unit: Kč
     format:
-      delimiter: ","
+      delimiter: "."
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Biliwn
-          million: Miliwn
-          quadrillion: Cwadriliwn
-          thousand: Mil
-          trillion: Triliwn
+          billion: Miliarda
+          million: Milion
+          quadrillion: Kvadrilion
+          thousand: Tisíc
+          trillion: Bilion
           unit: ''
       format:
         delimiter: ''
-        precision: 3
-        significant: true
-        strip_insignificant_zeros: true
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
       storage_units:
         format: "%n %u"
         units:
@@ -178,18 +184,19 @@ en:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", a "
+      last_word_connector: " a "
       two_words_connector: " a "
       words_connector: ", "
   time:
-    am: yb
+    am: dopoledne
     formats:
-      default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
-      short: "%d %b %H:%M"
-    pm: yh
+      default: "%a %e. %B %Y %H:%M %z"
+      long: "%A %e. %B %Y %H:%M"
+      short: "%e. %-m. %H:%M"
+    pm: odpoledne
