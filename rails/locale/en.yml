@@ -1,201 +1,212 @@
-en:
+en-US:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Nabigo ang pagpapatunay: %{errors}'
+        record_invalid: "校驗失敗: %{errors}"
+        restrict_dependent_destroy:
+          has_one: 由於 %{record} 需要此記錄，所以無法移除記錄
+          has_many: 由於 %{record} 需要此記錄，所以無法移除記錄
   date:
-    formats:
-      default: "%d/%m/%Y"
-      short: ika-%d ng %b
-      long: ika-%d ng %B, %Y
-    day_names:
-      - Linggo
-      - Lunes
-      - Martes
-      - Miyerkules
-      - Huwebes
-      - Biyernes
-      - Sabado
     abbr_day_names:
-      - Lin
-      - Lun
-      - Mar
-      - Miy
-      - Huw
-      - Biy
-      - Sab
-    month_names:
-      -
-      - Enero
-      - Pebrero
-      - Marso
-      - Abril
-      - Mayo
-      - Hunyo
-      - Hulyo
-      - Agosto
-      - Setyembre
-      - Oktubre
-      - Nobyembre
-      - Disyembre
+      - 周日
+      - 周一
+      - 周二
+      - 周三
+      - 周四
+      - 周五
+      - 周六
     abbr_month_names:
       -
-      - Ene
-      - Peb
-      - Mar
-      - Abr
-      - May
-      - Hun
-      - Hul
-      - Ago
-      - Set
-      - Okt
-      - Nob
-      - Dis
+      - 1月
+      - 2月
+      - 3月
+      - 4月
+      - 5月
+      - 6月
+      - 7月
+      - 8月
+      - 9月
+      - 10月
+      - 11月
+      - 12月
+    day_names:
+      - 星期日
+      - 星期一
+      - 星期二
+      - 星期三
+      - 星期四
+      - 星期五
+      - 星期六
+    formats:
+      default: "%Y-%m-%d"
+      long: "%Y年%m月%d日"
+      short: "%m月%d日"
+    month_names:
+      -
+      - 一月
+      - 二月
+      - 三月
+      - 四月
+      - 五月
+      - 六月
+      - 七月
+      - 八月
+      - 九月
+      - 十月
+      - 十一月
+      - 十二月
     order:
       - :year
       - :month
       - :day
-  time:
-    formats:
-      default: "%A, ika-%d ng %B ng %Y %H:%M:%S %z"
-      short: "%d ng %b %H:%M"
-      long: ika-%d ng %B ng %Y %H:%M
-    am: AM
-    pm: PM
-  support:
-    array:
-      words_connector: ","
-      two_words_connector: at
-      last_word_connector: ", at"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 大約一小時
+        other: 大約 %{count} 小時
+      about_x_months:
+        one: 大約一個月
+        other: 大約 %{count} 個月
+      about_x_years:
+        one: 大約一年
+        other: 大約 %{count} 年
+      almost_x_years:
+        one: 接近一年
+        other: 接近 %{count} 年
+      half_a_minute: 半分鐘
+      less_than_x_minutes:
+        one: 不到一分鐘
+        other: 不到 %{count} 分鐘
+      less_than_x_seconds:
+        one: 不到一秒
+        other: 不到 %{count} 秒
+      over_x_years:
+        one: 一年多
+        other: "%{count} 年多"
+      x_days:
+        one: 一天
+        other: "%{count} 天"
+      x_minutes:
+        one: 一分鐘
+        other: "%{count} 分鐘"
+      x_months:
+        one: 一個月
+        other: "%{count} 個月"
+      x_years:
+        one: 一年
+        other: "%{count} 年"
+      x_seconds:
+        one: 一秒
+        other: "%{count} 秒"
+    prompts:
+      day: 日
+      hour: 時
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: 必須是可被接受的
+      blank: 不能為空白
+      present: 必須是空白
+      confirmation: 兩次輸入須一致
+      empty: 不能留空
+      equal_to: 必須等於 %{count}
+      even: 必須是偶數
+      exclusion: 是被保留的關鍵字
+      greater_than: 必須大於 %{count}
+      greater_than_or_equal_to: 必須大於或等於 %{count}
+      inclusion: 沒有包含在列表中
+      invalid: 是無效的
+      less_than: 必須小於 %{count}
+      less_than_or_equal_to: 必須小於或等於 %{count}
+      model_invalid: "校驗失敗: %{errors}"
+      not_a_number: 不是數字
+      not_an_integer: 必須是整數
+      odd: 必須是奇數
+      required: 必須存在
+      taken: 已經被使用
+      too_long:
+        one: 過長（最長是一個字）
+        other: 過長（最長是 %{count} 個字）
+      too_short:
+        one: 過短（最短是一個字）
+        other: 過短（最短是 %{count} 個字）
+      wrong_length:
+        one: 字數錯誤 (必須是一個字)
+        other: 字數錯誤 (必須是 %{count} 個字)
+      other_than: 不可以是 %{count} 個字
+    template:
+      body: 以下欄位發生問題：
+      header:
+        one: 有 1 個錯誤發生使得「%{model}」無法被儲存。
+        other: 有 %{count} 個錯誤發生使得「%{model}」無法被儲存。
+  helpers:
+    select:
+      prompt: 請選擇
+    submit:
+      create: 新增%{model}
+      submit: 儲存%{model}
+      update: 更新%{model}
   number:
-    format:
-      separator: "."
-      delimiter: ","
-      precision: 3
-      significant: false
-      strip_insignificant_zeros: false
     currency:
       format:
-        format: "%n %u"
-        unit: "₱"
-        separator: "."
         delimiter: ","
+        format: "%u %n"
         precision: 2
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-    percentage:
-      format:
-        delimiter: ''
-    precision:
-      format:
-        delimiter: ''
+        unit: NT$
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 十億
+          million: 百萬
+          quadrillion: 千兆
+          thousand: 千
+          trillion: 兆
+          unit: ''
       format:
         delimiter: ''
         precision: 1
-        significant: true
-        strip_insignificant_zeros: true
+        significant: false
+        strip_insignificant_zeros: false
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
+            one: 位元組
+            other: 位元組
+          gb: GB
           kb: KB
           mb: MB
-          gb: GB
           tb: TB
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ''
-          thousand: libo
-          million: milyon
-          billion: bilyon
-          trillion: trilyon
-          quadrillion: kuwadrilyon
-  datetime:
-    distance_in_words:
-      half_a_minute: kalahating minuto
-      less_than_x_seconds:
-        one: mas mababa sa isang segundo
-        other: mas mababa sa %{count} segundo
-      x_seconds:
-        one: isang segundo
-        other: "%{count} segundo"
-      less_than_x_minutes:
-        one: mas mababa sa isang minuto
-        other: mas mababa sa %{count} minuto
-      x_minutes:
-        one: isang minuto
-        other: "%{count} minuto"
-      about_x_hours:
-        one: humigit-kumulang isang oras
-        other: humigit-kumulang %{count} oras
-      x_days:
-        one: isang araw
-        other: "%{count} araw"
-      about_x_months:
-        one: humigit-kumulang isang buwan
-        other: humigit-kumulang %{count} buwan
-      x_months:
-        one: isang buwan
-        other: "%{count} buwan"
-      about_x_years:
-        one: humigit-kumulang isang taon
-        other: humigit-kumulang %{count} taon
-      over_x_years:
-        one: higit sa isang taon
-        other: higit %{count} taon
-      almost_x_years:
-        one: halos isang taon
-        other: halos %{count} taon
-    prompts:
-      year: taon
-      month: buwan
-      day: araw
-      hour: oras
-      minute: minuto
-      second: segundo
-  helpers:
-    select:
-      prompt: Mangyaring pumili
-    submit:
-      create: lumikha ng %{model}
-      update: i-update ang %{model}
-      submit: isumite ang %{model}
-  errors:
-    format: "%{attribute} ay %{message}"
-    messages:
-      inclusion: hindi kasama sa listahan
-      exclusion: nakalaan na
-      invalid: hindi wasto
-      confirmation: hindi tumutugma ang pagpapatunay
-      accepted: dapat na tanggapin
-      empty: hindi maaaring walang laman
-      blank: hindi maaaring walang laman
-      too_long:
-        one: masyadong mahaba (pinakamadami ay %{count} character)
-        other: masyadong mahaba (pinakamadami ay %{count} character)
-      too_short:
-        one: masyadong maikli (pinakakonti ay %{count} character)
-        other: masyadong maikli (pinakakonti ay %{count} character)
-      wrong_length:
-        one: ang maling haba (ito ay dapat eksaktong %{count} character)
-        other: ang maling haba (ito ay dapat eksaktong %{count} character)
-      not_a_number: hindi isang numero
-      not_an_integer: dapat na isang integer
-      greater_than: dapat na mas higit sa %{count}
-      greater_than_or_equal_to: dapat na mas higit sa o katumbas ng %{count}
-      equal_to: dapat na katumba sa %{count}
-      less_than: dapat na mas mababa sa %{count}
-      less_than_or_equal_to: dapat na mas mababa sa o katumbas ng %{count}
-      odd: dapat maging odd
-      even: dapat maging even
-      taken: ginagamit na
-    template:
-      header:
-        one: hindi maaaring i-save ang %{model} na ito dahil sa isang error
-        other: hindi maaaring i-save ang %{model} na ito dahil sa %{count} error
-      body: 'May mga problema sa mga sumusunod na patlang:'
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ", 和 "
+      two_words_connector: " 和 "
+      words_connector: ", "
+  time:
+    am: 上午
+    formats:
+      default: "%Y年%m月%d日 %A %H:%M:%S %Z"
+      long: "%Y年%m月%d日 %H:%M"
+      short: "%m月%d日 %H:%M"
+    pm: 下午
