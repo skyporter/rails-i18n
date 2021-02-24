@@ -1,62 +1,60 @@
-#Telugu translations for Ruby on Rails
-#by Ravi Teja Dandu(raviteja499@gmail.com)
 en:
   activerecord:
     errors:
       messages:
-        record_invalid: "ధ్రువీకరన విఫలమైనది: %{errors}"
+        record_invalid: 'சரிபார்த்தல் தோல்வியுற்றது: %{errors}'
         restrict_dependent_destroy:
-          has_one: "రికార్డ్ను తొలగించలేరు, ఎందుకంటే ఒక ఆధారపడిన %{record} ఉంది"
-          has_many: "రికార్డ్ను తొలగించలేరు, ఎందుకంటే ఆధారపడిన %{record} ఉంది"
+          has_one: பதிவை நீக்க முடியாது, ஏனெனில் ஒரு சார்பு %{record} உள்ளது
+          has_many: பதிவை நீக்க முடியாது, ஏனெனில் சார்புகள் %{record} உள்ளது
   date:
     abbr_day_names:
-      - ఆది
-      - సోమ
-      - మంగళ
-      - బుధ
-      - గురు
-      - శుక్ర
-      - శని
+      - ஞாயிறு
+      - திங்கள்
+      - செவ்வாய்
+      - புதன்
+      - வியாழன்
+      - வெள்ளி
+      - சனி
     abbr_month_names:
       -
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - May
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Oct
-      - Nov
-      - Dec
+      - ஜன
+      - பிப்
+      - மார்ச்
+      - ஏப்
+      - மே
+      - ஜூன்
+      - ஜூலை
+      - ஆக
+      - செப்
+      - அக்
+      - நவ
+      - டிச
     day_names:
-      - ఆదివారం
-      - సోమవారం
-      - మంగళవారం
-      - బుధవారం
-      - గురువారం
-      - శుక్రవారం
-      - శనివారం
+      - ஞாயிற்றுக்கிழமை
+      - திங்கட்கிழமை
+      - செவ்வாய்க்கிழமை
+      - புதன்கிழமை
+      - வியாழக்கிழமை
+      - வெள்ளிக்கிழமை
+      - சனிக்கிழமை
     formats:
       default: "%d-%m-%Y"
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
       -
-      - జనవరి
-      - ఫిబ్రవరి
-      - మార్చి
-      - ఏప్రిల్
-      - మే
-      - జూన్
-      - జూలై
-      - ఆగస్టు
-      - సెప్టెంబరు
-      - అక్టోబరు
-      - నవంబరు
-      - డిసెంబరు
+      - ஜனவரி
+      - பிப்ரவரி
+      - மார்ச்
+      - ஏப்ரல்
+      - மே
+      - ஜூன்
+      - ஜூலை
+      - ஆகஸ்ட்
+      - செப்டம்பர்
+      - அக்டோபர்
+      - நவம்பர்
+      - டிசம்பர்
     order:
       - :day
       - :month
@@ -64,94 +62,89 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: సుమారు ఒక గంట
-        other: సుమారు %{count} గంటలు
+        one: சுமார் 1 மணி நேரம்
+        other: சுமார் %{count} மணி
       about_x_months:
-        one: సుమారు ఒక నెల
-        other: సుమారు %{count} నెలలు
+        one: சுமார் 1 மாதம்
+        other: சுமார் %{count} மாதங்களுக்கு
       about_x_years:
-        one: సుమారు ఒక సంవత్సరం
-        other: సుమారు %{count} సంవత్సరాలు
+        one: சுமார் 1  ஆண்டு
+        other: சுமார் %{count}  ஆண்டுகள்
       almost_x_years:
-        one: దాదాపు ఒక సంవత్సరం
-        other: దాదాపు %{count} సంవత్సరాలు
-      half_a_minute: అర నిమిషం
+        one: கிட்டத்தட்ட 1  ஆண்டு
+        other: கிட்டத்தட்ட %{count}  ஆண்டுகள்
+      half_a_minute: அரை நிமிடம்
       less_than_x_minutes:
-        one: ఒక నిమిషం కన్నా తక్కువ
-        other: "%{count} నిమిషాల కన్నా తక్కువ"
+        one: ஒரு நிமிடத்திற்கும் குறைவாக
+        other: குறைவாக %{count} நிமிடங்கள்
       less_than_x_seconds:
-        one: ఒక క్షణం కన్నా తక్కువ
-        other: "%{count} క్షణాలు కన్నా తక్కువ"
+        one: ஒரு வினாடிக்கும் குறைவாக
+        other: குறைவாக %{count} வினாடிகள்
       over_x_years:
-        one: ఒక సంవత్సరం పైగా
-        other: "%{count} సంవత్సరాల పైగా"
+        one: ஒரு  ஆண்டிற்கு மேலாக
+        other: "%{count}  ஆண்டிற்கு மேலாக"
       x_days:
-        one: ఒక రోజు
-        other: "%{count} రోజులు"
+        one: 1 நாள்
+        other: "%{count} நாட்கள்"
       x_minutes:
-        one: ఒక నిమిషం
-        other: "%{count} నిమిషాలు"
+        one: 1 நிமிடம்
+        other: "%{count} நிமிடங்கள்"
       x_months:
-        one: ఒక నెల
-        other: "%{count} నెలలు"
-      x_years:
-        one: ఒక సంవత్సరం
-        other: "%{count} సంవత్సరాలు"
+        one: 1 மாதம்
+        other: "%{count} மாதங்கள்"
       x_seconds:
-        one: ఒక క్షణం
-        other: "%{count} క్షణాలు"
+        one: 1 வினாடி
+        other: "%{count} விநாடிகள்"
     prompts:
-      day: రోజు
-      hour: గంట
-      minute: నిమిషం
-      month: నెల
-      second: క్షణాలు
-      year: సంవత్సరం
+      day: நாள்
+      hour: மணி
+      minute: நிமிடம்
+      month: மாதம்
+      second: விநாடிகள்
+      year: ஆண்டு
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: అంగీకరించి ఉండాలి
-      blank: ఖాళీగా ఉండకూడదు
-      present: ఖాళీగా ఉండాలి
-      confirmation: "%{attribute} సరిపోలడం లేదు"
-      empty: శూన్యంగా ఉండకూడదు
-      equal_to: "%{count}కు సమానంగా ఉండాలి"
-      even: సరి సంఖ్య అయి ఉండాలి
-      exclusion: ప్రత్యేకించబడింది
-      greater_than: "%{count} కంటే ఎక్కువ ఉండాలి"
-      greater_than_or_equal_to: "%{count} కంటే ఎక్కువ లేదా సమానంగా ఉండాలి"
-      inclusion: జాబితాలో చేర్చబడలేదు
-      invalid: చెల్లనిది
-      less_than: "%{count} కంటే తక్కువ ఉండాలి"
-      less_than_or_equal_to: "%{count} నాలుగు కంటే తక్కువగా లేదా సమానంగా ఉండాలి"
-      model_invalid: "ధృవీకరణ విఫలమైంది: %{errors}"
-      not_a_number: సంఖ్య కాదు
-      not_an_integer: పూర్ణాంకంగా ఉండాలి
-      odd: బేసి సంఖ్య అయి ఉండాలి
-      required: ఉనికిలో ఉండాలి
-      taken: ఇప్పటికే తీసుకోబడింది
+      accepted: ஏற்கப்பட வேண்டும்
+      blank: காலியாக இருக்க முடியாது
+      present: காலியாக இருக்க வேண்டும்
+      confirmation: "%{attribute}  பொருந்தவில்லை"
+      empty: வெறுமையாக இருக்க முடியாது
+      equal_to: "%{count} சமமாக இருக்க வேண்டும்"
+      even: இரட்டைப்படை இருக்க வேண்டும்
+      exclusion: ஒதுக்கப்பட்டுள்ளது
+      greater_than: "%{count} ஐ விட அதிகமாக இருக்க வேண்டும்"
+      greater_than_or_equal_to: "%{count}  அதிகமாக அல்லது சமமாக இருக்க வேண்டும்"
+      inclusion: பட்டியலில் சேர்க்கப்படவில்லை
+      invalid: செல்லுபடியானதல்ல
+      less_than: "%{count} ஐ விட குறைவாக இருக்க வேண்டும்"
+      less_than_or_equal_to: "%{count} குறைவாக அல்லது சமமாக இருக்க வேண்டும்"
+      not_a_number: ஒரு எண் அல்ல
+      not_an_integer: ஒரு முழு எண்ணாக இருக்க வேண்டும்
+      odd: ஒற்றைப்படை இருக்க வேண்டும்
+      taken: ஏற்கனவே எடுத்துகொள்ள பட்டது
       too_long:
-        one: చాలా పొడవుగా ఉంది (గరిష్టంగా ఒక అక్షరం)
-        other: చాలా పొడవుగా ఉంది (గరిష్టంగా %{count} అక్షరాలు)
+        one: மிக நீளமாக உள்ளது (அதிகபட்சமாக ஒரு எழுத்து)
+        other: மிக நீளமாக உள்ளது (அதிகபட்சமாக %{count} எழுத்துக்கள்)
       too_short:
-        one: చాలా తక్కువగా ఉంది (కనీసం ఒక అక్షరం)
-        other: చాలా చిన్నది (కనీసం %{count} అక్షరాలు)
+        one: மிகவும் குறுகியதாக உள்ளது (குறைந்தபட்சம் ஒரு எழுத்து)
+        other: மிகவும் குறுகியதாக உள்ளது (குறைந்தபட்சம் %{count} எழுத்துக்கள்)
       wrong_length:
-        one: తప్పు పొడవు (ఒక అక్షరం ఉండాలి)
-        other: తప్పు పొడవు (%{count} అక్షరాలు ఉండాలి)
-      other_than: "%{count} కన్నా వేరు ఉండాలి"
+        one: தவறான நீளம் (1 எழுத்து இருக்கவேண்டும்)
+        other: தவறான நீளம் (%{count} எழுத்துக்கள் இருக்கவேண்டும்)
+      other_than: "%{count} தவிர வேறு இருக்க வேண்டும்"
     template:
-      body: 'కింది రంగాలలో సమస్యలు ఉన్నాయి:'
+      body: 'பின்வரும் புலங்களில் பிரச்சினைகள் உள்ளது:'
       header:
-        one: ఒక తప్పు ఈ %{model} ను ఆదా చెయ్యకుండా నిషేదించింది
-        other: "%{count} తప్పులు ఈ %{model} ను ఆదా చెయ్యకుండా నిషేదించింది"
+        one: 1 பிழை இந்த %{model} ஐ சேமிக்க தடையாக உள்ளது
+        other: "%{count} பிழைகள் இந்த %{model} ஐ சேமிக்க தடையாக உள்ளது"
   helpers:
     select:
-      prompt: దయచేసి ఎంచుకోండి
+      prompt: தேர்வு செய்க
     submit:
-      create: "%{model} ను సృష్టించండి"
-      submit: "%{model} ను ఆదా చెయ్యండి"
-      update: "%{model} ను నవీకరించండి"
+      create: "%{model} ஐ  உருவாக்கு"
+      submit: "%{model} ஐ சேமி"
+      update: "%{model} ஐ புதுப்பி"
   number:
     currency:
       format:
@@ -172,11 +165,11 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion: బిలియన్
-          million: మిలియన్
-          quadrillion: క్వాడ్రిలియన్
-          thousand: వెయ్యి
-          trillion: ట్రిలియన్
+          billion: பில்லியன்
+          million: மில்லியன்
+          quadrillion: குவாட்ரில்லியன்
+          thousand: ஆயிரம்
+          trillion: டிரில்லியன்
           unit: ''
       format:
         delimiter: ''
@@ -187,8 +180,8 @@ en:
         format: "%n %u"
         units:
           byte:
-            one: బైట్
-            other: బైట్లు
+            one: Byte
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
@@ -202,13 +195,13 @@ en:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", మరియు "
-      two_words_connector: " మరియు "
+      last_word_connector: ", மற்றும் "
+      two_words_connector: " மற்றும் "
       words_connector: ", "
   time:
-    am: am
+    am: மு.ப.
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: pm
+    pm: பி.ப.
