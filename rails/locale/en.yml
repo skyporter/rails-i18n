@@ -1,57 +1,57 @@
-en-US:
+en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'सत्यापन विफल: %{errors}'
+        record_invalid: 'האימות נכשל: %{errors}'
   date:
     abbr_day_names:
-      - रवि
-      - सोम
-      - मंगल
-      - बुध
-      - गुरु
-      - शुक्र
-      - शनि
+      - א
+      - ב
+      - ג
+      - ד
+      - ה
+      - ו
+      - ש
     abbr_month_names:
       -
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - May
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Oct
-      - Nov
-      - Dec
+      - ינו
+      - פבר
+      - מרץ
+      - אפר
+      - מאי
+      - יונ
+      - יול
+      - אוג
+      - ספט
+      - אוק
+      - נוב
+      - דצמ
     day_names:
-      - रविवार
-      - सोमवार
-      - मंगलवार
-      - बुधवार
-      - गुरुवार
-      - शुक्रवार
-      - शनिवार
+      - ראשון
+      - שני
+      - שלישי
+      - רביעי
+      - חמישי
+      - שישי
+      - שבת
     formats:
       default: "%d-%m-%Y"
-      long: "%B %d, %Y"
-      short: "%b %d"
+      long: "%e ב%B, %Y"
+      short: "%e %b"
     month_names:
       -
-      - जनवरी
-      - फरवरी
-      - मार्च
-      - अप्रैल
-      - मई
-      - जून
-      - जुलाई
-      - अगस्त
-      - सितंबर
-      - अक्टूबर
-      - नवंबर
-      - दिसंबर
+      - ינואר
+      - פברואר
+      - מרץ
+      - אפריל
+      - מאי
+      - יוני
+      - יולי
+      - אוגוסט
+      - ספטמבר
+      - אוקטובר
+      - נובמבר
+      - דצמבר
     order:
       - :day
       - :month
@@ -59,91 +59,91 @@ en-US:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: लग - भग एक घंटा
-        other: लग - भग %{count} घंटा
+        one: בערך שעה אחת
+        other: בערך %{count} שעות
       about_x_months:
-        one: लग - भग 1 महीना
-        other: लग - भग %{count} महीना
+        one: בערך חודש אחד
+        other: בערך %{count} חודשים
       about_x_years:
-        one: लग - भग 1 साल
-        other: लग - भग %{count} साल
+        one: בערך שנה אחת
+        other: בערך %{count} שנים
       almost_x_years:
-        one: लग - भग एक साल
-        other: लग - भग %{count} साल
-      half_a_minute: एक आधा मिनट
+        one: כמעט שנה
+        other: כמעט %{count} שנים
+      half_a_minute: חצי דקה
       less_than_x_minutes:
-        one: एक मिनट से कम
-        other: "%{count} मिनट से कम"
+        one:
+        other:
       less_than_x_seconds:
-        one: एक सेकंड से कम
-        other: "%{count}  सेकंड से कम"
+        one:
+        other:
       over_x_years:
-        one: एक साल के ऊपर
-        other: "%{count} साल के ऊपर"
+        one: מעל שנה אחת
+        other: מעל %{count} שנים
       x_days:
-        one: एक दिन
-        other: "%{count} दिन"
+        one: יום אחד
+        other: "%{count} ימים"
       x_minutes:
-        one: एक मिनट
-        other: "%{count} मिनट"
+        one: דקה אחת
+        other: "%{count} דקות"
       x_months:
-        one: एक महीना
-        other: "%{count} महीना"
+        one: חודש אחד
+        other: "%{count} חודשים"
       x_seconds:
-        one: एक सेकंड
-        other: "%{count} सेकंड"
+        one: שניה אחת
+        other: "%{count} שניות"
     prompts:
-      day: दिन
-      hour: घंटा
-      minute: क्षण
-      month: माह
-      second: सेकंड
-      year: वर्ष
+      day: יום
+      hour: שעה
+      minute: דקה
+      month: חודש
+      second: שניות
+      year: שנה
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: होना स्वीकार किया जाना आवश्यक
-      blank: खाली नहीं किया जा सकता
-      confirmation: पुष्टिकरण मेल नहीं खाता
-      empty: खाली नहीं किया जा सकता
-      equal_to: "%{count} के लिए बराबर होना चाहिए"
-      even: सम होना चाहिए
-      exclusion: आरक्षित है
-      greater_than: "%{count} से अधिक होना चाहिए"
-      greater_than_or_equal_to: "%{count} से बड़ा या बराबर होना आवश्यक है"
-      inclusion: सूची में शामिल नहीं है
-      invalid: अवैध है
-      less_than: "%{count} से कम होना चाहिए"
-      less_than_or_equal_to: "%{count} से कम या बराबर होना आवश्यक है"
-      not_a_number: कोई संख्या नहीं है
-      not_an_integer: एक पूर्णांक होना चाहिए
-      odd: विषम होना चाहिए
-      taken: पहले ही ले लिया गया है
-      too_long: बहुत लंबा है (अधिकतम %{count} अक्षरों है)
-      too_short: बहुत छोटा है (न्यूनतम %{count} अक्षरों है)
-      wrong_length: गलत लंबाई है (%{count} वर्ण वाले होने चाहिए)
+      accepted: חייב באישור
+      blank: לא יכול להיות ריק
+      confirmation: לא תואם לאישורו
+      empty: לא יכול להיות ריק
+      equal_to: חייב להיות שווה ל- %{count}
+      even: חייב להיות זוגי
+      exclusion: לא זמין
+      greater_than: חייב להיות גדול מ- %{count}
+      greater_than_or_equal_to: חייב להיות גדול או שווה ל- %{count}
+      inclusion: לא נכלל ברשימה
+      invalid: לא תקין
+      less_than: חייב להיות קטן מ- %{count}
+      less_than_or_equal_to: חייב להיות קטן או שווה ל- %{count}
+      not_a_number: חייב להיות מספר
+      not_an_integer: חייב להיות מספר שלם
+      odd: חייב להיות אי זוגי
+      taken: כבר בשימוש
+      too_long: ארוך מדי (יותר מ- %{count} תווים)
+      too_short: קצר מדי (פחות מ- %{count} תווים)
+      wrong_length: לא באורך הנכון (חייב להיות %{count} תווים)
     template:
-      body: 'वहाँ निम्नलिखित क्षेत्रों के साथ समस्याओं रहे थे:'
+      body: 'אנא בדוק את השדות הבאים:'
       header:
-        one: एक त्रुटि सहेजे जाने से इस %{model} को निषिद्ध
-        other: "%{count} त्रुटियों को सहेजे जाने से इस %{model} निषिद्ध"
+        one: 'לא ניתן לשמור את ה%{model}: שגיאה אחת'
+        other: 'לא ניתן לשמור את ה%{model}: %{count} שגיאות.'
   helpers:
     select:
-      prompt: कृपया चुनें
+      prompt: נא לבחור
     submit:
-      create: बनाएँ %{model}
-      submit: सहेजें %{model}
-      update: अद्यतन %{model}
+      create: יצירת %{model}
+      submit: שמור %{model}
+      update: עדכון %{model}
   number:
     currency:
       format:
         delimiter: ","
-        format: "%u%n"
+        format: "%u %n"
         precision: 2
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "₹"
+        unit: "₪"
     format:
       delimiter: ","
       precision: 3
@@ -154,11 +154,11 @@ en-US:
       decimal_units:
         format: "%n %u"
         units:
-          billion: अरब
-          million: मिल्लिओंन
-          quadrillion: करोड़ शंख
-          thousand: हज़ार
-          trillion: खरब
+          billion: מיליארד
+          million: מיליון
+          quadrillion: קודריליון
+          thousand: אלף
+          trillion: טריליון
           unit: ''
       format:
         delimiter: ''
@@ -169,12 +169,12 @@ en-US:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: בייט
+            other: בתים
+          gb: ג'יגה-בייט
+          kb: קילו-בייט
+          mb: מגה-בייט
+          tb: טרה-בייט
     percentage:
       format:
         delimiter: ''
@@ -183,13 +183,13 @@ en-US:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", और "
-      two_words_connector: " और "
+      last_word_connector: " ו"
+      two_words_connector: " ו"
       words_connector: ", "
   time:
     am: am
     formats:
-      default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
+      default: "%a %d %b %H:%M:%S %Z %Y"
+      long: "%d ב%B, %Y %H:%M"
       short: "%d %b %H:%M"
     pm: pm
