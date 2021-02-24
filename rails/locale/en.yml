@@ -2,56 +2,59 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Pārbaude neizdevās: %{errors}'
+        record_invalid: 'Nepraeitos patikros: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja
+          has_many: Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja
   date:
     abbr_day_names:
-      - Sv.
-      - P.
-      - O.
-      - T.
-      - C.
-      - Pk.
-      - S.
+      - Sek
+      - Pir
+      - Ant
+      - Tre
+      - Ket
+      - Pen
+      - Šeš
     abbr_month_names:
       -
-      - Janv
-      - Febr
-      - Marts
-      - Apr
-      - Maijs
-      - Jūn
-      - Jūl
-      - Aug
-      - Sept
-      - Okt
-      - Nov
-      - Dec
+      - Sau
+      - Vas
+      - Kov
+      - Bal
+      - Geg
+      - Bir
+      - Lie
+      - Rgp
+      - Rgs
+      - Spa
+      - Lap
+      - Grd
     day_names:
-      - svētdiena
-      - pirmdiena
-      - otrdiena
-      - trešdiena
-      - ceturtdiena
-      - piektdiena
-      - sestdiena
+      - sekmadienis
+      - pirmadienis
+      - antradienis
+      - trečiadienis
+      - ketvirtadienis
+      - penktadienis
+      - šeštadienis
     formats:
-      default: "%d.%m.%Y."
-      long: "%Y. gada %e. %B"
-      short: "%e. %B"
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
       -
-      - Janvāris
-      - Februāris
-      - Marts
-      - Aprīlis
-      - Maijs
-      - Jūnijs
-      - Jūlijs
-      - Augusts
-      - Septembris
-      - Oktobris
-      - Novembris
-      - Decembris
+      - sausio
+      - vasario
+      - kovo
+      - balandžio
+      - gegužės
+      - birželio
+      - liepos
+      - rugpjūčio
+      - rugsėjo
+      - spalio
+      - lapkričio
+      - gruodžio
     order:
       - :year
       - :month
@@ -70,7 +73,7 @@ en:
       almost_x_years:
         one:
         other:
-      half_a_minute: pusminūte
+      half_a_minute: pusė minutės
       less_than_x_minutes:
         one:
         other:
@@ -93,57 +96,57 @@ en:
         one: ""
         other: ""
     prompts:
-      day: diena
-      hour: stunda
-      minute: minūte
-      month: mēnesis
-      second: sekunde
-      year: gads
+      day: Diena
+      hour: Valanda
+      minute: Minutė
+      month: Mėnuo
+      second: Sekundės
+      year: Metai
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: ir jāpiekrīt
-      blank: ir jābūt aizpildītam
-      confirmation: nesakrīt ar apstiprinājumu
-      empty: ir jābūt aizpildītam
-      equal_to: ir jābūt vienādam ar %{count}
-      even: ir jābūt pāra skaitlim
-      exclusion: nav pieejams
-      greater_than: ir jābūt lielākam par %{count}
-      greater_than_or_equal_to: ir jābūt lielākam vai vienādam ar %{count}
-      inclusion: nav iekļauts sarakstā
-      invalid: nav derīgs
-      less_than: ir jābūt mazākam par %{count}
-      less_than_or_equal_to: ir jābūt mazākam vai vienādam ar %{count}
-      not_a_number: nav skaitlis
-      not_an_integer: ir jābūt veselam skaitlim
-      odd: ir jābūt nepāra skaitlim
-      taken: ir jau aizņemts
+      accepted: turi būti patvirtintas
+      blank: negali būti tuščias
+      present: turi būti tuščias
+      confirmation: neteisingai pakartotas
+      empty: negali būti tuščias
+      equal_to: turi būti lygus %{count}
+      even: turi būti lyginis
+      exclusion: užimtas
+      greater_than: turi būti didesnis už %{count}
+      greater_than_or_equal_to: turi būti didesnis arba lygus %{count}
+      inclusion: nenumatyta reikšmė
+      invalid: neteisingas
+      less_than: turi būti mažesnis už %{count}
+      less_than_or_equal_to: turi būti mažesnis arba lygus %{count}
+      not_a_number: ne skaičius
+      not_an_integer: privalo būti sveikas skaičius
+      odd: turi būti nelyginis
+      taken: jau užimtas
       too_long:
         one:
         other:
       too_short:
         one:
         other:
-      wrong_length:
-        one:
-        other:
+      wrong_length: neteisingo ilgio (turi būti %{count} simboliai)
+      other_than: privalo būti kitoks nei %{count}
     template:
-      body: 'Problēmas ir šajos ievades laukos:'
+      body: 'Šiuose laukuose yra klaidų:'
       header:
         one:
         other:
   helpers:
     select:
-      prompt: Lūdzu izvēlies
+      prompt: Prašom pasirinkti
     submit:
-      create: Izveidot %{model}
-      submit: Saglabāt %{model}
-      update: Atjaunināt %{model}
+      create: Sukurti %{model}
+      submit: Išsaugoti %{model}
+      update: Atnaujinti %{model}
   number:
     currency:
       format:
-        delimiter: "."
+        delimiter: " "
         format: "%n %u"
         precision: 2
         separator: ","
@@ -151,8 +154,8 @@ en:
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: "."
-      precision: 2
+      delimiter: " "
+      precision: 3
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -160,27 +163,17 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one:
-            other:
-          million:
-            one:
-            other:
-          quadrillion:
-            one:
-            other:
-          thousand:
-            one:
-            other:
-          trillion:
-            one:
-            other:
+          billion: Milijardas
+          million: Milijonas
+          quadrillion: Kvadrilijonas
+          thousand: Tūkstantis
+          trillion: Trilijonas
           unit: ''
       format:
         delimiter: ''
         precision: 1
-        significant: false
-        strip_insignificant_zeros: false
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
@@ -194,18 +187,19 @@ en:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " un "
-      two_words_connector: " un "
+      last_word_connector: " ir "
+      two_words_connector: " ir "
       words_connector: ", "
   time:
-    am: priekšpusdiena
+    am: am
     formats:
-      default: "%Y. gada %e. %B, %H:%M"
-      long: "%Y. gada %e. %B, %H:%M:%S"
-      short: "%d.%m.%Y., %H:%M"
-    pm: pēcpusdiena
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
