@@ -127,7 +127,7 @@ en-US:
       not_an_integer: debe ser un entero
       odd: debe ser un número impar
       required: debe existir
-      taken: ya ha sido utilizado
+      taken: ya ha sido tomado
       too_long:
         one: es demasiado largo (máximo 1 caracter)
         other: es demasiado largo (máximo %{count} caracteres)
@@ -145,7 +145,7 @@ en-US:
         other: "%{model} no pudo guardarse debido a %{count} errores"
   helpers:
     select:
-      prompt: Por favor seleccione
+      prompt: Por favor selecciona
     submit:
       create: Crear %{model}
       submit: Guardar %{model}
@@ -159,7 +159,7 @@ en-US:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "¢"
+        unit: "$"
     format:
       delimiter: ","
       precision: 2
