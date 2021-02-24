@@ -2,176 +2,173 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: ! 'Validatioun feelgeschlo: %{errors}'
+        record_invalid: 데이터 검증에 실패하였습니다. %{errors}
         restrict_dependent_destroy:
-          has_one: "Den Enregistrement kann net geläscht gi wëll et en dovun ofhängegt %{record} gëtt"
-          has_many: "Den Enregistrement kann net geläscht gi wëll et dovun ofhängegt %{record} gëtt"
+          has_one: "%{record}가 존재하기 때문에 삭제할 수 없습니다"
+          has_many: "%{record}가 존재하기 때문에 삭제할 수 없습니다"
   date:
     abbr_day_names:
-      - Son
-      - Méi
-      - Dën
-      - Mët
-      - Don
-      - Fre
-      - Sam
+      - 일
+      - 월
+      - 화
+      - 수
+      - 목
+      - 금
+      - 토
     abbr_month_names:
       -
-      - Jan
-      - Feb
-      - Mäe
-      - Abr
-      - Mee
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Okt
-      - Nov
-      - Dez
+      - 1월
+      - 2월
+      - 3월
+      - 4월
+      - 5월
+      - 6월
+      - 7월
+      - 8월
+      - 9월
+      - 10월
+      - 11월
+      - 12월
     day_names:
-      - Sonndeg
-      - Méindeg
-      - Dënschdeg
-      - Mëttwoch
-      - Donneschdeg
-      - Freideg
-      - Samschdeg
+      - 일요일
+      - 월요일
+      - 화요일
+      - 수요일
+      - 목요일
+      - 금요일
+      - 토요일
     formats:
-      default: ! '%d.%m.%Y'
-      long: ! '%e. %B %Y'
-      short: ! '%e %b'
+      default: "%Y/%m/%d"
+      long: "%Y년 %m월 %d일 (%a)"
+      short: "%m/%d"
     month_names:
       -
-      - Januar
-      - Februar
-      - Mäerz
-      - Abrëll
-      - Mee
-      - Juni
-      - Juli
-      - August
-      - September
-      - Oktober
-      - November
-      - Dezember
+      - 1월
+      - 2월
+      - 3월
+      - 4월
+      - 5월
+      - 6월
+      - 7월
+      - 8월
+      - 9월
+      - 10월
+      - 11월
+      - 12월
     order:
-      - :Joer
-      - :Mount
-      - :Dag
+      - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ongeféier eng Stonn
-        other: ongeféier %{count} Stonnen
+        one: 약 한 시간
+        other: 약 %{count}시간
       about_x_months:
-        one: ongeféier ee Mount
-        other: ongeféier %{count} Méint
+        one: 약 한 달
+        other: 약 %{count}달
       about_x_years:
-        one: ongeféier ee Joer
-        other: ongeféier %{count} Joer
+        one: 약 일 년
+        other: 약 %{count}년
       almost_x_years:
-        one: bal ee Joer
-        other: bal %{count} Joer
-      half_a_minute: eng hallef Minutt
+        one: 일 년 이하
+        other: "%{count}년 이하"
+      half_a_minute: 30초
       less_than_x_minutes:
-        one: manner wéi eng Minutt
-        other: manner wéi %{count} Minutten
+        one: 일 분 이하
+        other: "%{count}분 이하"
       less_than_x_seconds:
-        one: manner wéi eng Sekonn
-        other: manner wéi %{count} Sekonnen
+        one: 일 초 이하
+        other: "%{count}초 이하"
       over_x_years:
-        one: méi wéi ee Joer
-        other: méi wéi %{count} Joer
+        one: 일 년 이상
+        other: "%{count}년 이상"
       x_days:
-        one: 1 Dag
-        other: ! '%{count} Deeg'
+        one: 하루
+        other: "%{count}일"
       x_minutes:
-        one: 1 Minutt
-        other: ! '%{count} Minutten'
+        one: 일 분
+        other: "%{count}분"
       x_months:
-        one: 1 Mount
-        other: ! '%{count} Méint'
+        one: 한 달
+        other: "%{count}달"
+      x_years:
+        one: 일 년
+        other: "%{count}년"
       x_seconds:
-        one: 1 Sekonn
-        other: ! '%{count} Sekonnen'
+        one: 일 초
+        other: "%{count}초"
     prompts:
-      day: Dag
-      hour: Stonn
-      minute: Minutt
-      month: Mount
-      second: Sekonnen
-      year: Joer
+      day: 일
+      hour: 시
+      minute: 분
+      month: 월
+      second: 초
+      year: 년
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{message}"
     messages:
-      accepted: muss akzeptéiert ginn
-      blank: däerf net eidel sinn
-      present: muss eidel sinn
-      confirmation: ! "stëmmt net mat %{attribute} iwwerenee"
-      empty: däerf net eidel sinn
-      equal_to: muss d'selwecht si wéi %{count}
-      even: muss gerued sinn
-      exclusion: ass reservéiert
-      greater_than: muss méi grouss wéi %{count} sinn
-      greater_than_or_equal_to: muss méi grouss oder gläich si wéi %{count}
-      inclusion: ass net an der Lëscht dran
-      invalid: ass net valabel
-      less_than: muss méi kleng wéi %{count} sinn
-      less_than_or_equal_to: muss méi kleng oder gläich si wéi %{count}
-      not_a_number: ass keng Zuel
-      not_an_integer: muss eng ganz Zuel sinn
-      odd: muss ongerued sinn
-      taken: gouf scho geholl
-      too_long:
-        one: ass ze laang (Maximal 1 Zeechen)
-        other: ass ze laang (net méi wéi %{count} Zeechen)
-      too_short:
-        one: ass ze kuerz (Mniimal 1 Zeechen)
-        other: ass ze kuerz (mindestens %{count} Zeechen)
-      wrong_length:
-        one: huet déi falsch Längt (muss genee een Zeeche sinn)
-        other: huet déi falsch Längt (musse genee %{count} Zeeche sinn)
-      other_than: "muss anescht si wéi %{count}"
+      accepted: "%{attribute}을(를) 반드시 확인해야 합니다"
+      blank: "%{attribute}에 내용을 입력해 주세요"
+      present: "%{attribute}은(는) 비어있어야 합니다"
+      confirmation: "%{attribute}은(는) 서로 일치해야 합니다"
+      empty: "%{attribute}에 내용을 입력해 주세요"
+      equal_to: "%{attribute}은(는) %{count}과 같아야 합니다"
+      even: "%{attribute}에 짝수를 입력해 주세요"
+      exclusion: "%{attribute}은(는) 이미 예약되어 있는 값입니다"
+      greater_than: "%{attribute}은(는) %{count}보다 커야 합니다"
+      greater_than_or_equal_to: "%{attribute}은(는) %{count}보다 크거야 같아야 합니다"
+      inclusion: "%{attribute}은(는) 목록에 포함되어 있는 값이 아닙니다"
+      invalid: "%{attribute}은(는) 올바르지 않은 값입니다"
+      less_than: "%{attribute}은(는) %{count}보다 작아야 합니다"
+      less_than_or_equal_to: "%{attribute}은(는) %{count}과 작거나 같아야 합니다"
+      model_invalid: "%{attribute}에 대한 데이터 검증에 실패하였습니다: %{errors}"
+      not_a_number: "%{attribute}에 숫자를 입력해 주세요"
+      not_an_integer: "%{attribute}에 정수를 입력해 주세요"
+      odd: "%{attribute}에 홀수를 입력해 주세요"
+      required: "%{attribute}은(는) 반드시 있어야 합니다"
+      taken: "%{attribute}은(는) 이미 존재합니다"
+      too_long: "%{attribute}은(는) %{count}자를 넘을 수 없습니다"
+      too_short: "%{attribute}은(는) 적어도 %{count}자를 넘어야 합니다"
+      wrong_length: "%{attribute}은(는) %{count}자여야 합니다"
+      other_than: "%{attribute}은(는) %{count}와(과) 달라야 합니다"
     template:
-      body: ! 'Et gouf Problemer mat dëse Felder:'
+      body: '아래 문제를 확인해 주세요.'
       header:
-        one: 1 Feeler verhënnert d'Späichere vu(n) %{model}
-        other: ! '%{count} Feeler verhënneren d''Späichere vu(n) %{model}'
+        one: 한 개의 오류로 인해 %{model}을(를) 저장할 수 없습니다
+        other: "%{count}개의 오류로 인해 %{model}을(를) 저장할 수 없습니다"
   helpers:
     select:
-      prompt: Sicht w.e.g. eraus
+      prompt: 선택해주세요
     submit:
-      create: uleeën %{model}
-      submit: späicheren %{model}
-      update: aktualiséieren %{model}
+      create: 등록
+      submit: 제출
+      update: 수정
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%n %u'
-        precision: 2
-        separator: .
+        delimiter: ","
+        format: "%n%u"
+        precision: 0
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: '€'
+        unit: 원
     format:
-      delimiter: ! ','
-      precision: 2
-      separator: .
+      delimiter: ","
+      precision: 3
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n%u"
         units:
-          billion: Milliard
-          million: Millioun
-          quadrillion:
-            one: Billiard
-            other: Billiarden
-          thousand: Dausend
-          trillion: Billioun
+          billion: 십억
+          million: 백만
+          quadrillion: 경
+          thousand: 천
+          trillion: 조
           unit: ''
       format:
         delimiter: ''
@@ -179,15 +176,13 @@ en:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n%u"
         units:
-          byte:
-            one: Byte
-            other: Byten
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+          byte: 바이트
+          gb: 기가바이트
+          kb: 킬로바이트
+          mb: 메가바이트
+          tb: 테라바이트
     percentage:
       format:
         delimiter: ''
@@ -197,13 +192,13 @@ en:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', an '
-      two_words_connector: ! ' an '
-      words_connector: ! ', '
+      last_word_connector: ", "
+      two_words_connector: '와(과) '
+      words_connector: ", "
   time:
-    am: moies
+    am: 오전
     formats:
-      default: ! '%A, %d. %B %Y, %H:%M Auer'
-      long: ! '%A, %d. %B %Y, %H:%M Auer'
-      short: ! '%d. %b %H:%M'
-    pm: mëttes
+      default: "%Y/%m/%d %H:%M:%S"
+      long: "%Y년 %m월 %d일, %H시 %M분 %S초 %Z"
+      short: "%y/%m/%d %H:%M"
+    pm: 오후
