@@ -2,189 +2,174 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Виникли помилки: %{errors}'
+        record_invalid: "%{errors} دا خاتالىق بار"
         restrict_dependent_destroy:
-          has_one: 'Неможливо видалити запис, так як існує залежність: %{record}'
-          has_many: 'Неможливо видалити запис, так як існують залежності: %{record}'
+          has_one: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
+          has_many: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
   date:
     abbr_day_names:
-      - нд.
-      - пн.
-      - вт.
-      - ср.
-      - чт.
-      - пт.
-      - сб.
+      - يەكشەنبە
+      - دۈشەنبە
+      - سەيشەنبە
+      - چارشەنبە
+      - پەيشەنبە
+      - جۈمە
+      - شەنبە
     abbr_month_names:
       -
-      - січ.
-      - лют.
-      - бер.
-      - квіт.
-      - трав.
-      - черв.
-      - лип.
-      - серп.
-      - вер.
-      - жовт.
-      - лист.
-      - груд.
+      - يانۋار
+      - فېۋرال
+      - مارت
+      - ئاپرېل
+      - ماي
+      - ئىيۇن
+      - ئىيۇل
+      - ئاۋغۇست
+      - سېنتەبىر
+      - ئۆكتەبىر
+      - نويابىر
+      - دېكابىر
     day_names:
-      - неділя
-      - понеділок
-      - вівторок
-      - середа
-      - четвер
-      - п'ятниця
-      - субота
+      - يەكشەنبە
+      - دۈشەنبە
+      - سەيشەنبە
+      - چارشەنبە
+      - پەيشەنبە
+      - جۈمە
+      - شەنبە
     formats:
-      default: "%d.%m.%Y"
-      long: "%d %B %Y"
-      short: "%d %b"
+      default: "%Y-%m-%d"
+      long: "%Y-%m-%d"
+      short: "%b%d"
     month_names:
       -
-      - Січня
-      - Лютого
-      - Березня
-      - Квітня
-      - Травня
-      - Червня
-      - Липня
-      - Серпня
-      - Вересня
-      - Жовтня
-      - Листопада
-      - Грудня
+      - يانۋار
+      - فېۋرال
+      - مارت
+      - ئاپرېل
+      - ماي
+      - ئىيۇن
+      - ئىيۇل
+      - ئاۋغۇست
+      - سېنتەبىر
+      - ئۆكتەبىر
+      - نويابىر
+      - دېكابىر
     order:
-      - :day
-      - :month
       - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one:
-        other:
+        one: تەخمىنەن بىر سائەت
+        other: تەخمىنەن %{count} سائەت
       about_x_months:
-        one:
-        other:
+        one: تەخمىنەن بىر ئاي
+        other: تەخمىنەن %{count} ئاي
       about_x_years:
-        one:
-        other:
+        one: تەخمىنەن بىر يىل
+        other: تەخمىنەن %{count} يىل
       almost_x_years:
-        one:
-        other:
-      half_a_minute: півхвилини
+        one: بىر يىلغا يېقىن
+        other: "%{count} يىلغا يېقىن"
+      half_a_minute: يېرىم مىنۇت
       less_than_x_minutes:
-        one:
-        other:
+        one: بىر مىنۇتقا يەتمىگەن
+        other: "%{count} مىنۇتقا يەتمىگەن"
       less_than_x_seconds:
-        one:
-        other:
+        one: بىر سىكۇنتقا يەتمىگەن
+        other: "%{count} سىكنۇتقا"
       over_x_years:
-        one:
-        other:
+        one: بىر يىلدىن ئارتۇق
+        other: "%{count} يىلدىن ئارتۇق"
       x_days:
-        one: ""
-        other: ""
+        one: بىر كۈن
+        other: "%{count} كۈن"
       x_minutes:
-        one: ""
-        other: ""
+        one: بىر مىنۇت
+        other: "%{count} مىنۇت"
       x_months:
-        one: ""
-        other: ""
-      x_years:
-        one: ""
-        other: ""
+        one: بىر ئاي
+        other: "%{count} ئاي"
       x_seconds:
-        one: ""
-        other: ""
+        one: بىر سىكنۇت
+        other: "%{count} سىكنۇت"
     prompts:
-      day: День
-      hour: Година
-      minute: Хвилина
-      month: Місяць
-      second: Секунда
-      year: Рік
+      day: كۈن
+      hour: سائەت
+      minute: مىنۇت
+      month: ئاي
+      second: سىكنۇت
+      year: يىل
   errors:
-    format: "%{attribute} %{message}"
+    format: "%{attribute}%{message}"
     messages:
-      accepted: має бути прийнятий
-      blank: не може бути пустим
-      present: має бути пустим
-      confirmation: не збігається з підтвердженням
-      empty: не може бути порожнім
-      equal_to: має дорівнювати %{count}
-      even: має бути парним
-      exclusion: зарезервовано
-      greater_than: має бути більше ніж %{count}
-      greater_than_or_equal_to: має бути більше ніж або дорівнювати %{count}
-      inclusion: не включено до переліку
-      invalid: недійсний
-      less_than: має бути менше ніж %{count}
-      less_than_or_equal_to: має бути менше ніж або дорівнювати %{count}
-      model_invalid: 'Виникли помилки: %{errors}'
-      not_a_number: не число
-      not_an_integer: не э цілим числом
-      odd: має бути непарним
-      required: не може бути порожнім
-      taken: вже зайнятий
+      accepted: تەستىقلاش كېرەك
+      blank: بوش بولماسلىقى كېرەك
+      present: بوش بولىشى كېرەك
+      confirmation: تەستىق بىلەن ماس ئەمەس
+      empty: بوش بولماسلىقى كېرەك
+      equal_to: "%{count} غا تەڭ"
+      even: جۈپ سان
+      exclusion: مۇمكىن ئەمەس
+      greater_than: "%{count} دىن چوڭ"
+      greater_than_or_equal_to: "%{count} دىن چوڭ ياكى تەڭ"
+      inclusion: كۈتىلمىگەن نەتىجە
+      invalid: ئىناۋەتسىز
+      less_than: "%{count} دىن كىچىك"
+      less_than_or_equal_to: "%{count} دىن كىچىك ياكى تەڭ"
+      not_a_number: سان ئەمەس
+      not_an_integer: پۈتۈن سان ئەمەس
+      odd: تاق سان
+      taken: ئىشلىتىپ بولۇنغان
       too_long:
-        one:
-        other:
+        one: بەك ئۇزۇن (بىر ھەرىپ)
+        other: بەك ئۇزۇن (ئەڭ ئۇزۇن بولغاندا %{count} ھەرىپ)
       too_short:
-        one:
-        other:
+        one: بەك قىسقا (بىر ھەرىپ)
+        other: بەك قىسقا (ئەڭ قىسقا بولغاندا %{count} ھەرىپ)
       wrong_length:
-        one:
-        other:
-      other_than: має відрізнятись від %{count}
+        one: ئىناۋەتسىز ئۇزۇنلۇق (بىر ھەرىپ)
+        other: ئىناۋەتسىز ئۇزۇنلۇق (چوقۇم %{count} ھەرىپ)
+      other_than: ئىناۋەتسىز ئۇزۇنلۇق (%{count} ھەرىپ بولماسلىقى كېرەك)
     template:
-      body: 'Помилки виявлено в таких полях:'
+      body: تۆۋەندىكى سۆز بۆلەكلىرىدە خاتالىق بار
       header:
-        one: ""
-        other: ""
+        one: بىر خاتالىق تۈپەيلىدىن 「%{model}」 ساقلاش مەغلۇب بولدى
+        other: "%{count} خاتالىق تۈپەيلىدىن 「%{model}」ساقلاش مەغلۇب بولدى"
   helpers:
     select:
-      prompt: 'Оберіть: '
+      prompt: تاللاڭ
     submit:
-      create: Створити %{model}
-      submit: Зберегти %{model}
-      update: Зберегти %{model}
+      create: "%{model} قوشۇش"
+      submit: "%{model} ساقلاش"
+      update: "%{model} يېڭىلاش"
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: ","
+        format: "%u %n"
         precision: 2
-        separator: ","
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: грн.
+        unit: CN¥
     format:
-      delimiter: " "
+      delimiter: ","
       precision: 3
-      separator: ","
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one:
-            other:
-          million:
-            one:
-            other:
-          quadrillion:
-            one:
-            other:
-          thousand:
-            one:
-            other:
-          trillion:
-            one:
-            other:
+          billion: مىليارد
+          million: مىليون
+          quadrillion: گېگابايت
+          thousand: مىڭ
+          trillion: مېگا
           unit: ''
       format:
         delimiter: ''
@@ -195,12 +180,12 @@ en:
         format: "%n %u"
         units:
           byte:
-            one:
-            other:
-          gb: ГБ
-          kb: кБ
-          mb: МБ
-          tb: ТБ
+            one: بايت
+            other: بايت
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
@@ -209,13 +194,13 @@ en:
         delimiter: ''
   support:
     array:
-      last_word_connector: " та "
-      two_words_connector: " і "
+      last_word_connector: " ۋە "
+      two_words_connector: " ۋە "
       words_connector: ", "
   time:
-    am: до полудня
+    am: چۈشتىن بۇرۇن
     formats:
-      default: "%a, %d %b %Y, %H:%M:%S %z"
-      long: "%d %B %Y, %H:%M"
-      short: "%d %b, %H:%M"
-    pm: по полудні
+      default: "%Y %b %d %A %H:%M:%S %Z"
+      long: "%Y %b %d %H:%M"
+      short: "%b %d %H:%M"
+    pm: چۈشتىن كېيىن
