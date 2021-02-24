@@ -2,157 +2,166 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Yoxlama uğursuz oldu: %{errors}'
+        record_invalid: "Validation failed: %{errors}"
         restrict_dependent_destroy:
-          has_one: "Əlaqəli %{record} yazı olduğundan bu yazını silmək mümkün deyil"
-          has_many: "Əlaqəli %{record} yazılar olduğundan bu yazını silmək mümkün deyil"
+          has_one: "Cannot delete record because a dependent %{record} exists"
+          has_many: "Cannot delete record because dependent %{record} exist"
   date:
     abbr_day_names:
-      - B.
-      - B.E.
-      - Ç.A.
-      - Ç.
-      - C.A.
-      - C.
-      - Ş.
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
     abbr_month_names:
       -
-      - Yan
-      - Fev
+      - Jan
+      - Feb
       - Mar
       - Apr
       - May
-      - İyn
-      - İyl
-      - Avq
-      - Sen
-      - Okt
-      - Noy
-      - Dek
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
     day_names:
-      - Bazar
-      - Bazar ertəsi
-      - Çərşənbə axşamı
-      - Çərşənbə
-      - Cümə axşamı
-      - Cümə
-      - Şənbə
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     formats:
-      default: "%d.%m.%Y"
-      long: "%d %B %Y"
-      short: "%d %b"
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
       -
-      - Yanvar
-      - Fevral
-      - Mart
-      - Aprel
+      - January
+      - February
+      - March
+      - April
       - May
-      - İyun
-      - İyul
-      - Avqust
-      - Sentyabr
-      - Oktyabr
-      - Noyabr
-      - Dekabr
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
     order:
-      - :day
-      - :month
       - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one: təxminən 1 saat
-        other: təxminən %{count} saat
+        one: about 1 hour
+        other: about %{count} hours
       about_x_months:
-        one: təxminən 1 ay
-        other: təxminən %{count} ay
+        one: about 1 month
+        other: about %{count} months
       about_x_years:
-        one: təxminən 1 il
-        other: təxminən %{count} il
+        one: about 1 year
+        other: about %{count} years
       almost_x_years:
-        one: təqribən 1 il
-        other: təqribən %{count} il
-      half_a_minute: yarım dəqiqə
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
       less_than_x_minutes:
-        one: 1 dəqiqədən az
-        other: "%{count} dəqiqədən az"
+        one: less than a minute
+        other: less than %{count} minutes
       less_than_x_seconds:
-        one: 1 saniyədən az
-        other: "%{count} saniyədən az"
+        one: less than 1 second
+        other: less than %{count} seconds
       over_x_years:
-        one: 1 ildən çox
-        other: "%{count} ildən çox"
+        one: over 1 year
+        other: over %{count} years
       x_days:
-        one: 1 gün
-        other: "%{count} gün"
+        one: 1 day
+        other: "%{count} days"
       x_minutes:
-        one: 1 dəqiqə
-        other: "%{count} dəqiqə"
+        one: 1 minute
+        other: "%{count} minutes"
       x_months:
-        one: 1 ay
-        other: "%{count} ay"
+        one: 1 month
+        other: "%{count} months"
+      x_years:
+        one: 1 year
+        other: "%{count} years"
       x_seconds:
-        one: 1 saniyə
-        other: "%{count} saniyə"
+        one: 1 second
+        other: "%{count} seconds"
     prompts:
-      day: Gün
-      hour: Saat
-      minute: Dəqiqə
-      month: Ay
-      second: Saniyə
-      year: İl
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: qəbul olunmalıdır
-      blank: boş ola bilməz
-      present: boş olmalıdır
-      confirmation: təsdiqə uygun deyil
-      empty: boş ola bilməz
-      equal_to: "%{count}-ə bərabər olmalıdır"
-      even: cüt olmalıdır
-      exclusion: qorunur
-      greater_than: "%{count}-dən böyük olmalıdır"
-      greater_than_or_equal_to: böyük və ya %{count}-ə bərabər olmalıdır
-      inclusion: siyahiyə daxil deyil
-      invalid: yanlışdır
-      less_than: "%{count}-dən kiçik olmalıdır"
-      less_than_or_equal_to: kiçik və ya %{count}-ə bərabər olmalıdır
-      model_invalid: "Yoxlama uğursuz oldu: %{errors}"
-      not_a_number: rəqəm deyil
-      not_an_integer: tam rəqəm olmalıdır
-      odd: tək olmalıdır
-      required: mövcud olmalıdır
-      taken: artıq mövcuddur
-      too_long: çox uzundur (%{count} simvoldan çox olmalı deyil)
-      too_short: çox qısadır (%{count} simvoldan az olmalı deyil)
-      wrong_length: uzunluqu səhvdir (%{count} simvol olmalıdır)
-      other_than: "%{count}-dən fərqli olmalıdır"
+      accepted: must be accepted
+      blank: can't be blank
+      present: must be blank
+      confirmation: doesn't match %{attribute}
+      empty: can't be empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is reserved
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      model_invalid: "Validation failed: %{errors}"
+      not_a_number: is not a number
+      not_an_integer: must be an integer
+      odd: must be odd
+      required: must exist
+      taken: has already been taken
+      too_long:
+        one: is too long (maximum is 1 character)
+        other: is too long (maximum is %{count} characters)
+      too_short:
+        one: is too short (minimum is 1 character)
+        other: is too short (minimum is %{count} characters)
+      wrong_length:
+        one: is the wrong length (should be 1 character)
+        other: is the wrong length (should be %{count} characters)
+      other_than: must be other than %{count}
     template:
-      body: 'Aşağıdaki səhvlər üzə çıxdı:'
+      body: 'There were problems with the following fields:'
       header:
-        one: "%{model} saxlanmadı: 1 səhv"
-        other: "%{model} saxlanmadı: %{count} səhv"
+        one: 1 error prohibited this %{model} from being saved
+        other: "%{count} errors prohibited this %{model} from being saved"
   helpers:
     select:
-      prompt: Seçin
+      prompt: Please select
     submit:
-      create: "%{model} yarat"
-      submit: "%{model} saxla"
-      update: "%{model} yenilə"
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: ","
+        format: "%u%n"
         precision: 2
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: AZN
+        unit: "$"
     format:
-      delimiter: " "
+      delimiter: ","
       precision: 3
       separator: "."
       significant: false
@@ -161,42 +170,45 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Milyard
-          million: Milyon
-          quadrillion: Kvadrilyon
-          thousand: Min
-          trillion: Trilyon
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
           unit: ''
       format:
         delimiter: ''
-        precision: 1
-        significant: false
-        strip_insignificant_zeros: false
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: Bayt
-            other: Bayt
+            one: Byte
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
           tb: TB
+          pb: PB
+          eb: EB
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " və "
-      two_words_connector: " və "
+      last_word_connector: ", and "
+      two_words_connector: " and "
       words_connector: ", "
   time:
-    am: günortaya qədər
+    am: am
     formats:
-      default: "%a, %d %b %Y, %H:%M:%S %z"
-      long: "%d %B %Y, %H:%M"
-      short: "%d %b, %H:%M"
-    pm: günortadan sonra
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
