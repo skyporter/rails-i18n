@@ -2,56 +2,59 @@ en-US:
   activerecord:
     errors:
       messages:
-        record_invalid: ! 'Η επικύρωση απέτυχε: %{errors}'
+        record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Datensatz kann nicht gelöscht werden, da ein abhängiger %{record}-Datensatz existiert.
+          has_many: Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.
   date:
     abbr_day_names:
-      - Κυρ
-      - Δευ
-      - Τρί
-      - Τετ
-      - Πέμ
-      - Παρ
-      - Σάβ
+      - So
+      - Mo
+      - Di
+      - Mi
+      - Do
+      - Fr
+      - Sa
     abbr_month_names:
       -
-      - Ιαν
-      - Φεβ
-      - Μαρ
-      - Απρ
-      - Μαϊ
-      - Ιουν
-      - Ιουλ
-      - Αυγ
-      - Σεπ
-      - Οκτ
-      - Νοε
-      - Δεκ
+      - Jan
+      - Feb
+      - Mär
+      - Apr
+      - Mai
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Okt
+      - Nov
+      - Dez
     day_names:
-      - Κυριακή
-      - Δευτέρα
-      - Τρίτη
-      - Τετάρτη
-      - Πέμπτη
-      - Παρασκευή
-      - Σάββατο
+      - Sonntag
+      - Montag
+      - Dienstag
+      - Mittwoch
+      - Donnerstag
+      - Freitag
+      - Samstag
     formats:
-      default: ! '%d/%m/%Y'
-      long: ! '%e %B %Y'
-      short: ! '%d %b'
+      default: "%d.%m.%Y"
+      long: "%e. %B %Y"
+      short: "%e. %b"
     month_names:
       -
-      - Ιανουάριος
-      - Φεβρουάριος
-      - Μάρτιος
-      - Απρίλιος
-      - Μάιος
-      - Ιούνιος
-      - Ιούλιος
-      - Αύγουστος
-      - Σεπτέμβριος
-      - Οκτώβριος
-      - Νοέμβριος
-      - Δεκέμβριος
+      - Januar
+      - Februar
+      - März
+      - April
+      - Mai
+      - Juni
+      - Juli
+      - August
+      - September
+      - Oktober
+      - November
+      - Dezember
     order:
       - :day
       - :month
@@ -59,120 +62,132 @@ en-US:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: περίπου μία ώρα
-        other: περίπου %{count} ώρες
+        one: etwa eine Stunde
+        other: etwa %{count} Stunden
       about_x_months:
-        one: περίπου ένα μήνα
-        other: περίπου %{count} μήνες
+        one: etwa ein Monat
+        other: etwa %{count} Monate
       about_x_years:
-        one: περίπου ένα χρόνο
-        other: περίπου %{count} χρόνια
+        one: etwa ein Jahr
+        other: etwa %{count} Jahre
       almost_x_years:
-        one: σχεδόν ένα χρόνο
-        other: σχεδόν %{count} χρόνια
-      half_a_minute: μισό λεπτό
+        one: fast ein Jahr
+        other: fast %{count} Jahre
+      half_a_minute: eine halbe Minute
       less_than_x_minutes:
-        one: λιγότερο από ένα λεπτό
-        other: λιγότερο από %{count} λεπτά
+        one: weniger als eine Minute
+        other: weniger als %{count} Minuten
       less_than_x_seconds:
-        one: λιγότερο από ένα δευτερόλεπτο
-        other: λιγότερο από %{count} δευτερόλεπτα
+        one: weniger als eine Sekunde
+        other: weniger als %{count} Sekunden
       over_x_years:
-        one: πάνω από ένα χρόνο
-        other: πάνω από %{count} χρόνια
+        one: mehr als ein Jahr
+        other: mehr als %{count} Jahre
       x_days:
-        one: 1 μέρα
-        other: ! '%{count} ημέρες'
+        one: ein Tag
+        other: "%{count} Tage"
       x_minutes:
-        one: 1 λεπτό
-        other: ! '%{count} λεπτά'
+        one: eine Minute
+        other: "%{count} Minuten"
       x_months:
-        one: 1 μήνα
-        other: ! '%{count} μήνες'
+        one: ein Monat
+        other: "%{count} Monate"
       x_seconds:
-        one: 1 δευτερόλεπτο
-        other: ! '%{count} δευτερόλεπτα'
+        one: eine Sekunde
+        other: "%{count} Sekunden"
     prompts:
-      day: Ημέρα
-      hour: Ώρα
-      minute: Λεπτό
-      month: Μήνας
-      second: Δευτερόλεπτο
-      year: Έτος
+      day: Tag
+      hour: Stunden
+      minute: Minute
+      month: Monat
+      second: Sekunde
+      year: Jahr
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
-      accepted: πρέπει να είναι αποδεκτό
-      blank: δεν πρέπει να είναι κενό
-      confirmation: δεν ταιριάζει με την επικύρωση
-      empty: δεν πρέπει να είναι άδειο
-      equal_to: πρέπει να είναι ίσο με %{count}
-      even: πρέπει να είναι άρτιος
-      exclusion: είναι δεσμευμένο
-      greater_than: πρέπει να είναι μεγαλύτερο από %{count}
-      greater_than_or_equal_to: πρέπει να είναι μεγαλύτερο ή ίσο με %{count}
-      inclusion: δεν συμπεριλαμβάνεται στη λίστα
-      invalid: είναι άκυρο
-      less_than: πρέπει να είναι λιγότερο από %{count}
-      less_than_or_equal_to: πρέπει να είναι λιγότερο ή ίσο με %{count}
-      not_a_number: δεν είναι αριθμός
-      not_an_integer: πρέπει να είναι ακέραιος αριθμός
-      odd: πρέπει να είναι περιττός
-      taken: το έχουν ήδη χρησιμοποιήσει
+      accepted: muss akzeptiert werden
+      blank: muss ausgefüllt werden
+      present: darf nicht ausgefüllt werden
+      confirmation: stimmt nicht mit %{attribute} überein
+      empty: muss ausgefüllt werden
+      equal_to: muss genau %{count} sein
+      even: muss gerade sein
+      exclusion: ist nicht verfügbar
+      greater_than: muss größer als %{count} sein
+      greater_than_or_equal_to: muss größer oder gleich %{count} sein
+      inclusion: ist kein gültiger Wert
+      invalid: ist nicht gültig
+      less_than: muss kleiner als %{count} sein
+      less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+      model_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+      not_a_number: ist keine Zahl
+      not_an_integer: muss ganzzahlig sein
+      required: muss ausgefüllt werden
+      odd: muss ungerade sein
+      taken: ist bereits vergeben
       too_long:
-        one: είναι πολύ μεγάλο (το μέγιστο μήκος είναι 1 χαρακτήρας)
-        other: είναι πολύ μεγάλο (το μέγιστο μήκος είναι %{count} χαρακτήρες)
+        one: ist zu lang (mehr als 1 Zeichen)
+        other: ist zu lang (mehr als %{count} Zeichen)
       too_short:
-        one: είναι πολύ μικρό (το ελάχιστο μήκος είναι 1 χαρακτήρας)
-        other: είναι πολύ μικρό (το ελάχιστο μήκος είναι %{count} χαρακτήρες)
+        one: ist zu kurz (weniger als 1 Zeichen)
+        other: ist zu kurz (weniger als %{count} Zeichen)
       wrong_length:
-        one: έχει λανθασμένο μήκος (πρέπει να είναι 1 χαρακτήρας)
-        other: έχει λανθασμένο μήκος (πρέπει να είναι %{count} χαρακτήρες)
+        one: hat die falsche Länge (muss genau 1 Zeichen haben)
+        other: hat die falsche Länge (muss genau %{count} Zeichen haben)
+      other_than: darf nicht gleich %{count} sein
     template:
-      body: ! 'Υπήρξαν προβλήματα με τα ακόλουθα πεδία:'
+      body: 'Bitte überprüfen Sie die folgenden Felder:'
       header:
-        one: 1 λάθος εμπόδισε αυτό το %{model} να αποθηκευτεί.
-        other: ! '%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευτεί.'
+        one: 'Konnte %{model} nicht speichern: ein Fehler.'
+        other: 'Konnte %{model} nicht speichern: %{count} Fehler.'
   helpers:
     select:
-      prompt: Παρακαλώ επιλέξτε
+      prompt: Bitte wählen
     submit:
-      create: Δημιουργήστε %{model}
-      submit: Αποθηκεύστε %{model}
-      update: Ενημερώστε %{model}
+      create: "%{model} erstellen"
+      submit: "%{model} speichern"
+      update: "%{model} aktualisieren"
   number:
     currency:
       format:
         delimiter: "."
-        format: ! '%n %u'
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: '€'
+        unit: "€"
     format:
       delimiter: "."
-      precision: 3
-      separator: ! ','
+      precision: 2
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
-          billion: δισεκατομμύριο
-          million: εκατομμύριο
-          quadrillion: τετράκις εκατομμύριο
-          thousand: χίλια
-          trillion: τρισεκατομμύριο
+          billion:
+            one: Milliarde
+            other: Milliarden
+          million:
+            one: Million
+            other: Millionen
+          quadrillion:
+            one: Billiarde
+            other: Billiarden
+          thousand: Tausend
+          trillion:
+            one: Billion
+            other: Billionen
           unit: ''
       format:
         delimiter: ''
-        precision: 1
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -184,18 +199,19 @@ en-US:
     percentage:
       format:
         delimiter: ''
+        format: "%n %"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' και '
-      two_words_connector: ! ' και '
-      words_connector: ! ', '
+      last_word_connector: " und "
+      two_words_connector: " und "
+      words_connector: ", "
   time:
-    am: π.μ.
+    am: vormittags
     formats:
-      default: ! '%d %B %Y %H:%M'
-      long: ! '%A %d %B %Y %H:%M:%S %Z'
-      short: ! '%d %b %H:%M'
-    pm: μ.μ.
+      default: "%A, %d. %B %Y, %H:%M Uhr"
+      long: "%A, %d. %B %Y, %H:%M Uhr"
+      short: "%d. %B, %H:%M Uhr"
+    pm: nachmittags
