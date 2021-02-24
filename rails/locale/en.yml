@@ -2,59 +2,59 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Validacija nije uspjela: %{errors}'
+        record_invalid: 'Valideerimine ebaõnnestus: %{errors}'
         restrict_dependent_destroy:
-          has_one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
-          has_many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
+          has_one: "Ei saa kirjet kustutada kuna sõltuv %{record} on olemas"
+          has_many: "Ei saa kirjet kustutada kuna sõltuvad %{record} on olemas"
   date:
     abbr_day_names:
-      - Ned
-      - Pon
-      - Uto
-      - Sri
-      - Čet
-      - Pet
-      - Sub
+      - P
+      - E
+      - T
+      - K
+      - false
+      - R
+      - L
     abbr_month_names:
       -
-      - Sij
-      - Veǉ
-      - Ožu
-      - Tra
-      - Svi
-      - Lip
-      - Srp
-      - Kol
-      - Ruj
-      - Lis
-      - Stu
-      - Pro
+      - jaan.
+      - veebr.
+      - märts
+      - apr.
+      - mai
+      - juuni
+      - juuli
+      - aug.
+      - sept.
+      - okt.
+      - nov.
+      - dets.
     day_names:
-      - Nedjelja
-      - Ponedjeljak
-      - Utorak
-      - Srijeda
-      - Četvrtak
-      - Petak
-      - Subota
+      - pühapäev
+      - esmaspäev
+      - teisipäev
+      - kolmapäev
+      - neljapäev
+      - reede
+      - laupäev
     formats:
-      default: "%d.%m.%Y."
-      long: "%e. %B %Y."
-      short: "%e.%-m."
+      default: "%d.%m.%Y"
+      long: "%d. %B %Y"
+      short: "%d.%m.%y"
     month_names:
       -
-      - Siječanj
-      - Veljača
-      - Ožujak
-      - Travanj
-      - Svibanj
-      - Lipanj
-      - Srpanj
-      - Kolovoz
-      - Rujan
-      - Listopad
-      - Studeni
-      - Prosinac
+      - jaanuar
+      - veebruar
+      - märts
+      - aprill
+      - mai
+      - juuni
+      - juuli
+      - august
+      - september
+      - oktoober
+      - november
+      - detsember
     order:
       - :day
       - :month
@@ -62,102 +62,101 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one:
-        other:
+        one: umbes %{count} tund
+        other: umbes %{count} tundi
       about_x_months:
-        one:
-        other:
+        one: umbes %{count} kuu
+        other: umbes %{count} kuud
       about_x_years:
-        one:
-        other:
+        one: umbes %{count} aasta
+        other: umbes %{count} aastat
       almost_x_years:
-        one:
-        other:
-      half_a_minute: pola minute
+        one: peaaegu üks aasta
+        other: peaaegu %{count} aastat
+      half_a_minute: pool minutit
       less_than_x_minutes:
-        one:
-        other:
+        one: vähem kui %{count} minut
+        other: vähem kui %{count} minutit
       less_than_x_seconds:
-        one:
-        other:
+        one: vähem kui %{count} sekund
+        other: vähem kui %{count} sekundit
       over_x_years:
-        one:
-        other:
+        one: üle %{count} aasta
+        other: üle %{count} aasta
       x_days:
-        one: ""
-        other: ""
+        one: "%{count} päev"
+        other: "%{count} päeva"
       x_minutes:
-        one: ""
-        other: ""
+        one: "%{count} minut"
+        other: "%{count} minutit"
       x_months:
-        one: ""
-        other: ""
+        one: "%{count} kuu"
+        other: "%{count} kuud"
+      x_years:
+        one: "%{count} aasta"
+        other: "%{count} aastat"
       x_seconds:
-        one: ""
-        other: ""
+        one: "%{count} sekund"
+        other: "%{count} sekundit"
     prompts:
-      day: Dan
-      hour: Sat
-      minute: Minuta
-      month: Mjesec
-      second: Sekunde
-      year: Godina
+      day: Päev
+      hour: Tunde
+      minute: Minutit
+      month: Kuu
+      second: Sekundit
+      year: Aasta
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: mora biti prihvaćen
-      blank: ne smije biti prazan
-      present: mora biti prazan
-      confirmation: se ne slaže sa svojom potvrdom
-      empty: ne smije biti prazan
-      equal_to: mora biti jednak %{count}
-      even: mora biti paran
-      exclusion: je rezerviran
-      greater_than: mora biti veći od %{count}
-      greater_than_or_equal_to: mora biti veći ili jednak %{count}
-      inclusion: nije u listi
-      invalid: nije ispravan
-      less_than: mora biti manji od %{count}
-      less_than_or_equal_to: mora biti manji ili jednak %{count}
-      not_a_number: nije broj
-      not_an_integer: nije cijeli broj
-      odd: mora biti neparan
-      taken: je već zauzet
-      too_long:
-        one:
-        other:
-      too_short:
-        one:
-        other:
-      wrong_length:
-        one:
-        other:
-      other_than: mora biti različit od %{count}
+      accepted: peab olema heaks kiidetud
+      blank: on täitmata
+      present: peab olema täitmata
+      confirmation: ei vasta kinnitusele
+      empty: on tühi
+      equal_to: peab olema võrdne arvuga %{count}
+      even: peab olema paarisarv
+      exclusion: on reserveeritud
+      greater_than: peab olema suurem kui %{count}
+      greater_than_or_equal_to: peab olema suurem või võrdne arvuga %{count}
+      inclusion: ei leidu nimekirjas
+      invalid: ei ole korrektne
+      less_than: peab olema vähem kui %{count}
+      less_than_or_equal_to: peab olema vähem või võrdne arvuga %{count}
+      model_invalid: "Valideerimine ebaõnnestus: %{errors}"
+      not_a_number: ei ole number
+      not_an_integer: peab olema täisarv
+      odd: peab olema paaritu arv
+      required: peab olemas olema
+      taken: on juba võetud
+      too_long: on liiga pikk (maksimum on %{count} tähemärki)
+      too_short: on liiga lühike (miinimum on %{count} tähemärki)
+      wrong_length: on vale pikkusega (peab olema %{count} tähemärki)
+      other_than: peab olema midagi muud kui %{count}
     template:
-      body: 'Sljedeća polja su neispravno popunjena:'
+      body: 'Probleeme ilmnes järgmiste väljadega:'
       header:
-        one: ""
-        other: ""
+        one: Üks viga takistas objekti %{model} salvestamist
+        other: "%{count} viga takistasid objekti %{model} salvestamist"
   helpers:
     select:
-      prompt: Izaberite
+      prompt: Palun vali
     submit:
-      create: Stvori %{model}
-      submit: Spremi %{model}
-      update: Izmjeni %{model}
+      create: Loo uus %{model}
+      submit: Salvesta %{model}
+      update: Uuenda objekti %{model}
   number:
     currency:
       format:
-        delimiter: "."
+        delimiter: " "
         format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: kn
+        unit: "€"
     format:
-      delimiter: "."
-      precision: 3
+      delimiter: " "
+      precision: 2
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -165,23 +164,23 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          thousand: Tisuća
-          million: Milijun
-          billion: Milijarda
-          trillion: Bilijun
-          quadrillion: Bilijarda
+          billion: miljard
+          million: miljon
+          quadrillion: kvadriljon
+          thousand: tuhat
+          trillion: triljon
           unit: ''
       format:
         delimiter: ''
-        precision: 3
+        precision: 1
         significant: true
         strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one:
-            other:
+            one: bait
+            other: baiti
           gb: GB
           kb: KB
           mb: MB
@@ -195,13 +194,13 @@ en:
         delimiter: ''
   support:
     array:
-      last_word_connector: " i "
-      two_words_connector: " i "
+      last_word_connector: " ja "
+      two_words_connector: " ja "
       words_connector: ", "
   time:
-    am: AM
+    am: enne lõunat
     formats:
-      default: "%d.%m.%Y. %H:%M:%S"
-      long: "%e. %B %Y. %H:%M"
-      short: "%e.%-m. %k:%M"
-    pm: PM
+      default: "%d. %B %Y, %H:%M"
+      long: "%a, %d. %b %Y, %H:%M:%S %z"
+      short: "%d.%m.%y, %H:%M"
+    pm: pärast lõunat
