@@ -2,59 +2,59 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'A validação falhou: %{errors}'
+        record_invalid: 'Validasi gagal: %{errors}'
         restrict_dependent_destroy:
-          has_many: Não pode ser eliminado por existirem dependências de %{record}
-          has_one: Não pode ser eliminado por existir uma dependência de %{record}
+          has_one: Tidak bisa menghapus record karena terdapat satu %{record} yang bergantung
+          has_many: Tidak bisa menghapus record karena terdapat %{record} yang bergantung
   date:
     abbr_day_names:
-      - Dom
-      - Seg
-      - Ter
-      - Qua
-      - Qui
-      - Sex
-      - Sáb
+      - Min
+      - Sen
+      - Sel
+      - Rab
+      - Kam
+      - Jum
+      - Sab
     abbr_month_names:
       -
       - Jan
-      - Fev
+      - Feb
       - Mar
-      - Abr
-      - Mai
+      - Apr
+      - Mei
       - Jun
       - Jul
-      - Ago
-      - Set
-      - Out
+      - Agu
+      - Sep
+      - Okt
       - Nov
-      - Dez
+      - Des
     day_names:
-      - Domingo
-      - Segunda-feira
-      - Terça-feira
-      - Quarta-feira
-      - Quinta-feira
-      - Sexta-feira
-      - Sábado
+      - Minggu
+      - Senin
+      - Selasa
+      - Rabu
+      - Kamis
+      - Jumat
+      - Sabtu
     formats:
-      default: "%d/%m/%Y"
-      long: "%d de %B de %Y"
-      short: "%d de %B"
+      default: "%d %B %Y"
+      long: "%A, %d %B %Y"
+      short: "%d.%m.%Y"
     month_names:
       -
-      - Janeiro
-      - Fevereiro
-      - Março
-      - Abril
-      - Maio
-      - Junho
-      - Julho
-      - Agosto
-      - Setembro
-      - Outubro
-      - Novembro
-      - Dezembro
+      - Januari
+      - Februari
+      - Maret
+      - April
+      - Mei
+      - Juni
+      - Juli
+      - Agustus
+      - September
+      - Oktober
+      - November
+      - Desember
     order:
       - :day
       - :month
@@ -62,98 +62,101 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: aproximadamente 1 hora
-        other: aproximadamente %{count} horas
+        one: sekitar satu jam
+        other: sekitar %{count} jam
       about_x_months:
-        one: aproximadamente 1 mês
-        other: aproximadamente %{count} meses
+        one: sekitar sebulan
+        other: sekitar %{count} bulan
       about_x_years:
-        one: aproximadamente 1 ano
-        other: aproximadamente %{count} anos
+        one: sekitar setahun
+        other: sekitar %{count} tahun
       almost_x_years:
-        one: quase 1 ano
-        other: quase %{count} anos
-      half_a_minute: meio minuto
+        one: hampir setahun
+        other: hampir %{count} tahun
+      half_a_minute: setengah menit
       less_than_x_minutes:
-        one: menos de um minuto
-        other: menos de %{count} minutos
+        one:
+        other:
       less_than_x_seconds:
-        one: menos de 1 segundo
-        other: menos de %{count} segundos
+        one:
+        other:
       over_x_years:
-        one: mais de 1 ano
-        other: mais de %{count} anos
+        one: lebih dari setahun
+        other: lebih dari %{count} tahun
       x_days:
-        one: 1 dia
-        other: "%{count} dias"
+        one: sehari
+        other: "%{count} hari"
       x_minutes:
-        one: 1 minuto
-        other: "%{count} minutos"
+        one: satu menit
+        other: "%{count} menit"
       x_months:
-        one: 1 mês
-        other: "%{count} meses"
+        one: sebulan
+        other: "%{count} bulan"
       x_seconds:
-        one: 1 segundo
-        other: "%{count} segundos"
-      x_years:
-        one: 1 ano
-        other: "%{count} anos"
+        one: satu detik
+        other: "%{count} detik"
     prompts:
-      day: Dia
-      hour: Hora
-      minute: Minuto
-      month: Mês
-      second: Segundo
-      year: Ano
+      day: Hari
+      hour: Jam
+      minute: Menit
+      month: Bulan
+      second: Detik
+      year: Tahun
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: tem de ser aceite
-      blank: não pode estar em branco
-      confirmation: não coincide com a confirmação
-      empty: não pode estar vazio
-      equal_to: tem de ser igual a %{count}
-      even: tem de ser par
-      exclusion: é reservado
-      greater_than: tem de ser maior que %{count}
-      greater_than_or_equal_to: tem de ser maior ou igual a %{count}
-      inclusion: não está incluído na lista
-      invalid: é inválido
-      less_than: tem de ser menor que %{count}
-      less_than_or_equal_to: tem de ser menor ou igual a %{count}
-      model_invalid: 'A validação falhou: %{errors}'
-      not_a_number: não é um número
-      not_an_integer: tem de ser um inteiro
-      odd: tem de ser ímpar
-      other_than: tem de ser diferente de %{count}
-      present: não pode estar em branco
-      required: é obrigatório
-      taken: não está disponível
-      too_long: é demasiado grande (o máximo é de %{count} caracteres)
-      too_short: é demasiado pequeno (o mínimo é de %{count} caracteres)
-      wrong_length: comprimento errado (deve ter %{count} caracteres)
+      accepted: harus diterima
+      blank: tidak boleh kosong
+      present: harus kosong
+      confirmation: tidak sesuai dengan %{attribute}
+      empty: tidak boleh kosong
+      equal_to: harus sama dengan %{count}
+      even: harus genap
+      exclusion: sudah digunakan
+      greater_than: harus lebih besar dari %{count}
+      greater_than_or_equal_to: harus sama atau lebih besar dari %{count}
+      inclusion: tidak termasuk
+      invalid: tidak valid
+      less_than: harus lebih kecil dari %{count}
+      less_than_or_equal_to: harus sama atau lebih kecil dari %{count}
+      model_invalid: "Validasi gagal: %{errors}"
+      not_a_number: bukan angka
+      not_an_integer: harus bilangan bulat
+      odd: harus ganjil
+      required: harus ada
+      taken: sudah digunakan
+      too_long:
+        one: terlalu panjang (maksimum 1 karakter)
+        other: terlalu panjang (maksimum %{count} karakter)
+      too_short:
+        one: terlalu pendek (minimum 1 karakter)
+        other: terlalu pendek (minimum %{count} karakter)
+      wrong_length:
+        one: jumlah karakter salah (seharusnya 1 karakter)
+        other: jumlah karakter salah (seharusnya %{count} karakter)
+      other_than: harus selain %{count}
     template:
-      body: 'Por favor, verifique os seguintes campos:'
+      body: 'Ada masalah dengan field berikut:'
       header:
-        one: '1 erro impediu guardar este %{model}'
-        other: '%{count} erros impediram guardar este %{model}'
+        one: 1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan
+        other: "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
   helpers:
     select:
-      prompt: Por favor seleccione
+      prompt: Silakan pilih
     submit:
-      create: Criar %{model}
-      submit: Gravar %{model}
-      update: Actualizar %{model}
+      create: Buat %{model}
+      submit: Simpan %{model}
+      update: Perbarui %{model}
   number:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%u%n"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: "€"
+        unit: "Rp"
     format:
       delimiter: "."
       precision: 3
@@ -164,23 +167,15 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: mil milhões
-            other: mil milhões
-          million:
-            one: milhão
-            other: milhões
-          quadrillion:
-            one: mil biliões
-            other: mil biliões
-          thousand: mil
-          trillion:
-            one: bilião
-            other: biliões
+          billion: Miliar
+          million: Juta
+          quadrillion: Quadriliun
+          thousand: Ribu
+          trillion: Triliun
           unit: ''
       format:
         delimiter: ''
-        precision: 1
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
@@ -188,28 +183,27 @@ en:
         units:
           byte:
             one: Byte
-            other: Bytes
+            other: Byte
           gb: GB
           kb: KB
           mb: MB
           tb: TB
-          pb: PB
-          eb: EB
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", e"
-      two_words_connector: " e "
+      last_word_connector: ", dan "
+      two_words_connector: " dan "
       words_connector: ", "
   time:
     am: am
     formats:
-      default: "%A, %d de %B de %Y, %H:%Mh"
-      long: "%A, %d de %B de %Y, %H:%Mh"
-      short: "%d/%m, %H:%M hs"
+      default: "%a, %d %b %Y %H.%M.%S %z"
+      long: "%d %B %Y %H.%M"
+      short: "%d %b %H.%M"
     pm: pm
