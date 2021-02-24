@@ -2,151 +2,149 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: "Validation failed: %{errors}"
+        record_invalid: 'ਪਰਮਾਣ ਫ਼ੇਲ ਹੋਇਆ: %{errors}'
         restrict_dependent_destroy:
-          has_one: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
-          has_many: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
+          has_one: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਇੱਕ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹੈ
+          has_many: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹਨ
   date:
     abbr_day_names:
-      - ഞാ.
-      - തി.
-      - ചൊ.
-      - ബു.
-      - വ്യാ.
-      - വെ.
-      - ശ.
+      - ਅੈਤ
+      - ਸੋਮ
+      - ਮੰਗਲ
+      - ਬੱੁਧ
+      - ਵੀਰ
+      - ਸ਼ੁੱਕਰ
+      - ਸ਼ਨਿੱਚਰ
     abbr_month_names:
       -
-      - ജനു.
-      - ഫെബ്ര.
-      - മാർ.
-      - എപ്രി.
-      - മെയ്.
-      - ജൂണ്‍.
-      - ജൂലൈ.
-      - ആഗ.
-      - സെപ്തം.
-      - ഒക്ടോ.
-      - നവം.
-      - ഡിസം.
+      - ਜਨ
+      - ਫ਼ਰ
+      - ਮਾਰਚ
+      - ਅਪ੍ਰੈ
+      - ਮਈ
+      - ਜੂਨ
+      - ਜੁਲਾ
+      - ਅਗ
+      - ਸਤੰ
+      - ਅਕਤੂ
+      - ਨਵੰ
+      - ਦਸੰ
     day_names:
-      - ഞായര്‍
-      - തിങ്കള്‍
-      - ചൊവ്വ
-      - ബുധൻ
-      - വ്യാഴം
-      - വെള്ളി
-      - ശനി
+      - ਐਤਵਾਰ
+      - ਸੋਮਵਾਰ
+      - ਮੰਗਲਵਾਰ
+      - ਬੁੱਧਵਾਰ
+      - ਵੀਰਵਾਰ
+      - ਸ਼ੁੱਕਰਵਾਰ
+      - ਸ਼ਨਿੱਚਰਵਾਰ
     formats:
-      default: "%d-%m-%Y"
-      long: "%d %B, %Y"
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
       short: "%b %d"
     month_names:
       -
-      - ജനുവരി
-      - ഫെബ്രുവരി
-      - മാർച്ച്
-      - ഏപ്രിൽ
-      - മെയ്
-      - ജൂണ്‍
-      - ജൂലൈ
-      - ഓഗസ്റ്റ്‌
-      - സെപ്റ്റംബർ
-      - ഒക്ടോബർ
-      - നവംബർ
-      - ഡിസംബർ
+      - ਜਨਵਰੀ
+      - ਫ਼ਰਵਰੀ
+      - ਮਾਰਚ
+      - ਅਪ੍ਰੈਲ
+      - ਮਈ
+      - ਜੂਨ
+      - ਜੁਲਾਈ
+      - ਅਗਸਤ
+      - ਸਤੰਬਰ
+      - ਅਕਤੂਬਰ
+      - ਨਵੰਬਰ
+      - ਦਸੰਬਰ
     order:
-      - :day
-      - :month
       - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one: എകദേശം 1 മണിക്കൂർ
-        other: "എകദേശം %{count} മണിക്കൂർ"
+        one: ਲਗਭਗ 1 ਘੰਟਾ
+        other: ਲਗਭਗ %{count} ਘੰਟੇ
       about_x_months:
-        one: എകദേശം 1 മാസം
-        other: "എകദേശം %{count} മാസം"
+        one: ਲਗਭਗ 1 ਮਹੀਨਾ
+        other: ਲਗਭਗ %{count} ਮਹੀਨੇ
       about_x_years:
-        one: എകദേശം 1 വർഷം
-        other: "എകദേശം %{count} വർഷം"
+        one: ਲਗਭਗ 1 ਸਾਲ
+        other: ਲਗਭਗ %{count} ਸਾਲ
       almost_x_years:
-        one: ഏതാണ്ട്  1 വർഷം
-        other: "ഏതാണ്ട്  %{count} വർഷം"
-      half_a_minute: അര സൂക്ഷ്മ
+        one: ਤਕਰੀਬਨ 1 ਸਾਲ
+        other: ਤਕਰੀਬਨ %{count} ਸਾਲ
+      half_a_minute: ਅੱਧਾ ਮਿੰਟ
       less_than_x_minutes:
-        one: ഒരു മിനുറ്റിനു ഉള്ളിൽ
-        other: "%{count} മിനുറ്റിനു ഉള്ളിൽ"
+        one: 1 ਮਿੰਟ ਤੋਂ ਘੱਟ
+        other: "%{count} ਮਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       less_than_x_seconds:
-        one: ഒരു നിമിഷത്തിനു ഉള്ളിൽ
-        other: "%{count} നിമിഷത്തിനു ഉള്ളിൽ"
+        one: 1 ਸਕਿੰਟ ਤੋਂ ਘੱਟ
+        other: "%{count} ਸਕਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       over_x_years:
-        one: ഒരു വര്ഷത്തിനു മേലെ
-        other: "%{count} വര്ഷത്തിനു മേലെ"
+        one: 1 ਸਾਲ ਤੋਂ ਵੱਧ
+        other: "%{count} ਸਾਲਾਂ ਤੋਂ ਵੱਧ"
       x_days:
-        one: 1 ദിവസം
-        other: "%{count} ദിവസങ്ങൾ"
+        one: 1 ਦਿਨ
+        other: "%{count} ਦਿਨ"
       x_minutes:
-        one: 1 മിനിറ്റ്
-        other: "%{count} മിനിറ്റ്"
+        one: 1 ਮਿੰਟ
+        other: "%{count} ਮਿੰਟ"
       x_months:
-        one: 1 മാസം
-        other: "%{count} മാസം"
+        one: 1 ਮਹੀਨਾ
+        other: "%{count} ਮਹੀਨੇ"
       x_seconds:
-        one: 1 നിമിഷം
-        other: "%{count} നിമിഷം"
+        one: 1 ਸਕਿੰਟ
+        other: "%{count} ਸਕਿੰਟ"
     prompts:
-      day: ദിവസം
-      hour: മണിക്കൂർ
-      minute: സുക്ഷ്മ
-      month: സുക്ഷ്മ
-      second: നിമിഷം
-      year: വർഷം
+      day: ਦਿਨ
+      hour: ਘੰਟਾ
+      minute: ਮਿੰਟ
+      month: ਮਹੀਨਾ
+      second: ਸਕਿੰਟ
+      year: ਸਾਲ
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: സ്വീകരികേണ്ടത്  അത്യാവശ്യം ആണ്
-      blank: ഒഴിവായി കിടക്കുവാൻ പാടുള്ളതല്ല
-      present: ഒഴിവായി ഇരിക്കണം
-      confirmation: "%{attribute} ആയി സാമ്യം ഇല്ല"
-      empty: ഒഴിവായി കിടക്കുവാൻ പാടുള്ളതല്ല
-      equal_to: "%{count} ആയി സാമ്യം വേണം"
-      even: ഇരട്ട സംഖ്യ ആയിരിക്കണം
-      exclusion: കരുതിവെച്ചിരികുന്നതാണ്
-      greater_than: "%{count} നേകാൾ വലുതായിരിക്കണം"
-      greater_than_or_equal_to: "%{count} നു തുല്യമോ അല്ലെങ്കിൽ വലുതോ ആയിരിക്കണം"
-      inclusion: ഇതിൽ ഉള്ട്പെട്ടിട്ടില്ല
-      invalid: അസാധുവാണ്
-      less_than: "%{count} നേകാൾ ചെറുതായിരിക്കണം"
-      less_than_or_equal_to: "%{count} നു തുല്യമോ അല്ലെങ്കിൽ ചെറുതോ ആയിരിക്കണം"
-      model_invalid: "മൂല്യനിർണ്ണയം പരാജയപ്പെട്ടു: %{errors}"
-      not_a_number: ഒരു അക്കം അല്ല
-      not_an_integer: ഒരു അക്കം ആയിരിക്കണം
-      odd: ഒട്ടസന്ഘ്യ ആയിരിക്കണം
-      required: എന്തായാലും ഉണ്ടായിരിക്കണം
-      taken: ഇതിനു മുൻപേ ഉപയോഗിച്ചിരിക്കുന്നു
+      accepted: ਜਰੂਰ ਮੰਜੂਰ ਹੋਵੇ
+      blank: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
+      present: ਜਰੂਰ ਖਾਲੀ ਹੋਵੇ
+      confirmation: "%{attribute} ਨਹੀਂ ਰਲਦੇ"
+      empty: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
+      equal_to: "%{count} ਦੇ ਬਰਾਬਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+      even: ਜਰੂਰੀ ਹੈ ਕੇ ਜੋਟਾ ਹੋਵੇ
+      exclusion: ਮੱਲਿਆ ਹੋਇਆ ਹੈ
+      greater_than: "%{count} ਤੋਂ ਵਧੇਰੇ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
+      greater_than_or_equal_to: "%{count} ਤੋਂ ਵਧੇਰੇ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
+      inclusion: ਇਸ ਲਿਸਟ ਵਿੱਚ ਸ਼ਾਮਿਲ ਨਹੀਂ ਹੈ
+      invalid: ਨਾ-ਮੰਜੂਰਸ਼ੁਦਾ ਹੈ
+      less_than: "%{count} ਤੋਂ ਘੱਟ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
+      less_than_or_equal_to: "%{count} ਤੋਂ ਘੱਟ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
+      not_a_number: ਸੰਖਿਆ ਨਹੀਂ ਹੈ
+      not_an_integer: ਜਰੂਰੀ ਹੈ ਕੇ ਪੂਰਨ ਅੰਕ ਹੋਵੇ
+      odd: ਜਰੂਰੀ ਹੈ ਕੇ ਕਲ਼ੀ ਹੋਵੇ
+      taken: ਪਹਿਲਾਂ ਹੀ ਮੱਲਿਆ ਹੋਇਆ ਹੈ
       too_long:
-        one: വളരെ വലുതാണ് (പരമാവധി 1 പ്രതീകം)
-        other: "വളരെ വലുതാണ് (പരമാവധി %{count} പ്രതീകങ്ങൾ)"
+        one: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ 1 ਅੱਖਰ)
+        other: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ %{count} ਅੱਖਰ)
       too_short:
-        one: വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌  1 പ്രതീകം)
-        other: "വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌ %{count} പ്രതീകങ്ങൾ)"
+        one: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ 1 ਅੱਖਰ)
+        other: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ %{count} ਅੱਖਰ)
       wrong_length:
-        one: തെറ്റായ നീളം ആണ്  (1 പ്രതീകം ആയിരിക്കണം)
-        other: "തെറ്റായ നീളം ആണ്  (%{count} പ്രതീകങ്ങൾ ആയിരിക്കണം)"
-      other_than: "must be other than %{count}"
+        one: ਲੰਬਾਈ ਗਲਤ ਹੈ (1 ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
+        other: ਲੰਬਾਈ ਗਲਤ ਹੈ (%{count} ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
+      other_than: "%{count} ਦੀ ਜਗ੍ਹਾ ਹੋਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
     template:
-      body: 'താഴെ പറഞ്ഞവയിൽ തെറ്റുകൾ ഉണ്ട്:'
+      body: 'ਹੇਠਲੇ ਖੇਤਰਾਂ ਵਿੱਚ ਗਲਤੀਆਂ ਹਨ:'
       header:
-        one: "%{model} സേവ് ചെയ്യുനത്തിൽ നിന്നും ഒരു തെറ്റ് വിലക്കിയിരിക്കുന്നു"
-        other: "%{model} സേവ് ചെയ്യുനത്തിൽ നിന്നും %{count} തെറ്റുകൾ വിലക്കിയിരിക്കുന്നു"
+        one: 1 ਗਲਤੀ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ
+        other: "%{count} ਗਲਤੀਆਂ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ"
   helpers:
     select:
-      prompt: ദയവായി തിരഞ്ഞെടുക്കുക
+      prompt: ਕਿਰਪਾ ਕਰਕੇ ਚੁਣੋ
     submit:
-      create: "%{model} സൃഷ്ടിക്കുക"
-      submit: "%{model} സേവ് ചെയ്യുക"
-      update: "%{model} തിരുത്തുക്ക"
+      create: "%{model} ਬਣਾਓ"
+      submit: "%{model} ਬਚਾਓ"
+      update: "%{model} ਬਦਲੋ"
   number:
     currency:
       format:
@@ -167,11 +165,11 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion: നൂറുകോടി
-          million: ദശലക്ഷം
-          quadrillion: ക്വാഡ്രില്യൺ
-          thousand: ആയിരം
-          trillion: ട്രില്യൺ
+          billion: ਬਿਲੀਅਨ
+          million: ਮਿਲੀਅਨ
+          quadrillion: ਕ੍ਵਾਡਰਿਲੀਅਨ
+          thousand: ਹਜ਼ਾਰ
+          trillion: ਟ੍ਰਿਲੀਅਨ
           unit: ''
       format:
         delimiter: ''
@@ -182,28 +180,28 @@ en:
         format: "%n %u"
         units:
           byte:
-            one: ബൈറ്റ്
-            other: ബൈറ്റുകൾ
-          gb: ജി.ബി
-          kb: കെ.ബി.
-          mb: എം.ബി.
-          tb: ടി.ബി
+            one: ਬਾਈਟ
+            other: ਬਾਈਟ
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
-        format: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", ഒപ്പം "
-      two_words_connector: " ഒപ്പം "
+      last_word_connector: ", ਅਤੇ "
+      two_words_connector: " ਅਤੇ "
       words_connector: ", "
   time:
-    am: രാവിലെ
+    am: ਸਵੇਰ
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: വൈകിട്ട്
+    pm: ਸ਼ਾਮ
