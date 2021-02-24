@@ -2,7 +2,7 @@ en-US:
   activerecord:
     errors:
       messages:
-        record_invalid: "Validation failed: %{errors}"
+        record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_one: "Cannot delete record because a dependent %{record} exists"
           has_many: "Cannot delete record because dependent %{record} exist"
@@ -39,8 +39,8 @@ en-US:
       - Saturday
     formats:
       default: "%d-%m-%Y"
-      long: "%d %B, %Y"
-      short: "%d %b"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
       -
       - January
@@ -155,7 +155,7 @@ en-US:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "$"
+        unit: "₹"
     format:
       delimiter: ","
       precision: 3
@@ -202,6 +202,6 @@ en-US:
     am: am
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%d %B, %Y %H:%M"
+      long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
     pm: pm
