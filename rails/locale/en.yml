@@ -1,8 +1,8 @@
-en-US:
+en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'fsgdsdggdssgdgsdé : %{errors}'
+        record_invalid: 'The validation failed: %{errors}'
         restrict_dependent_destroy:
           has_one: "Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record} dépendant(e) existe"
           has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent"
@@ -38,9 +38,9 @@ en-US:
       - vendredi
       - samedi
     formats:
-      default: "%Y-%m-%d"
-      long: "%d %B %Y"
-      short: "%y-%m-%d"
+      default: "%d/%m/%Y"
+      short: "%e %b"
+      long: "%e %B %Y"
     month_names:
       -
       - janvier
@@ -56,9 +56,9 @@ en-US:
       - novembre
       - décembre
     order:
-      - :year
-      - :month
       - :day
+      - :month
+      - :year
   datetime:
     distance_in_words:
       about_x_hours:
@@ -110,7 +110,7 @@ en-US:
     messages:
       accepted: doit être accepté(e)
       blank: doit être rempli(e)
-      present: doit être vide
+      present: english version ???
       confirmation: ne concorde pas avec %{attribute}
       empty: doit être rempli(e)
       equal_to: doit être égal à %{count}
@@ -159,7 +159,7 @@ en-US:
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: "$"
+        unit: "€"
     format:
       delimiter: " "
       precision: 3
@@ -208,7 +208,7 @@ en-US:
   time:
     am: am
     formats:
-      default: "%H h %M min %S s"
-      long: "%A %d %B %Y %H h %M"
-      short: "%H h %M"
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
     pm: pm
