@@ -1,168 +1,158 @@
-en-US:
+en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'A validação falhou: %{errors}'
-        restrict_dependent_destroy:
-          has_one: Não é possível excluir o registro pois existe um %{record} dependente
-          has_many: Não é possível excluir o registro pois existem %{record} dependentes
+        record_invalid: 'Pārbaude neizdevās: %{errors}'
   date:
     abbr_day_names:
-      - Dom
-      - Seg
-      - Ter
-      - Qua
-      - Qui
-      - Sex
-      - Sáb
+      - Sv.
+      - P.
+      - O.
+      - T.
+      - C.
+      - Pk.
+      - S.
     abbr_month_names:
       -
-      - Jan
-      - Fev
-      - Mar
-      - Abr
-      - Mai
-      - Jun
-      - Jul
-      - Ago
-      - Set
-      - Out
+      - Janv
+      - Febr
+      - Marts
+      - Apr
+      - Maijs
+      - Jūn
+      - Jūl
+      - Aug
+      - Sept
+      - Okt
       - Nov
-      - Dez
+      - Dec
     day_names:
-      - Domingo
-      - Segunda-feira
-      - Terça-feira
-      - Quarta-feira
-      - Quinta-feira
-      - Sexta-feira
-      - Sábado
+      - svētdiena
+      - pirmdiena
+      - otrdiena
+      - trešdiena
+      - ceturtdiena
+      - piektdiena
+      - sestdiena
     formats:
-      default: "%d/%m/%Y"
-      long: "%d de %B de %Y"
-      short: "%d de %B"
+      default: "%d.%m.%Y."
+      long: "%Y. gada %e. %B"
+      short: "%e. %B"
     month_names:
       -
-      - Janeiro
-      - Fevereiro
-      - Março
-      - Abril
-      - Maio
-      - Junho
-      - Julho
-      - Agosto
-      - Setembro
-      - Outubro
-      - Novembro
-      - Dezembro
+      - Janvāris
+      - Februāris
+      - Marts
+      - Aprīlis
+      - Maijs
+      - Jūnijs
+      - Jūlijs
+      - Augusts
+      - Septembris
+      - Oktobris
+      - Novembris
+      - Decembris
     order:
-      - :day
-      - :month
       - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one: aproximadamente 1 hora
-        other: aproximadamente %{count} horas
+        one:
+        other:
       about_x_months:
-        one: aproximadamente 1 mês
-        other: aproximadamente %{count} meses
+        one:
+        other:
       about_x_years:
-        one: aproximadamente 1 ano
-        other: aproximadamente %{count} anos
+        one:
+        other:
       almost_x_years:
-        one: quase 1 ano
-        other: quase %{count} anos
-      half_a_minute: meio minuto
+        one:
+        other:
+      half_a_minute: pusminūte
       less_than_x_minutes:
-        one: menos de um minuto
-        other: menos de %{count} minutos
+        one:
+        other:
       less_than_x_seconds:
-        one: menos de 1 segundo
-        other: menos de %{count} segundos
+        one:
+        other:
       over_x_years:
-        one: mais de 1 ano
-        other: mais de %{count} anos
+        one:
+        other:
       x_days:
-        one: 1 dia
-        other: "%{count} dias"
+        one: ""
+        other: ""
       x_minutes:
-        one: 1 minuto
-        other: "%{count} minutos"
+        one: ""
+        other: ""
       x_months:
-        one: 1 mês
-        other: "%{count} meses"
-      x_years:
-        one: 1 ano
-        other: "%{count} anos"
+        one: ""
+        other: ""
       x_seconds:
-        one: 1 segundo
-        other: "%{count} segundos"
+        one: ""
+        other: ""
     prompts:
-      day: Dia
-      hour: Hora
-      minute: Minuto
-      month: Mês
-      second: Segundo
-      year: Ano
+      day: diena
+      hour: stunda
+      minute: minūte
+      month: mēnesis
+      second: sekunde
+      year: gads
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: deve ser aceito
-      blank: não pode ficar em branco
-      present: deve ficar em branco
-      confirmation: não é igual a %{attribute}
-      empty: não pode ficar vazio
-      equal_to: deve ser igual a %{count}
-      even: deve ser par
-      exclusion: não está disponível
-      greater_than: deve ser maior que %{count}
-      greater_than_or_equal_to: deve ser maior ou igual a %{count}
-      inclusion: não está incluído na lista
-      invalid: não é válido
-      less_than: deve ser menor que %{count}
-      less_than_or_equal_to: deve ser menor ou igual a %{count}
-      model_invalid: 'A validação falhou: %{errors}'
-      not_a_number: não é um número
-      not_an_integer: não é um número inteiro
-      odd: deve ser ímpar
-      required: é obrigatório(a)
-      taken: já está em uso
+      accepted: ir jāpiekrīt
+      blank: ir jābūt aizpildītam
+      confirmation: nesakrīt ar apstiprinājumu
+      empty: ir jābūt aizpildītam
+      equal_to: ir jābūt vienādam ar %{count}
+      even: ir jābūt pāra skaitlim
+      exclusion: nav pieejams
+      greater_than: ir jābūt lielākam par %{count}
+      greater_than_or_equal_to: ir jābūt lielākam vai vienādam ar %{count}
+      inclusion: nav iekļauts sarakstā
+      invalid: nav derīgs
+      less_than: ir jābūt mazākam par %{count}
+      less_than_or_equal_to: ir jābūt mazākam vai vienādam ar %{count}
+      not_a_number: nav skaitlis
+      not_an_integer: ir jābūt veselam skaitlim
+      odd: ir jābūt nepāra skaitlim
+      taken: ir jau aizņemts
       too_long:
-        one: 'é muito longo (máximo: 1 caracter)'
-        other: 'é muito longo (máximo: %{count} caracteres)'
+        one:
+        other:
       too_short:
-        one: 'é muito curto (mínimo: 1 caracter)'
-        other: 'é muito curto (mínimo: %{count} caracteres)'
+        one:
+        other:
       wrong_length:
-        one: não possui o tamanho esperado (1 caracter)
-        other: não possui o tamanho esperado (%{count} caracteres)
-      other_than: deve ser diferente de %{count}
+        one:
+        other:
     template:
-      body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      body: 'Problēmas ir šajos ievades laukos:'
       header:
-        one: 'Não foi possível gravar %{model}: 1 erro'
-        other: 'Não foi possível gravar %{model}: %{count} erros'
+        one:
+        other:
   helpers:
     select:
-      prompt: Por favor selecione
+      prompt: Lūdzu izvēlies
     submit:
-      create: Criar %{model}
-      submit: Salvar %{model}
-      update: Atualizar %{model}
+      create: Izveidot %{model}
+      submit: Saglabāt %{model}
+      update: Atjaunināt %{model}
   number:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: R$
+        unit: "€"
     format:
       delimiter: "."
-      precision: 3
+      precision: 2
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -171,52 +161,51 @@ en-US:
         format: "%n %u"
         units:
           billion:
-            one: bilhão
-            other: bilhões
+            one:
+            other:
           million:
-            one: milhão
-            other: milhões
+            one:
+            other:
           quadrillion:
-            one: quatrilhão
-            other: quatrilhões
-          thousand: mil
+            one:
+            other:
+          thousand:
+            one:
+            other:
           trillion:
-            one: trilhão
-            other: trilhões
+            one:
+            other:
           unit: ''
       format:
-        delimiter: ""
-        precision: 3
-        significant: true
-        strip_insignificant_zeros: true
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
+            one:
+            other:
           gb: GB
           kb: KB
           mb: MB
           tb: TB
-          pb: PB
-          eb: EB
     percentage:
       format:
-        delimiter: "."
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
-        delimiter: "."
+        delimiter: ''
   support:
     array:
-      last_word_connector: " e "
-      two_words_connector: " e "
+      last_word_connector: " un "
+      two_words_connector: " un "
       words_connector: ", "
   time:
-    am: ''
+    am: priekšpusdiena
     formats:
-      default: "%a, %d de %B de %Y, %H:%M:%S %z"
-      long: "%d de %B de %Y, %H:%M"
-      short: "%d de %B, %H:%M"
-    pm: ''
+      default: "%Y. gada %e. %B, %H:%M"
+      long: "%Y. gada %e. %B, %H:%M:%S"
+      short: "%d.%m.%Y., %H:%M"
+    pm: pēcpusdiena
