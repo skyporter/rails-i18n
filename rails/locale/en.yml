@@ -38,9 +38,9 @@ en-US:
       - vendredi
       - samedi
     formats:
-      default: "%d/%m/%Y"
-      short: "%e %b"
+      default: "%d.%m.%Y"
       long: "%e %B %Y"
+      short: "%e %b"
     month_names:
       -
       - janvier
@@ -153,17 +153,17 @@ en-US:
   number:
     currency:
       format:
-        delimiter: " "
+        delimiter: "'"
         format: "%n %u"
         precision: 2
-        separator: ","
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "€"
+        unit: sFr.
     format:
-      delimiter: " "
+      delimiter: "'"
       precision: 3
-      separator: ","
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -208,7 +208,7 @@ en-US:
   time:
     am: am
     formats:
-      default: "%d %B %Y %Hh %Mmin %Ss"
-      long: "%A %d %B %Y %Hh%M"
-      short: "%d %b %Hh%M"
+      default: "%d. %B %Y %H h %M"
+      long: "%A, %d %B %Y %H h %M min %S s %Z"
+      short: "%d %b %H h %M"
     pm: pm
