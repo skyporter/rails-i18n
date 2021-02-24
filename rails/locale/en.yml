@@ -1,60 +1,57 @@
-en:
+en-US:
   activerecord:
     errors:
       messages:
         record_invalid: 'Validazione fallita: %{errors}'
-        restrict_dependent_destroy:
-          has_one: Il record non può essere cancellato perchè esiste un %{record} dipendente
-          has_many: Il record non può essere cancellato perchè esistono %{record} dipendenti
   date:
     abbr_day_names:
-      - dom
-      - lun
-      - mar
-      - mer
-      - gio
-      - ven
-      - sab
+      - Dom
+      - Lun
+      - Mar
+      - Mer
+      - Gio
+      - Ven
+      - Sab
     abbr_month_names:
       -
-      - gen
-      - feb
-      - mar
-      - apr
-      - mag
-      - giu
-      - lug
-      - ago
-      - set
-      - ott
-      - nov
-      - dic
+      - Gen
+      - Feb
+      - Mar
+      - Apr
+      - Mag
+      - Giu
+      - Lug
+      - Ago
+      - Set
+      - Ott
+      - Nov
+      - Dic
     day_names:
-      - domenica
-      - lunedì
-      - martedì
-      - mercoledì
-      - giovedì
-      - venerdì
-      - sabato
+      - Domenica
+      - Lunedì
+      - Martedì
+      - Mercoledì
+      - Giovedì
+      - Venerdì
+      - Sabato
     formats:
-      default: "%d/%m/%Y"
+      default: "%d-%m-%Y"
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
       -
-      - gennaio
-      - febbraio
-      - marzo
-      - aprile
-      - maggio
-      - giugno
-      - luglio
-      - agosto
-      - settembre
-      - ottobre
-      - novembre
-      - dicembre
+      - Gennaio
+      - Febbraio
+      - Marzo
+      - Aprile
+      - Maggio
+      - Giugno
+      - Luglio
+      - Agosto
+      - Settembre
+      - Ottobre
+      - Novembre
+      - Dicembre
     order:
       - :day
       - :month
@@ -92,9 +89,6 @@ en:
       x_months:
         one: 1 mese
         other: "%{count} mesi"
-      x_years:
-        one: 1 anno
-        other: "%{count} anni"
       x_seconds:
         one: 1 secondo
         other: "%{count} secondi"
@@ -110,23 +104,21 @@ en:
     messages:
       accepted: deve essere accettata
       blank: non può essere lasciato in bianco
-      present: deve essere lasciato in bianco
       confirmation: non coincide con %{attribute}
       empty: non può essere vuoto
       equal_to: deve essere uguale a %{count}
       even: deve essere pari
       exclusion: è riservato
-      greater_than: deve essere maggiore di %{count}
-      greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
-      inclusion: non è compreso tra le opzioni disponibili
+      greater_than: deve essere superiore a %{count}
+      greater_than_or_equal_to: deve essere superiore o uguale a %{count}
+      inclusion: non è incluso nella lista
       invalid: non è valido
-      less_than: deve essere minore di %{count}
-      less_than_or_equal_to: deve essere minore o uguale a %{count}
+      less_than: deve essere meno di %{count}
+      less_than_or_equal_to: deve essere meno o uguale a %{count}
       not_a_number: non è un numero
-      not_an_integer: non è un numero intero
+      not_an_integer: non è un intero
       odd: deve essere dispari
-      required: deve esistere
-      taken: è già presente
+      taken: è già in uso
       too_long:
         one: è troppo lungo (il massimo è 1 carattere)
         other: è troppo lungo (il massimo è %{count} caratteri)
@@ -136,15 +128,14 @@ en:
       wrong_length:
         one: è della lunghezza sbagliata (deve essere di 1 carattere)
         other: è della lunghezza sbagliata (deve essere di %{count} caratteri)
-      other_than: devono essere di numero diverso da %{count}
     template:
-      body: 'Ricontrolla i seguenti campi:'
+      body: 'Per favore ricontrolla i seguenti campi:'
       header:
         one: 'Non posso salvare questo %{model}: 1 errore'
         other: 'Non posso salvare questo %{model}: %{count} errori.'
   helpers:
     select:
-      prompt: Seleziona...
+      prompt: Per favore, seleziona
     submit:
       create: Crea %{model}
       submit: Invia %{model}
@@ -152,17 +143,17 @@ en:
   number:
     currency:
       format:
-        delimiter: "."
-        format: "%n %u"
+        delimiter: "'"
+        format: "%u %n"
         precision: 2
-        separator: ","
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "€"
+        unit: CHF
     format:
-      delimiter: "."
+      delimiter: ","
       precision: 2
-      separator: ","
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -177,7 +168,7 @@ en:
           unit: ''
       format:
         delimiter: ''
-        precision: 3
+        precision: 1
         significant: true
         strip_insignificant_zeros: true
       storage_units:
@@ -193,7 +184,6 @@ en:
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
     precision:
       format:
         delimiter: ''
