@@ -1,4 +1,4 @@
-en:
+en-US:
   activerecord:
     errors:
       messages:
@@ -14,18 +14,18 @@ en:
       - शनि
     abbr_month_names:
       -
-      - जन
-      - फर
-      - मार्च
-      - अप्रै
-      - मई
-      - जून
-      - जुला
-      - अग
-      - सितं
-      - अक्टू
-      - नवं
-      - दिस
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
     day_names:
       - रविवार
       - सोमवार
@@ -59,27 +59,27 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: लगभग एक घंटा
-        other: लगभग %{count} घंटा
+        one: लग - भग एक घंटा
+        other: लग - भग %{count} घंटा
       about_x_months:
-        one: लगभग 1 महीना
-        other: लगभग %{count} महीना
+        one: लग - भग 1 महीना
+        other: लग - भग %{count} महीना
       about_x_years:
-        one: लगभग 1 साल
-        other: लगभग %{count} साल
+        one: लग - भग 1 साल
+        other: लग - भग %{count} साल
       almost_x_years:
-        one: लगभग एक साल
-        other: लगभग %{count} साल
+        one: लग - भग एक साल
+        other: लग - भग %{count} साल
       half_a_minute: एक आधा मिनट
       less_than_x_minutes:
         one: एक मिनट से कम
         other: "%{count} मिनट से कम"
       less_than_x_seconds:
-        one: एक सेकेंड से कम
-        other: "%{count}  सेकेंड से कम"
+        one: एक सेकंड से कम
+        other: "%{count}  सेकंड से कम"
       over_x_years:
         one: एक साल के ऊपर
-        other: "%{count} साल से अधिक"
+        other: "%{count} साल के ऊपर"
       x_days:
         one: एक दिन
         other: "%{count} दिन"
@@ -90,22 +90,22 @@ en:
         one: एक महीना
         other: "%{count} महीना"
       x_seconds:
-        one: एक सेकेंड
-        other: "%{count} सेकेंड"
+        one: एक सेकंड
+        other: "%{count} सेकंड"
     prompts:
       day: दिन
       hour: घंटा
-      minute: मिनट
+      minute: क्षण
       month: माह
-      second: सेकेंड
+      second: सेकंड
       year: वर्ष
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: स्वीकार किया जाना जरूरी
-      blank: खाली नहीं रह सकता है
+      accepted: होना स्वीकार किया जाना आवश्यक
+      blank: खाली नहीं किया जा सकता
       confirmation: पुष्टिकरण मेल नहीं खाता
-      empty: रिक्त नहीं रह सकता है
+      empty: खाली नहीं किया जा सकता
       equal_to: "%{count} के लिए बराबर होना चाहिए"
       even: सम होना चाहिए
       exclusion: आरक्षित है
@@ -117,23 +117,23 @@ en:
       less_than_or_equal_to: "%{count} से कम या बराबर होना आवश्यक है"
       not_a_number: कोई संख्या नहीं है
       not_an_integer: एक पूर्णांक होना चाहिए
-      odd: विसम होना चाहिए
+      odd: विषम होना चाहिए
       taken: पहले ही ले लिया गया है
-      too_long: अत्यधिक लंबा है (अधिकतम %{count} वर्ण हैं)
-      too_short: अत्यधिक छोटा है (न्यूनतम %{count} वर्ण हैं)
-      wrong_length: गलत लंबाई है (%{count} वर्ण युक्त होना चाहिए)
+      too_long: बहुत लंबा है (अधिकतम %{count} अक्षरों है)
+      too_short: बहुत छोटा है (न्यूनतम %{count} अक्षरों है)
+      wrong_length: गलत लंबाई है (%{count} वर्ण वाले होने चाहिए)
     template:
-      body: 'निम्नलिखित क्षेत्रों के साथ समस्या थी:'
+      body: 'वहाँ निम्नलिखित क्षेत्रों के साथ समस्याओं रहे थे:'
       header:
-        one: इस %{model} को सहेजे जाना एक त्रुटि के कारण नहीं हुआ
-        other: इस %{model} को सहेजे जाना %{count} त्रुटि के कारण नहीं हुआ
+        one: एक त्रुटि सहेजे जाने से इस %{model} को निषिद्ध
+        other: "%{count} त्रुटियों को सहेजे जाने से इस %{model} निषिद्ध"
   helpers:
     select:
       prompt: कृपया चुनें
     submit:
-      create: "%{model} बनाएँ"
-      submit: "%{model} सौंपें"
-      update: "%{model} अद्यतन"
+      create: बनाएँ %{model}
+      submit: सहेजें %{model}
+      update: अद्यतन %{model}
   number:
     currency:
       format:
@@ -155,7 +155,7 @@ en:
         format: "%n %u"
         units:
           billion: अरब
-          million: दस करोड़
+          million: मिल्लिओंन
           quadrillion: करोड़ शंख
           thousand: हज़ार
           trillion: खरब
@@ -187,9 +187,9 @@ en:
       two_words_connector: " और "
       words_connector: ", "
   time:
-    am: पूर्वाह्न
+    am: am
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: अपराह्न
+    pm: pm
