@@ -2,176 +2,179 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: رکورد نامعتبر است %{errors}
+        record_invalid: 'Balioztatze arazoa: %{errors}'
         restrict_dependent_destroy:
-          has_many: نمی توان رکورد را حذف کرد بخاطر اینکه %{record} وابسته وجود دارد
-          has_one: نمی توان رکورد را حذف کرد بخاطر اینکه یک %{record} وابسته وجود دارد
+          has_one: Ezin da erregistroa ezabatu menpeko %{record} bat dagoelako
+          has_many: Ezin da erregistroa ezabat menpeko %{record}ak daudelako
   date:
     abbr_day_names:
-      - ی
-      - د
-      - س
-      - چ
-      - پ
-      - ج
-      - ش
+      - Igan
+      - Astel
+      - Astear
+      - Asteaz
+      - Oste
+      - Osti
+      - Lar
     abbr_month_names:
       -
-      - ژانویه
-      - فوریه
-      - مارس
-      - آوریل
-      - مه
-      - ژوئن
-      - ژوئیه
-      - اوت
-      - سپتامبر
-      - اکتبر
-      - نوامبر
-      - دسامبر
+      - Urt
+      - Ots
+      - Mar
+      - Api
+      - Mai
+      - Eka
+      - Uzt
+      - Abu
+      - Ira
+      - Urr
+      - Aza
+      - Aben
     day_names:
-      - یکشنبه
-      - دوشنبه
-      - سه‌شنبه
-      - چهارشنبه
-      - پنج‌شنبه
-      - جمعه
-      - شنبه
+      - Igandea
+      - Astelehena
+      - Asteartea
+      - Asteazkena
+      - Osteguna
+      - Ostirala
+      - Larunbata
     formats:
-      default: "%Y/%m/%d"
-      long: "%e %B %Y"
-      short: "%m/%d"
+      default: "%Y/%m/%e"
+      long: "%Y(e)ko %Bk %e"
+      short: "%b %e"
     month_names:
       -
-      - ژانویه
-      - فوریه
-      - مارس
-      - آوریل
-      - مه
-      - ژوئن
-      - ژوئیه
-      - اوت
-      - سپتامبر
-      - اکتبر
-      - نوامبر
-      - دسامبر
+      - Urtarrila
+      - Otsaila
+      - Martxoa
+      - Apirila
+      - Maiatza
+      - Ekaina
+      - Uztaila
+      - Abuztua
+      - Iraila
+      - Urria
+      - Azaroa
+      - Abendua
     order:
-      - :day
-      - :month
       - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one: حدود یک ساعت
-        other: حدود %{count} ساعت
+        one: ordu bat inguru
+        other: "%{count} ordu inguru"
       about_x_months:
-        one: حدود یک ماه
-        other: حدود %{count} ماه
+        one: hilabete bat inguru
+        other: "%{count} hilabete inguru"
       about_x_years:
-        one: حدود یک سال
-        other: حدود %{count} سال
+        one: urte bat inguru
+        other: "%{count} urte inguru"
       almost_x_years:
-        one: حدود یک سال
-        other: حدود %{count} سال
-      half_a_minute: نیم دقیقه
+        one: ia urte bat
+        other: ia %{count} urte
+      half_a_minute: minutu erdi
       less_than_x_minutes:
-        one: کمتر از یک دقیقه
-        other: کمتر از %{count} دقیقه
+        one: 1 minutu bat baino gutxiago
+        other: "%{count} minutu baino gutxiago"
       less_than_x_seconds:
-        one: یک ثانیه
-        other: کمتر  از %{count} ثانیه
+        one: segundu bat baino gutxiago
+        other: "%{count} segundu baino gutxiago"
       over_x_years:
-        one: بیش از یک سال
-        other: بیش از %{count} سال
+        one: urte bat baino gehiago
+        other: "%{count} urte baino gehiago"
       x_days:
-        one: یک روز
-        other: "%{count} روز"
+        one: egun bat
+        other: "%{count} egun"
       x_minutes:
-        one: یک دقیقه
-        other: "%{count} دقیقه"
+        one: minutu bat
+        other: "%{count} minutu"
       x_months:
-        one: یک ماه
-        other: "%{count} ماه"
+        one: hilabete bat
+        other: "%{count} hilabete"
       x_seconds:
-        one: یک ثانیه
-        other: "%{count} ثانیه"
-      x_years:
-        one: 1 سال
-        other: "%{count} سال"
+        one: segundu bat
+        other: "%{count} segundu"
     prompts:
-      day: روز
-      hour: ساعت
-      minute: دقیقه
-      month: ماه
-      second: ثانیه
-      year: سال
+      day: Egun
+      hour: Ordu
+      minute: Minutu
+      month: Hilabete
+      second: Segundu
+      year: Urte
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: باید پذیرفته شود
-      blank: نباید خالی باشد
-      confirmation: با تایید نمی‌خواند
-      empty: نمی‌تواند خالی باشد
-      equal_to: باید برابر %{count} باشد
-      even: باید زوج باشد
-      exclusion: رزرو است
-      greater_than: باید بزرگتر از %{count} باشد
-      greater_than_or_equal_to: باید بزرگتر یا برابر %{count} باشد
-      inclusion: در لیست موجود نیست
-      invalid: نامعتبر است
-      less_than: باید کمتر از %{count} باشد
-      less_than_or_equal_to: باید کمتر یا برابر %{count} باشد
-      model_invalid: "رکورد نامعتبر است %{errors}"
-      not_a_number: عدد نیست
-      not_an_integer: عدد صحیح نیست
-      odd: باید فرد باشد
-      other_than: باید غیر از %{count} باشد
-      present: باید خالی باشد
-      required: باید وجود داشته باشد
-      taken: پیشتر گرفته شده
-      too_long: بلند است (حداکثر %{count} کاراکتر)
-      too_short: کوتاه است (حداقل %{count} کاراکتر)
-      wrong_length: نااندازه است (باید %{count} کاراکتر باشد)
+      accepted: onartuta izan behar da
+      blank: ezin da zuriz utzi
+      present: zuriz egon behar da
+      confirmation: ez dator bat konfirmazioarekin
+      empty: ezin da hutsik egon
+      equal_to: "%{count} izan behar da"
+      even: bikoitia izan behar du
+      exclusion: erreserbatuta dago
+      greater_than: "%{count} baino handiagoa izan behar da"
+      greater_than_or_equal_to: "%{count} baino handiago edo berdin izan behar da"
+      inclusion: ez da zerrendako aukera bat
+      invalid: ez da zuzena
+      less_than: "%{count} baino txikiago izan behar da"
+      less_than_or_equal_to: "%{count} baino txikiago edo berdin izan behar da"
+      model_invalid: "Baieztatzeak huts egin du: %{errors}"
+      not_a_number: ez da zenbaki bat
+      not_an_integer: zenbaki osoa izan behar da
+      odd: bakoitia izan behar du
+      required: egon behar du
+      taken: hartuta dago
+      too_long:
+        one: "luzeegia da (karaktere 1 gehienez)"
+        other: "luzeegia da (%{count} karaktere gehienez)"
+      too_short:
+        one: "laburregia da (karaktere 1 gutxienez)"
+        other: "laburregia da (%{count} karaktere gutxienez)"
+      wrong_length:
+        one: "ez du luzeera zuzena (karaktere 1 izan behar ditu)"
+        other: "ez du luzeera zuzena (%{count} karaktere izan behar ditu)"
+      other_than: "%{count}ren ezberdina izan behar du"
     template:
-      body: "موارد زیر مشکل داشت:"
+      body: 'Arazoak egon dira ondoko eremuekin:'
       header:
-        one: 1 خطا جلوی ذخیره این %{model} را گرفت
-        other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
+        one: Errore batek ezinezkoa egin du %{model} hau gordetzea
+        other: "%{count} errorek ezinezkoa egiten dute %{model} hau gordetzea"
   helpers:
     select:
-      prompt: لطفا انتخاب کنید
+      prompt: Mesedez, aukeratu
     submit:
-      create: ایجاد %{model}
-      submit: ذخیره‌ی %{model}
-      update: بروز رسانی %{model}
+      create: "%{model}a eratu"
+      submit: "%{model}a gorde"
+      update: "%{model}a eguneratu"
   number:
     currency:
       format:
-        delimiter: "٬"
+        delimiter: "."
         format: "%n %u"
-        precision: 0
-        separator: "٫"
+        precision: 2
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: "77e8"
+        unit: "€"
     format:
-      delimiter: "٬"
-      precision: 2
-      separator: "٫"
+      delimiter: "."
+      precision: 3
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: میلیارد
-          million: میلیون
-          quadrillion: کادریلیون
-          thousand: هزار
-          trillion: تریلیون
-          unit: ""
+          billion: Mila milioi
+          million: Milioi
+          quadrillion: Kuatrilioi
+          thousand: Mila
+          trillion: Trilioi
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 1
         significant: true
         strip_insignificant_zeros: true
@@ -179,27 +182,28 @@ en:
         format: "%n %u"
         units:
           byte:
-            one: بایت
-            other: بایت
-          gb: گیگابایت
-          kb: کیلوبایت
-          mb: مگابایت
-          tb: ترابایت
+            one: Byte
+            other: Byte
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
-        delimiter: ""
+        delimiter: ''
+        format: "%n %"
     precision:
       format:
-        delimiter: ""
+        delimiter: ''
   support:
     array:
-      last_word_connector: " و "
-      two_words_connector: " و "
-      words_connector: "، "
+      last_word_connector: " eta "
+      two_words_connector: " eta "
+      words_connector: ", "
   time:
-    am: قبل از ظهر
+    am: am
     formats:
-      default: "%A، %e %B %Y، ساعت %H:%M:%S (%Z)"
-      long: "%e %B %Y، ساعت %H:%M"
-      short: "%e %B، ساعت %H:%M"
-    pm: بعد از ظهر
+      default: "%A, %Y(e)ko %Bren %e %H:%M:%S %z"
+      long: "%Y(e)ko %Bren %e,  %H:%M"
+      short: "%b %e, %H:%M"
+    pm: pm
