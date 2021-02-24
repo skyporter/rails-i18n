@@ -2,59 +2,59 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Хаталар чыкты: %{errors}'
+        record_invalid: 'Doğrulama başarısız oldu: %{errors}'
         restrict_dependent_destroy:
-          has_one: 'Язмышны бетереп булмады, чөнки бәйлелек табылды: %{record}'
-          has_many: 'Язмышны бетереп булмады, чөнки бәйлелекләр табылды: %{record}'
+          has_one: Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi
+          has_many: Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi
   date:
     abbr_day_names:
-      - Якш
-      - Дүш
-      - Сиш
-      - Чәр
-      - Пән
-      - Җом
-      - Шим
+      - Pzr
+      - Pzt
+      - Sal
+      - Çrş
+      - Prş
+      - Cum
+      - Cts
     abbr_month_names:
       -
-      - гыйн.
-      - февр.
-      - март
-      - апр.
-      - май
-      - июнь
-      - июль
-      - авг.
-      - сент.
-      - окт.
-      - нояб.
-      - дек.
+      - Oca
+      - Şub
+      - Mar
+      - Nis
+      - May
+      - Haz
+      - Tem
+      - Ağu
+      - Eyl
+      - Eki
+      - Kas
+      - Ara
     day_names:
-      - якшәмбе
-      - дүшәмбе
-      - сишәмбе
-      - чәршәмбе
-      - пәнҗешәмбе
-      - җомга
-      - шимбә
+      - Pazar
+      - Pazartesi
+      - Salı
+      - Çarşamba
+      - Perşembe
+      - Cuma
+      - Cumartesi
     formats:
       default: "%d.%m.%Y"
-      long: "%-d %B %Y"
-      short: "%-d %b"
+      long: "%e %B %Y, %A"
+      short: "%e %b"
     month_names:
       -
-      - гыйнвар
-      - февраль
-      - март
-      - апрель
-      - май
-      - июнь
-      - июль
-      - август
-      - сентябрь
-      - октябрь
-      - ноябрь
-      - декабрь
+      - Ocak
+      - Şubat
+      - Mart
+      - Nisan
+      - Mayıs
+      - Haziran
+      - Temmuz
+      - Ağustos
+      - Eylül
+      - Ekim
+      - Kasım
+      - Aralık
     order:
       - :day
       - :month
@@ -62,102 +62,107 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: бер сәгать чамасы
-        other: "%{count} сәгать чамасы"
+        one: yaklaşık 1 saat
+        other: yaklaşık %{count} saat
       about_x_months:
-        one: бер ай чамасы
-        other: "%{count} ай чамасы"
+        one: yaklaşık 1 ay
+        other: yaklaşık %{count} ay
       about_x_years:
-        one: бер ел чамасы
-        other: "%{count} ел чамасы"
+        one: yaklaşık 1 yıl
+        other: yaklaşık %{count} yıl
       almost_x_years:
-        one: бер ел диярлек
-        other: "%{count} ел диярлек"
-      half_a_minute: минуттан азрак
+        one: neredeyse 1 yıl
+        other: neredeyse %{count} yıl
+      half_a_minute: yarım dakika
       less_than_x_minutes:
-        one: бер минуттан азрак
-        other: "%{count} минуттан азрак"
+        one: 1 dakikadan az
+        other: "%{count} dakikadan az"
       less_than_x_seconds:
-        one: бер секундтан азрак
-        other: "%{count} секундтан азрак"
+        one: 1 saniyeden az
+        other: "%{count} saniyeden az"
       over_x_years:
-        one: бер ел артык
-        other: "%{count} ел артык"
+        one: 1 yıldan fazla
+        other: "%{count} yıldan fazla"
       x_days:
-        one: бер көн
-        other: "%{count} көн"
+        one: 1 gün
+        other: "%{count} gün"
       x_minutes:
-        one: бер минут
-        other: "%{count} минут"
+        one: 1 dakika
+        other: "%{count} dakika"
       x_months:
-        one: бер ай
-        other: "%{count} ай"
+        one: 1 ay
+        other: "%{count} ay"
       x_seconds:
-        one: бер секунд
-        other: "%{count} секунд"
+        one: 1 saniye
+        other: "%{count} saniye"
+      x_years:
+        one: 1 yıl
+        other: "%{count} yıl"
     prompts:
-      day: Көн
-      hour: Сәгать
-      minute: Минут
-      month: Ай
-      second: Секунд
-      year: Ел
+      day: Gün
+      hour: Saat
+      minute: Dakika
+      month: Ay
+      second: Saniye
+      year: Yıl
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: раслау кирәк
-      blank: буш була алмый
-      present: буш булырга тиеш
-      confirmation: "%{attribute} читнең мәгнәсе белән тигез түгел"
-      empty: буш була алмый
-      equal_to: мәгнәсе %{count} була гына ала
-      even: так кына була ала
-      exclusion: резервта саклау дигән әһәмияте бар
-      greater_than: "%{count} мәгнәсеннән зур була ала"
-      greater_than_or_equal_to: "%{count} мәгнәсеннән зур яки тигез була ала"
-      inclusion: мәгнәсе алдан исәпкә алынган түгел
-      invalid: мәгнәсе ялгыш
-      less_than: "%{count} мәгнәсеннән азрак була ала"
-      less_than_or_equal_to: "%{count} мәгнәсеннән азрак яки тигез була ала"
-      not_a_number: сан тугел
-      not_an_integer: бөтен сан түгел
-      odd: җөп кенә була ала
-      taken: бар инде
+      accepted: kabul edilmeli
+      blank: doldurulmalı
+      present: boş bırakılmalı
+      confirmation: "%{attribute} teyidiyle uyuşmuyor"
+      empty: doldurulmalı
+      equal_to: tam olarak %{count} olmalı
+      even: çift olmalı
+      exclusion: kullanılamaz
+      greater_than: "%{count} sayısından büyük olmalı"
+      greater_than_or_equal_to: "%{count} sayısına eşit veya büyük olmalı"
+      inclusion: kabul edilen bir kelime değil
+      invalid: geçersiz
+      less_than: "%{count} sayısından küçük olmalı"
+      less_than_or_equal_to: "%{count} sayısına eşit veya küçük olmalı"
+      not_a_number: geçerli bir sayı değil
+      not_an_integer: tam sayı olmalı
+      odd: tek olmalı
+      taken: hali hazırda kullanılmakta
       too_long:
-        one: бигрәк озын (озынлыгы бердән озынрак була алмый)
-        other: бигрәк озын (озынлыгы %{count} мәгнәсеннән озынрак була алмый)
+        one: çok uzun (en fazla 1 karakter)
+        other: çok uzun (en fazla %{count} karakter)
       too_short:
-        one: бигрәк кыска (озынлыгы бердән кыскарак була алмый)
-        other: бигрәк кыска (озынлыгы %{count} мәгнәсеннән кыскарак була алмый)
+        one: çok kısa (en az 1 karakter)
+        other: çok kısa (en az %{count} karakter)
       wrong_length:
-        one: озынлыгы ялгыш (озынлыгы бергә тигез булырга тиеш)
-        other: озынлыгы ялгыш (озынлыгы %{count} мәгнәгә тигез булырга тиеш)
-      other_than: "%{count} мәгнәсеннән икенче булырга тиеш"
+        one: hatalı uzunlukta (1 karakter olmalı)
+        other: hatalı uzunlukta (%{count} karakter olmalı)
+      other_than: "%{count} karakterden oluşamaz"
+      model_invalid: "Doğrulama başarısız oldu: %{errors}"
+      required: doldurulmalı
     template:
-      body: ":"
+      body: 'Lütfen aşağıdaki hataları düzeltiniz:'
       header:
-        one: "%{model}: %{count} хата аркасында саклау чыкмады"
-        other: "%{model}: %{count} хата аркасында саклау чыкмады"
+        one: 1 hata oluştuğu için %{model} kaydedilemedi
+        other: "%{count} hata oluştuğu için %{model} kaydedilemedi"
   helpers:
     select:
-      prompt: 'Сайлагыз: '
+      prompt: Lütfen seçiniz
     submit:
-      create: "%{model} иҗат итергә"
-      submit: "%{model} саклап калырга"
-      update: "%{model} саклап калырга"
+      create: "%{model} Ekle"
+      submit: "%{model} Kaydet"
+      update: "%{model} Güncelle"
   number:
     currency:
       format:
-        delimiter: " "
+        delimiter: "."
         format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: сум
+        unit: '₺'
     format:
-      delimiter: " "
-      precision: 3
+      delimiter: "."
+      precision: 2
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -165,53 +170,43 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: миллиард
-            other: миллиард
-          million:
-            one: миллион
-            other: миллион
-          quadrillion:
-            one: квадриллион
-            other: квадриллион
-          thousand:
-            one: мең
-            other: мең
-          trillion:
-            one: триллион
-            other: триллион
+          billion: Milyar
+          million: Milyon
+          quadrillion: Katrilyon
+          thousand: Bin
+          trillion: Trilyon
           unit: ''
       format:
-        delimiter: ''
-        precision: 1
-        significant: false
-        strip_insignificant_zeros: false
+        delimiter: "."
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: байт
-            other: байт
-          gb: ГБ
-          kb: КБ
-          mb: МБ
-          tb: ТБ
+            one: Bayt
+            other: Bayt
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
+        format: "%%n"
     precision:
       format:
-        delimiter: ''
+        delimiter: "."
   support:
     array:
-      last_word_connector: " һәм "
-      two_words_connector: " һәм "
+      last_word_connector: " ve "
+      two_words_connector: " ve "
       words_connector: ", "
   time:
-    am: иртәнге
+    am: öğleden önce
     formats:
-      default: "%a, %d %b %Y, %H:%M:%S %z"
-      long: "%d %B %Y, %H:%M"
-      short: "%d %b, %H:%M"
-    pm: кичке
+      default: "%a %d.%b.%y %H:%M"
+      long: "%e %B %Y, %A, %H:%M"
+      short: "%e %B, %H:%M"
+    pm: öğleden sonra
