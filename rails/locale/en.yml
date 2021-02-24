@@ -2,59 +2,56 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Valideerimine ebaõnnestus: %{errors}'
-        restrict_dependent_destroy:
-          has_one: "Ei saa kirjet kustutada kuna sõltuv %{record} on olemas"
-          has_many: "Ei saa kirjet kustutada kuna sõltuvad %{record} on olemas"
+        record_invalid: 'सत्यापन विफल: %{errors}'
   date:
     abbr_day_names:
-      - P
-      - E
-      - T
-      - K
-      - false
-      - R
-      - L
+      - रवि
+      - सोम
+      - मंगल
+      - बुध
+      - गुरु
+      - शुक्र
+      - शनि
     abbr_month_names:
       -
-      - jaan.
-      - veebr.
-      - märts
-      - apr.
-      - mai
-      - juuni
-      - juuli
-      - aug.
-      - sept.
-      - okt.
-      - nov.
-      - dets.
+      - जन
+      - फर
+      - मार्च
+      - अप्रै
+      - मई
+      - जून
+      - जुला
+      - अग
+      - सितं
+      - अक्टू
+      - नवं
+      - दिस
     day_names:
-      - pühapäev
-      - esmaspäev
-      - teisipäev
-      - kolmapäev
-      - neljapäev
-      - reede
-      - laupäev
+      - रविवार
+      - सोमवार
+      - मंगलवार
+      - बुधवार
+      - गुरुवार
+      - शुक्रवार
+      - शनिवार
     formats:
-      default: "%d.%m.%Y"
-      long: "%d. %B %Y"
-      short: "%d.%m.%y"
+      default: "%d-%m-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
       -
-      - jaanuar
-      - veebruar
-      - märts
-      - aprill
-      - mai
-      - juuni
-      - juuli
-      - august
-      - september
-      - oktoober
-      - november
-      - detsember
+      - जनवरी
+      - फरवरी
+      - मार्च
+      - अप्रैल
+      - मई
+      - जून
+      - जुलाई
+      - अगस्त
+      - सितंबर
+      - अक्टूबर
+      - नवंबर
+      - दिसंबर
     order:
       - :day
       - :month
@@ -62,125 +59,118 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: umbes %{count} tund
-        other: umbes %{count} tundi
+        one: लगभग एक घंटा
+        other: लगभग %{count} घंटा
       about_x_months:
-        one: umbes %{count} kuu
-        other: umbes %{count} kuud
+        one: लगभग 1 महीना
+        other: लगभग %{count} महीना
       about_x_years:
-        one: umbes %{count} aasta
-        other: umbes %{count} aastat
+        one: लगभग 1 साल
+        other: लगभग %{count} साल
       almost_x_years:
-        one: peaaegu üks aasta
-        other: peaaegu %{count} aastat
-      half_a_minute: pool minutit
+        one: लगभग एक साल
+        other: लगभग %{count} साल
+      half_a_minute: एक आधा मिनट
       less_than_x_minutes:
-        one: vähem kui %{count} minut
-        other: vähem kui %{count} minutit
+        one: एक मिनट से कम
+        other: "%{count} मिनट से कम"
       less_than_x_seconds:
-        one: vähem kui %{count} sekund
-        other: vähem kui %{count} sekundit
+        one: एक सेकेंड से कम
+        other: "%{count}  सेकेंड से कम"
       over_x_years:
-        one: üle %{count} aasta
-        other: üle %{count} aasta
+        one: एक साल के ऊपर
+        other: "%{count} साल से अधिक"
       x_days:
-        one: "%{count} päev"
-        other: "%{count} päeva"
+        one: एक दिन
+        other: "%{count} दिन"
       x_minutes:
-        one: "%{count} minut"
-        other: "%{count} minutit"
+        one: एक मिनट
+        other: "%{count} मिनट"
       x_months:
-        one: "%{count} kuu"
-        other: "%{count} kuud"
-      x_years:
-        one: "%{count} aasta"
-        other: "%{count} aastat"
+        one: एक महीना
+        other: "%{count} महीना"
       x_seconds:
-        one: "%{count} sekund"
-        other: "%{count} sekundit"
+        one: एक सेकेंड
+        other: "%{count} सेकेंड"
     prompts:
-      day: Päev
-      hour: Tunde
-      minute: Minutit
-      month: Kuu
-      second: Sekundit
-      year: Aasta
+      day: दिन
+      hour: घंटा
+      minute: मिनट
+      month: माह
+      second: सेकेंड
+      year: वर्ष
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: peab olema heaks kiidetud
-      blank: on täitmata
-      present: peab olema täitmata
-      confirmation: ei vasta kinnitusele
-      empty: on tühi
-      equal_to: peab olema võrdne arvuga %{count}
-      even: peab olema paarisarv
-      exclusion: on reserveeritud
-      greater_than: peab olema suurem kui %{count}
-      greater_than_or_equal_to: peab olema suurem või võrdne arvuga %{count}
-      inclusion: ei leidu nimekirjas
-      invalid: ei ole korrektne
-      less_than: peab olema vähem kui %{count}
-      less_than_or_equal_to: peab olema vähem või võrdne arvuga %{count}
-      model_invalid: "Valideerimine ebaõnnestus: %{errors}"
-      not_a_number: ei ole number
-      not_an_integer: peab olema täisarv
-      odd: peab olema paaritu arv
-      required: peab olemas olema
-      taken: on juba võetud
-      too_long: on liiga pikk (maksimum on %{count} tähemärki)
-      too_short: on liiga lühike (miinimum on %{count} tähemärki)
-      wrong_length: on vale pikkusega (peab olema %{count} tähemärki)
-      other_than: peab olema midagi muud kui %{count}
+      accepted: स्वीकार किया जाना जरूरी
+      blank: खाली नहीं रह सकता है
+      confirmation: पुष्टिकरण मेल नहीं खाता
+      empty: रिक्त नहीं रह सकता है
+      equal_to: "%{count} के लिए बराबर होना चाहिए"
+      even: सम होना चाहिए
+      exclusion: आरक्षित है
+      greater_than: "%{count} से अधिक होना चाहिए"
+      greater_than_or_equal_to: "%{count} से बड़ा या बराबर होना आवश्यक है"
+      inclusion: सूची में शामिल नहीं है
+      invalid: अवैध है
+      less_than: "%{count} से कम होना चाहिए"
+      less_than_or_equal_to: "%{count} से कम या बराबर होना आवश्यक है"
+      not_a_number: कोई संख्या नहीं है
+      not_an_integer: एक पूर्णांक होना चाहिए
+      odd: विसम होना चाहिए
+      taken: पहले ही ले लिया गया है
+      too_long: अत्यधिक लंबा है (अधिकतम %{count} वर्ण हैं)
+      too_short: अत्यधिक छोटा है (न्यूनतम %{count} वर्ण हैं)
+      wrong_length: गलत लंबाई है (%{count} वर्ण युक्त होना चाहिए)
     template:
-      body: 'Probleeme ilmnes järgmiste väljadega:'
+      body: 'निम्नलिखित क्षेत्रों के साथ समस्या थी:'
       header:
-        one: Üks viga takistas objekti %{model} salvestamist
-        other: "%{count} viga takistasid objekti %{model} salvestamist"
+        one: इस %{model} को सहेजे जाना एक त्रुटि के कारण नहीं हुआ
+        other: इस %{model} को सहेजे जाना %{count} त्रुटि के कारण नहीं हुआ
   helpers:
     select:
-      prompt: Palun vali
+      prompt: कृपया चुनें
     submit:
-      create: Loo uus %{model}
-      submit: Salvesta %{model}
-      update: Uuenda objekti %{model}
+      create: "%{model} बनाएँ"
+      submit: "%{model} सौंपें"
+      update: "%{model} अद्यतन"
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: ","
+        format: "%u%n"
         precision: 2
-        separator: ","
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "€"
+        unit: "₹"
     format:
-      delimiter: " "
-      precision: 2
-      separator: ","
+      delimiter: ","
+      precision: 3
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: miljard
-          million: miljon
-          quadrillion: kvadriljon
-          thousand: tuhat
-          trillion: triljon
+          billion: अरब
+          million: दस करोड़
+          quadrillion: करोड़ शंख
+          thousand: हज़ार
+          trillion: खरब
           unit: ''
       format:
         delimiter: ''
-        precision: 1
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: bait
-            other: baiti
+            one: Byte
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
@@ -188,19 +178,18 @@ en:
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " ja "
-      two_words_connector: " ja "
+      last_word_connector: ", और "
+      two_words_connector: " और "
       words_connector: ", "
   time:
-    am: enne lõunat
+    am: पूर्वाह्न
     formats:
-      default: "%d. %B %Y, %H:%M"
-      long: "%a, %d. %b %Y, %H:%M:%S %z"
-      short: "%d.%m.%y, %H:%M"
-    pm: pärast lõunat
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: अपराह्न
