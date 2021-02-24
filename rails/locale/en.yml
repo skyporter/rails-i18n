@@ -2,7 +2,7 @@ en-US:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Validation failed: %{errors}'
+        record_invalid: "Validation failed: %{errors}"
         restrict_dependent_destroy:
           has_one: "Cannot delete record because a dependent %{record} exists"
           has_many: "Cannot delete record because dependent %{record} exist"
@@ -155,7 +155,7 @@ en-US:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "£"
+        unit: "€"
     format:
       delimiter: ","
       precision: 3
