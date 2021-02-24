@@ -1,60 +1,60 @@
-en-US:
+en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Ett fel uppstod: %{errors}'
+        record_invalid: 'Валидација није успела: %{errors}'
         restrict_dependent_destroy:
-          has_one: Kan inte ta bort post då beroende %{record} finns
-          has_many: Kan inte ta bort poster då beroende %{record} finns
+          has_one: Није могуће обрисати запис јер постоји зависан %{record}
+          has_many: Није могуће обрисати запис јер постоје зависни %{record}
   date:
     abbr_day_names:
-      - sön
-      - mån
-      - tis
-      - ons
-      - tor
-      - fre
-      - lör
+      - Нед
+      - Пон
+      - Уто
+      - Сре
+      - Чет
+      - Пет
+      - Суб
     abbr_month_names:
       -
-      - jan
-      - feb
-      - mar
-      - apr
-      - maj
-      - jun
-      - jul
-      - aug
-      - sep
-      - okt
-      - nov
-      - dec
+      - Јан
+      - Феб
+      - Мар
+      - Апр
+      - Мај
+      - Јун
+      - Јул
+      - Авг
+      - Сеп
+      - Окт
+      - Нов
+      - Дец
     day_names:
-      - söndag
-      - måndag
-      - tisdag
-      - onsdag
-      - torsdag
-      - fredag
-      - lördag
+      - Недеља
+      - Понедељак
+      - Уторак
+      - Среда
+      - Четвртак
+      - Петак
+      - Субота
     formats:
-      default: "%Y-%m-%d"
-      long: "%e %B %Y"
+      default: "%d/%m/%Y"
+      long: "%B %e, %Y"
       short: "%e %b"
     month_names:
       -
-      - januari
-      - februari
-      - mars
-      - april
-      - maj
-      - juni
-      - juli
-      - augusti
-      - september
-      - oktober
-      - november
-      - december
+      - Јануар
+      - Фабруар
+      - Март
+      - Април
+      - Мај
+      - Јун
+      - Јул
+      - Август
+      - Септембар
+      - Октобар
+      - Новембар
+      - Децембар
     order:
       - :day
       - :month
@@ -62,101 +62,102 @@ en-US:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ungefär en timme
-        other: ungefär %{count} timmar
+        one:
+        other:
       about_x_months:
-        one: ungefär en månad
-        other: ungefär %{count} månader
+        one:
+        other:
       about_x_years:
-        one: ungefär ett år
-        other: ungefär %{count} år
+        one:
+        other:
       almost_x_years:
-        one: nästan ett år
-        other: nästan %{count} år
-      half_a_minute: en halv minut
+        one:
+        other:
+      half_a_minute: пола минуте
       less_than_x_minutes:
-        one: mindre än en minut
-        other: mindre än %{count} minuter
+        one:
+        other:
       less_than_x_seconds:
-        one: mindre än en sekund
-        other: mindre än %{count} sekunder
+        one:
+        other:
       over_x_years:
-        one: mer än ett år
-        other: mer än %{count} år
+        one:
+        other:
       x_days:
-        one: en dag
-        other: "%{count} dagar"
+        one: ""
+        other: ""
       x_minutes:
-        one: en minut
-        other: "%{count} minuter"
+        one: ""
+        other: ""
       x_months:
-        one: en månad
-        other: "%{count} månader"
-      x_years:
-        one: ett år
-        other: "%{count} år"
+        one: ""
+        other: ""
       x_seconds:
-        one: en sekund
-        other: "%{count} sekunder"
+        one: ""
+        other: ""
     prompts:
-      day: Dag
-      hour: Timme
-      minute: Minut
-      month: Månad
-      second: Sekund
-      year: År
+      day: Дан
+      hour: Сат
+      minute: Минут
+      month: Месец
+      second: Секунд
+      year: Година
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: måste vara accepterad
-      blank: måste anges
-      present: får inte anges
-      confirmation: stämmer inte överens
-      empty: får ej vara tom
-      equal_to: måste vara lika med %{count}
-      even: måste vara jämnt
-      exclusion: är reserverat
-      greater_than: måste vara större än %{count}
-      greater_than_or_equal_to: måste vara större än eller lika med %{count}
-      inclusion: finns inte i listan
-      invalid: har fel format
-      less_than: måste vara mindre än %{count}
-      less_than_or_equal_to: måste vara mindre än eller lika med %{count}
-      model_invalid: "Validering misslyckades: %{errors}"
-      not_a_number: är inte ett nummer
-      not_an_integer: måste vara ett heltal
-      odd: måste vara udda
-      required: måste finnas
-      taken: används redan
-      too_long: är för lång (maximum är %{count} tecken)
-      too_short: är för kort (minimum är %{count} tecken)
-      wrong_length: har fel längd (ska vara %{count} tecken)
-      other_than: måste vara annat än %{count}
+      accepted: мора бити прихваћено
+      blank: не сме бити празан
+      present: мора бити празан
+      confirmation: се не слаже са потврдом
+      empty: не сме бити празан
+      equal_to: мора бити једнак %{count}
+      even: мора бити паран
+      exclusion: је резервисан
+      greater_than: мора бити већи од %{count}
+      greater_than_or_equal_to: мора бити већи или једнак %{count}
+      inclusion: није у листи
+      invalid: није исправан
+      less_than: мора бити мањи од %{count}
+      less_than_or_equal_to: мора бити мањи или једнак %{count}
+      not_a_number: није број
+      not_an_integer: није цео број
+      odd: мора бити непаран
+      taken: је већ заузет
+      too_long:
+        one:
+        other:
+      too_short:
+        one:
+        other:
+      wrong_length:
+        one:
+        other:
+      other_than: мора бити различит од %{count}
     template:
-      body: 'Det var problem med följande fält:'
+      body: 'Молим Вас да проверите следећа поља:'
       header:
-        one: Ett fel förhindrade denna %{model} från att sparas
-        other: "%{count} fel förhindrade denna %{model} från att sparas"
+        one: ''
+        other: ''
   helpers:
     select:
-      prompt: Välj
+      prompt: Изаберите
     submit:
-      create: Skapa %{model}
-      submit: Spara %{model}
-      update: Ändra %{model}
+      create: Направи %{model}
+      submit: Сачувај %{model}
+      update: Измени %{model}
   number:
     currency:
       format:
-        delimiter: ' '
+        delimiter: ","
         format: "%n %u"
         precision: 2
-        separator: ","
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: kr
+        unit: ДИН
     format:
-      delimiter: ' '
-      precision: 2
+      delimiter: "."
+      precision: 3
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -164,27 +165,27 @@ en-US:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Miljard
-          million: Miljon
-          quadrillion: Biljard
-          thousand: Tusen
-          trillion: Biljon
+          thousand: Хиљаду
+          million: Милион
+          billion: Милијарда
+          trillion: Трилион
+          quadrillion: Квадрилион
           unit: ''
       format:
         delimiter: ''
-        precision: 1
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one:
+            other:
+          gb: ГБ
+          kb: КБ
+          mb: МБ
+          tb: ТБ
     percentage:
       format:
         delimiter: ''
@@ -194,13 +195,13 @@ en-US:
         delimiter: ''
   support:
     array:
-      last_word_connector: " och "
-      two_words_connector: " och "
+      last_word_connector: ", и "
+      two_words_connector: " и "
       words_connector: ", "
   time:
-    am: ''
+    am: АМ
     formats:
-      default: "%a, %e %b %Y %H:%M:%S %z"
-      long: "%e %B %Y %H:%M"
-      short: "%e %b %H:%M"
-    pm: ''
+      default: "%a %b %d %H:%M:%S %Z %Y"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: ПМ
