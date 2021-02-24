@@ -2,59 +2,59 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Negatywne sprawdzenie poprawności: %{errors}'
+        record_invalid: 'A validação falhou: %{errors}'
         restrict_dependent_destroy:
-          has_many: Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}
-          has_one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
+          has_many: Não pode ser eliminado por existirem dependências de %{record}
+          has_one: Não pode ser eliminado por existir uma dependência de %{record}
   date:
     abbr_day_names:
-      - nie
-      - pon
-      - wto
-      - śro
-      - czw
-      - pią
-      - sob
+      - Dom
+      - Seg
+      - Ter
+      - Qua
+      - Qui
+      - Sex
+      - Sáb
     abbr_month_names:
       -
-      - sty
-      - lut
-      - mar
-      - kwi
-      - maj
-      - cze
-      - lip
-      - sie
-      - wrz
-      - paź
-      - lis
-      - gru
+      - Jan
+      - Fev
+      - Mar
+      - Abr
+      - Mai
+      - Jun
+      - Jul
+      - Ago
+      - Set
+      - Out
+      - Nov
+      - Dez
     day_names:
-      - niedziela
-      - poniedziałek
-      - wtorek
-      - środa
-      - czwartek
-      - piątek
-      - sobota
+      - Domingo
+      - Segunda-feira
+      - Terça-feira
+      - Quarta-feira
+      - Quinta-feira
+      - Sexta-feira
+      - Sábado
     formats:
-      default: "%d-%m-%Y"
-      long: "%B %d, %Y"
-      short: "%d %b"
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %B"
     month_names:
       -
-      - styczeń
-      - luty
-      - marzec
-      - kwiecień
-      - maj
-      - czerwiec
-      - lipiec
-      - sierpień
-      - wrzesień
-      - październik
-      - listopad
-      - grudzień
+      - Janeiro
+      - Fevereiro
+      - Março
+      - Abril
+      - Maio
+      - Junho
+      - Julho
+      - Agosto
+      - Setembro
+      - Outubro
+      - Novembro
+      - Dezembro
     order:
       - :day
       - :month
@@ -62,102 +62,100 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one:
-        other:
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
       about_x_months:
-        one:
-        other:
+        one: aproximadamente 1 mês
+        other: aproximadamente %{count} meses
       about_x_years:
-        one:
-        other:
+        one: aproximadamente 1 ano
+        other: aproximadamente %{count} anos
       almost_x_years:
-        one:
-        other:
-      half_a_minute: pół minuty
+        one: quase 1 ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
       less_than_x_minutes:
-        one:
-        other:
+        one: menos de um minuto
+        other: menos de %{count} minutos
       less_than_x_seconds:
-        one:
-        other:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
       over_x_years:
-        one:
-        other:
+        one: mais de 1 ano
+        other: mais de %{count} anos
       x_days:
-        one:
-        other: ""
+        one: 1 dia
+        other: "%{count} dias"
       x_minutes:
-        one:
-        other: ""
+        one: 1 minuto
+        other: "%{count} minutos"
       x_months:
-        one:
-        other: ""
+        one: 1 mês
+        other: "%{count} meses"
       x_seconds:
-        one:
-        other: ""
+        one: 1 segundo
+        other: "%{count} segundos"
+      x_years:
+        one: 1 ano
+        other: "%{count} anos"
     prompts:
-      day: Dzień
-      hour: Godzina
-      minute: Minuta
-      month: Miesiąc
-      second: Sekundy
-      year: Rok
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: musi zostać zaakceptowane
-      blank: nie może być puste
-      confirmation: nie zgadza się z polem %{attribute}
-      empty: nie może być puste
-      equal_to: musi być równe %{count}
-      even: musi być parzyste
-      exclusion: jest zarezerwowane
-      greater_than: musi być większe od %{count}
-      greater_than_or_equal_to: musi być większe lub równe %{count}
-      inclusion: nie znajduje się na liście dopuszczalnych wartości
-      invalid: jest nieprawidłowe
-      less_than: musi być mniejsze od %{count}
-      less_than_or_equal_to: musi być mniejsze lub równe %{count}
-      not_a_number: nie jest liczbą
-      not_an_integer: musi być liczbą całkowitą
-      odd: musi być nieparzyste
-      present: musi być puste
-      required: musi istnieć
-      taken: zostało już zajęte
-      too_long:
-        one:
-        other:
-      too_short:
-        one:
-        other:
-      wrong_length:
-        one:
-        other:
-      other_than: musi być inna niż %{count}
+      accepted: tem de ser aceite
+      blank: não pode estar em branco
+      confirmation: não coincide com a confirmação
+      empty: não pode estar vazio
+      equal_to: tem de ser igual a %{count}
+      even: tem de ser par
+      exclusion: é reservado
+      greater_than: tem de ser maior que %{count}
+      greater_than_or_equal_to: tem de ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: é inválido
+      less_than: tem de ser menor que %{count}
+      less_than_or_equal_to: tem de ser menor ou igual a %{count}
+      model_invalid: 'A validação falhou: %{errors}'
+      not_a_number: não é um número
+      not_an_integer: tem de ser um inteiro
+      odd: tem de ser ímpar
+      other_than: tem de ser diferente de %{count}
+      present: não pode estar em branco
+      required: é obrigatório
+      taken: não está disponível
+      too_long: é demasiado grande (o máximo é de %{count} caracteres)
+      too_short: é demasiado pequeno (o mínimo é de %{count} caracteres)
+      wrong_length: comprimento errado (deve ter %{count} caracteres)
     template:
-      body: 'Błędy dotyczą następujących pól:'
+      body: 'Por favor, verifique os seguintes campos:'
       header:
-        one: ""
-        other: ""
+        one: '1 erro impediu guardar este %{model}'
+        other: '%{count} erros impediram guardar este %{model}'
   helpers:
     select:
-      prompt: Proszę wybrać
+      prompt: Por favor seleccione
     submit:
-      create: Utwórz %{model}
-      submit: Zapisz %{model}
-      update: Aktualizuj %{model}
+      create: Criar %{model}
+      submit: Gravar %{model}
+      update: Actualizar %{model}
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: "."
+        format: "%u %n"
         precision: 2
         separator: ","
         significant: false
-        strip_insignificant_zeros: true
-        unit: zł
+        strip_insignificant_zeros: false
+        unit: "€"
     format:
-      delimiter: " "
+      delimiter: "."
       precision: 3
       separator: ","
       significant: false
@@ -166,43 +164,52 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Miliard
-          million: Milion
-          quadrillion: Biliard
-          thousand: Tysiąc
-          trillion: Bilion
+          billion:
+            one: mil milhões
+            other: mil milhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: mil biliões
+            other: mil biliões
+          thousand: mil
+          trillion:
+            one: bilião
+            other: biliões
           unit: ''
       format:
         delimiter: ''
-        precision: 3
+        precision: 1
         significant: true
         strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one:
-            other:
+            one: Byte
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
           tb: TB
+          pb: PB
+          eb: EB
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " oraz "
-      two_words_connector: " i "
+      last_word_connector: ", e"
+      two_words_connector: " e "
       words_connector: ", "
   time:
-    am: przed południem
+    am: am
     formats:
-      default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
-      short: "%d %b %H:%M"
-    pm: po południu
+      default: "%A, %d de %B de %Y, %H:%Mh"
+      long: "%A, %d de %B de %Y, %H:%Mh"
+      short: "%d/%m, %H:%M hs"
+    pm: pm
