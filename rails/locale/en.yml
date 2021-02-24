@@ -1,53 +1,60 @@
 en:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'The validation failed: %{errors}'
+        restrict_dependent_destroy:
+          has_one: "Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record} dépendant(e) existe"
+          has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent"
   date:
     abbr_day_names:
-      - Dom
-      - Lun
-      - Mar
-      - Mer
-      - Xov
-      - Ven
-      - Sab
+      - dim
+      - lun
+      - mar
+      - mer
+      - jeu
+      - ven
+      - sam
     abbr_month_names:
       -
-      - Xan
-      - Feb
-      - Mar
-      - Abr
-      - Mai
-      - Xuñ
-      - Xul
-      - Ago
-      - Set
-      - Out
-      - Nov
-      - Dec
+      - jan.
+      - fév.
+      - mar.
+      - avr.
+      - mai
+      - juin
+      - juil.
+      - août
+      - sept.
+      - oct.
+      - nov.
+      - déc.
     day_names:
-      - Domingo
-      - Luns
-      - Martes
-      - Mércores
-      - Xoves
-      - Venres
-      - Sábado
+      - dimanche
+      - lundi
+      - mardi
+      - mercredi
+      - jeudi
+      - vendredi
+      - samedi
     formats:
-      default: "%e/%m/%Y"
-      long: "%A %e de %B de %Y"
+      default: "%d/%m/%Y"
       short: "%e %b"
+      long: "%e %B %Y"
     month_names:
       -
-      - Xaneiro
-      - Febreiro
-      - Marzo
-      - Abril
-      - Maio
-      - Xuño
-      - Xullo
-      - Agosto
-      - Setembro
-      - Outubro
-      - Novembro
-      - Decembro
+      - janvier
+      - février
+      - mars
+      - avril
+      - mai
+      - juin
+      - juillet
+      - août
+      - septembre
+      - octobre
+      - novembre
+      - décembre
     order:
       - :day
       - :month
@@ -55,67 +62,98 @@ en:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: aproximadamente unha hora
-        other: "%{count} horas"
+        one: environ une heure
+        other: environ %{count} heures
       about_x_months:
-        one: aproximadamente 1 mes
-        other: "%{count} meses"
+        one: environ un mois
+        other: environ %{count} mois
       about_x_years:
-        one: aproximadamente 1 ano
-        other: "%{count} anos"
-      half_a_minute: medio minuto
+        one: environ un an
+        other: environ %{count} ans
+      almost_x_years:
+        one: presqu'un an
+        other: presque %{count} ans
+      half_a_minute: une demi-minute
       less_than_x_minutes:
         one:
-        other: ""
+        other:
       less_than_x_seconds:
         one:
-        other: ""
+        other:
       over_x_years:
-        one: máis dun ano
-        other: "%{count} anos"
+        one: plus d'un an
+        other: plus de %{count} ans
       x_days:
-        one: 1 día
-        other: "%{count} días"
+        one: 1 jour
+        other: "%{count} jours"
       x_minutes:
-        one: 1 minuto
-        other: "%{count} minuto"
+        one: 1 minute
+        other: "%{count} minutes"
       x_months:
-        one: 1 mes
-        other: "%{count} meses"
+        one: 1 mois
+        other: "%{count} mois"
+      x_years:
+        one: 1 an
+        other: "%{count} ans"
       x_seconds:
-        one: 1 segundo
-        other: "%{count} segundos"
+        one: 1 seconde
+        other: "%{count} secondes"
+    prompts:
+      day: Jour
+      hour: Heure
+      minute: Minute
+      month: Mois
+      second: Seconde
+      year: Année
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: debe ser aceptado
-      blank: non pode estar en blanco
-      confirmation: non coincide coa confirmación
-      empty: non pode estar valeiro
-      equal_to: debe ser igual a %{count}
-      even: debe ser impar
-      exclusion: xa existe
-      greater_than: debe ser maior que %{count}
-      greater_than_or_equal_to: debe ser maior ou igual que %{count}
-      inclusion: non está incluido na lista
-      invalid: non é válido
-      less_than: debe ser menor que %{count}
-      less_than_or_equal_to: debe ser menor ou igual que %{count}
-      not_a_number: non é un número
-      odd: debe ser par
-      taken: non está dispoñible
-      too_long: é demasiado longo (non máis de %{count} carácteres)
-      too_short: é demasiado curto (non menos de %{count} carácteres)
-      wrong_length: non ten a lonxitude correcta (debe ser de %{count} carácteres)
+      accepted: doit être accepté(e)
+      blank: doit être rempli(e)
+      present: doit être vide
+      confirmation: ne concorde pas avec %{attribute}
+      empty: doit être rempli(e)
+      equal_to: doit être égal à %{count}
+      even: doit être pair
+      exclusion: n'est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n'est pas inclus(e) dans la liste
+      invalid: n'est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      model_invalid: "Validation échouée : %{errors}"
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      odd: doit être impair
+      required: doit exister
+      taken: n'est pas disponible
+      too_long:
+        one: est trop long (pas plus d'un caractère)
+        other: est trop long (pas plus de %{count} caractères)
+      too_short:
+        one: est trop court (au moins un caractère)
+        other: est trop court (au moins %{count} caractères)
+      wrong_length:
+        one: ne fait pas la bonne longueur (doit comporter un seul caractère)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+      other_than: doit être différent de %{count}
     template:
-      body: 'Atopáronse os seguintes problemas:'
+      body: 'Veuillez vérifier les champs suivants : '
       header:
-        one: 1 erro evitou que se poidese gardar o %{model}
-        other: "%{count} erros evitaron que se poidese gardar o %{model}"
+        one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
+        other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
+  helpers:
+    select:
+      prompt: Veuillez sélectionner
+    submit:
+      create: Créer un(e) %{model}
+      submit: Enregistrer ce(tte) %{model}
+      update: Modifier ce(tte) %{model}
   number:
     currency:
       format:
-        delimiter: "."
+        delimiter: " "
         format: "%n %u"
         precision: 2
         separator: ","
@@ -123,8 +161,8 @@ en:
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: "."
-      precision: 2
+      delimiter: " "
+      precision: 3
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -132,37 +170,45 @@ en:
       decimal_units:
         format: "%n %u"
         units:
+          billion: milliard
+          million: million
+          quadrillion: million de milliards
+          thousand: millier
+          trillion: billion
           unit: ''
       format:
         delimiter: ''
-        precision: 1
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: octet
+            other: octets
+          gb: Go
+          kb: ko
+          mb: Mo
+          tb: To
+          pb: Po
+          eb: Eo
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " e "
-      two_words_connector: " e "
+      last_word_connector: " et "
+      two_words_connector: " et "
       words_connector: ", "
   time:
-    am: ''
+    am: am
     formats:
-      default: "%A, %e de %B de %Y ás %H:%M"
-      long: "%A %e de %B de %Y ás %H:%M"
-      short: "%e/%m, %H:%M"
-    pm: ''
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: pm
