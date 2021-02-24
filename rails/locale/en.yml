@@ -2,174 +2,184 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: "%{errors} دا خاتالىق بار"
+        record_invalid: 'Хаталар чыкты: %{errors}'
         restrict_dependent_destroy:
-          has_one: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
-          has_many: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
+          has_one: 'Язмышны бетереп булмады, чөнки бәйлелек табылды: %{record}'
+          has_many: 'Язмышны бетереп булмады, чөнки бәйлелекләр табылды: %{record}'
   date:
     abbr_day_names:
-      - يەكشەنبە
-      - دۈشەنبە
-      - سەيشەنبە
-      - چارشەنبە
-      - پەيشەنبە
-      - جۈمە
-      - شەنبە
+      - Якш
+      - Дүш
+      - Сиш
+      - Чәр
+      - Пән
+      - Җом
+      - Шим
     abbr_month_names:
       -
-      - يانۋار
-      - فېۋرال
-      - مارت
-      - ئاپرېل
-      - ماي
-      - ئىيۇن
-      - ئىيۇل
-      - ئاۋغۇست
-      - سېنتەبىر
-      - ئۆكتەبىر
-      - نويابىر
-      - دېكابىر
+      - гыйн.
+      - февр.
+      - март
+      - апр.
+      - май
+      - июнь
+      - июль
+      - авг.
+      - сент.
+      - окт.
+      - нояб.
+      - дек.
     day_names:
-      - يەكشەنبە
-      - دۈشەنبە
-      - سەيشەنبە
-      - چارشەنبە
-      - پەيشەنبە
-      - جۈمە
-      - شەنبە
+      - якшәмбе
+      - дүшәмбе
+      - сишәмбе
+      - чәршәмбе
+      - пәнҗешәмбе
+      - җомга
+      - шимбә
     formats:
-      default: "%Y-%m-%d"
-      long: "%Y-%m-%d"
-      short: "%b%d"
+      default: "%d.%m.%Y"
+      long: "%-d %B %Y"
+      short: "%-d %b"
     month_names:
       -
-      - يانۋار
-      - فېۋرال
-      - مارت
-      - ئاپرېل
-      - ماي
-      - ئىيۇن
-      - ئىيۇل
-      - ئاۋغۇست
-      - سېنتەبىر
-      - ئۆكتەبىر
-      - نويابىر
-      - دېكابىر
+      - гыйнвар
+      - февраль
+      - март
+      - апрель
+      - май
+      - июнь
+      - июль
+      - август
+      - сентябрь
+      - октябрь
+      - ноябрь
+      - декабрь
     order:
-      - :year
-      - :month
       - :day
+      - :month
+      - :year
   datetime:
     distance_in_words:
       about_x_hours:
-        one: تەخمىنەن بىر سائەت
-        other: تەخمىنەن %{count} سائەت
+        one: бер сәгать чамасы
+        other: "%{count} сәгать чамасы"
       about_x_months:
-        one: تەخمىنەن بىر ئاي
-        other: تەخمىنەن %{count} ئاي
+        one: бер ай чамасы
+        other: "%{count} ай чамасы"
       about_x_years:
-        one: تەخمىنەن بىر يىل
-        other: تەخمىنەن %{count} يىل
+        one: бер ел чамасы
+        other: "%{count} ел чамасы"
       almost_x_years:
-        one: بىر يىلغا يېقىن
-        other: "%{count} يىلغا يېقىن"
-      half_a_minute: يېرىم مىنۇت
+        one: бер ел диярлек
+        other: "%{count} ел диярлек"
+      half_a_minute: минуттан азрак
       less_than_x_minutes:
-        one: بىر مىنۇتقا يەتمىگەن
-        other: "%{count} مىنۇتقا يەتمىگەن"
+        one: бер минуттан азрак
+        other: "%{count} минуттан азрак"
       less_than_x_seconds:
-        one: بىر سىكۇنتقا يەتمىگەن
-        other: "%{count} سىكنۇتقا"
+        one: бер секундтан азрак
+        other: "%{count} секундтан азрак"
       over_x_years:
-        one: بىر يىلدىن ئارتۇق
-        other: "%{count} يىلدىن ئارتۇق"
+        one: бер ел артык
+        other: "%{count} ел артык"
       x_days:
-        one: بىر كۈن
-        other: "%{count} كۈن"
+        one: бер көн
+        other: "%{count} көн"
       x_minutes:
-        one: بىر مىنۇت
-        other: "%{count} مىنۇت"
+        one: бер минут
+        other: "%{count} минут"
       x_months:
-        one: بىر ئاي
-        other: "%{count} ئاي"
+        one: бер ай
+        other: "%{count} ай"
       x_seconds:
-        one: بىر سىكنۇت
-        other: "%{count} سىكنۇت"
+        one: бер секунд
+        other: "%{count} секунд"
     prompts:
-      day: كۈن
-      hour: سائەت
-      minute: مىنۇت
-      month: ئاي
-      second: سىكنۇت
-      year: يىل
+      day: Көн
+      hour: Сәгать
+      minute: Минут
+      month: Ай
+      second: Секунд
+      year: Ел
   errors:
-    format: "%{attribute}%{message}"
+    format: "%{attribute} %{message}"
     messages:
-      accepted: تەستىقلاش كېرەك
-      blank: بوش بولماسلىقى كېرەك
-      present: بوش بولىشى كېرەك
-      confirmation: تەستىق بىلەن ماس ئەمەس
-      empty: بوش بولماسلىقى كېرەك
-      equal_to: "%{count} غا تەڭ"
-      even: جۈپ سان
-      exclusion: مۇمكىن ئەمەس
-      greater_than: "%{count} دىن چوڭ"
-      greater_than_or_equal_to: "%{count} دىن چوڭ ياكى تەڭ"
-      inclusion: كۈتىلمىگەن نەتىجە
-      invalid: ئىناۋەتسىز
-      less_than: "%{count} دىن كىچىك"
-      less_than_or_equal_to: "%{count} دىن كىچىك ياكى تەڭ"
-      not_a_number: سان ئەمەس
-      not_an_integer: پۈتۈن سان ئەمەس
-      odd: تاق سان
-      taken: ئىشلىتىپ بولۇنغان
+      accepted: раслау кирәк
+      blank: буш була алмый
+      present: буш булырга тиеш
+      confirmation: "%{attribute} читнең мәгнәсе белән тигез түгел"
+      empty: буш була алмый
+      equal_to: мәгнәсе %{count} була гына ала
+      even: так кына була ала
+      exclusion: резервта саклау дигән әһәмияте бар
+      greater_than: "%{count} мәгнәсеннән зур була ала"
+      greater_than_or_equal_to: "%{count} мәгнәсеннән зур яки тигез була ала"
+      inclusion: мәгнәсе алдан исәпкә алынган түгел
+      invalid: мәгнәсе ялгыш
+      less_than: "%{count} мәгнәсеннән азрак була ала"
+      less_than_or_equal_to: "%{count} мәгнәсеннән азрак яки тигез була ала"
+      not_a_number: сан тугел
+      not_an_integer: бөтен сан түгел
+      odd: җөп кенә була ала
+      taken: бар инде
       too_long:
-        one: بەك ئۇزۇن (بىر ھەرىپ)
-        other: بەك ئۇزۇن (ئەڭ ئۇزۇن بولغاندا %{count} ھەرىپ)
+        one: бигрәк озын (озынлыгы бердән озынрак була алмый)
+        other: бигрәк озын (озынлыгы %{count} мәгнәсеннән озынрак була алмый)
       too_short:
-        one: بەك قىسقا (بىر ھەرىپ)
-        other: بەك قىسقا (ئەڭ قىسقا بولغاندا %{count} ھەرىپ)
+        one: бигрәк кыска (озынлыгы бердән кыскарак була алмый)
+        other: бигрәк кыска (озынлыгы %{count} мәгнәсеннән кыскарак була алмый)
       wrong_length:
-        one: ئىناۋەتسىز ئۇزۇنلۇق (بىر ھەرىپ)
-        other: ئىناۋەتسىز ئۇزۇنلۇق (چوقۇم %{count} ھەرىپ)
-      other_than: ئىناۋەتسىز ئۇزۇنلۇق (%{count} ھەرىپ بولماسلىقى كېرەك)
+        one: озынлыгы ялгыш (озынлыгы бергә тигез булырга тиеш)
+        other: озынлыгы ялгыш (озынлыгы %{count} мәгнәгә тигез булырга тиеш)
+      other_than: "%{count} мәгнәсеннән икенче булырга тиеш"
     template:
-      body: تۆۋەندىكى سۆز بۆلەكلىرىدە خاتالىق بار
+      body: ":"
       header:
-        one: بىر خاتالىق تۈپەيلىدىن 「%{model}」 ساقلاش مەغلۇب بولدى
-        other: "%{count} خاتالىق تۈپەيلىدىن 「%{model}」ساقلاش مەغلۇب بولدى"
+        one: "%{model}: %{count} хата аркасында саклау чыкмады"
+        other: "%{model}: %{count} хата аркасында саклау чыкмады"
   helpers:
     select:
-      prompt: تاللاڭ
+      prompt: 'Сайлагыз: '
     submit:
-      create: "%{model} قوشۇش"
-      submit: "%{model} ساقلاش"
-      update: "%{model} يېڭىلاش"
+      create: "%{model} иҗат итергә"
+      submit: "%{model} саклап калырга"
+      update: "%{model} саклап калырга"
   number:
     currency:
       format:
-        delimiter: ","
-        format: "%u %n"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: CN¥
+        unit: сум
     format:
-      delimiter: ","
+      delimiter: " "
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: مىليارد
-          million: مىليون
-          quadrillion: گېگابايت
-          thousand: مىڭ
-          trillion: مېگا
+          billion:
+            one: миллиард
+            other: миллиард
+          million:
+            one: миллион
+            other: миллион
+          quadrillion:
+            one: квадриллион
+            other: квадриллион
+          thousand:
+            one: мең
+            other: мең
+          trillion:
+            one: триллион
+            other: триллион
           unit: ''
       format:
         delimiter: ''
@@ -180,27 +190,28 @@ en:
         format: "%n %u"
         units:
           byte:
-            one: بايت
-            other: بايت
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: байт
+            other: байт
+          gb: ГБ
+          kb: КБ
+          mb: МБ
+          tb: ТБ
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " ۋە "
-      two_words_connector: " ۋە "
+      last_word_connector: " һәм "
+      two_words_connector: " һәм "
       words_connector: ", "
   time:
-    am: چۈشتىن بۇرۇن
+    am: иртәнге
     formats:
-      default: "%Y %b %d %A %H:%M:%S %Z"
-      long: "%Y %b %d %H:%M"
-      short: "%b %d %H:%M"
-    pm: چۈشتىن كېيىن
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y, %H:%M"
+      short: "%d %b, %H:%M"
+    pm: кичке
