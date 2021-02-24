@@ -2,59 +2,59 @@ en-US:
   activerecord:
     errors:
       messages:
-        record_invalid: "Validation failed: %{errors}"
+        record_invalid: 'fsgdsdggdssgdgsdé : %{errors}'
         restrict_dependent_destroy:
-          has_one: Cannot delete record because a dependent %{record} exists
-          has_many: Cannot delete record because dependent %{record} exist
+          has_one: "Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record} dépendant(e) existe"
+          has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent"
   date:
     abbr_day_names:
-      - Sun
-      - Mon
-      - Tue
-      - Wed
-      - Thu
-      - Fri
-      - Sat
+      - dim
+      - lun
+      - mar
+      - mer
+      - jeu
+      - ven
+      - sam
     abbr_month_names:
       -
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - May
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Oct
-      - Nov
-      - Dec
+      - jan.
+      - fév.
+      - mar.
+      - avr.
+      - mai
+      - juin
+      - juil.
+      - août
+      - sept.
+      - oct.
+      - nov.
+      - déc.
     day_names:
-      - Sunday
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
+      - dimanche
+      - lundi
+      - mardi
+      - mercredi
+      - jeudi
+      - vendredi
+      - samedi
     formats:
       default: "%Y-%m-%d"
-      long: "%B %d, %Y"
-      short: "%b %d"
+      long: "%d %B %Y"
+      short: "%y-%m-%d"
     month_names:
       -
-      - January
-      - February
-      - March
-      - April
-      - May
-      - June
-      - July
-      - August
-      - September
-      - October
-      - November
-      - December
+      - janvier
+      - février
+      - mars
+      - avril
+      - mai
+      - juin
+      - juillet
+      - août
+      - septembre
+      - octobre
+      - novembre
+      - décembre
     order:
       - :year
       - :month
@@ -62,135 +62,137 @@ en-US:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: about 1 hour
-        other: about %{count} hours
+        one: environ une heure
+        other: environ %{count} heures
       about_x_months:
-        one: about 1 month
-        other: about %{count} months
+        one: environ un mois
+        other: environ %{count} mois
       about_x_years:
-        one: about 1 year
-        other: about %{count} years
+        one: environ un an
+        other: environ %{count} ans
       almost_x_years:
-        one: almost 1 year
-        other: almost %{count} years
-      half_a_minute: half a minute
+        one: presqu'un an
+        other: presque %{count} ans
+      half_a_minute: une demi-minute
       less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
+        one:
+        other:
       less_than_x_seconds:
-        one: less than 1 second
-        other: less than %{count} seconds
+        one:
+        other:
       over_x_years:
-        one: over 1 year
-        other: over %{count} years
+        one: plus d'un an
+        other: plus de %{count} ans
       x_days:
-        one: 1 day
-        other: "%{count} days"
+        one: 1 jour
+        other: "%{count} jours"
       x_minutes:
         one: 1 minute
         other: "%{count} minutes"
       x_months:
-        one: 1 month
-        other: "%{count} months"
+        one: 1 mois
+        other: "%{count} mois"
       x_years:
-        one: 1 year
-        other: "%{count} years"
+        one: 1 an
+        other: "%{count} ans"
       x_seconds:
-        one: 1 second
-        other: "%{count} seconds"
+        one: 1 seconde
+        other: "%{count} secondes"
     prompts:
-      day: Day
-      hour: Hour
+      day: Jour
+      hour: Heure
       minute: Minute
-      month: Month
-      second: Seconds
-      year: Year
+      month: Mois
+      second: Seconde
+      year: Année
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: must be accepted
-      blank: "can't be blank"
-      present: "must be blank"
-      confirmation: "doesn't match %{attribute}"
-      empty: "can't be empty"
-      equal_to: "must be equal to %{count}"
-      even: "must be even"
-      exclusion: "is reserved"
-      greater_than: "must be greater than %{count}"
-      greater_than_or_equal_to: "must be greater than or equal to %{count}"
-      inclusion: "is not included in the list"
-      invalid: "is invalid"
-      less_than: "must be less than %{count}"
-      less_than_or_equal_to: "must be less than or equal to %{count}"
-      model_invalid: "Validation failed: %{errors}"
-      not_a_number: "is not a number"
-      not_an_integer: "must be an integer"
-      odd: "must be odd"
-      required: must exist
-      taken: "has already been taken"
+      accepted: doit être accepté(e)
+      blank: doit être rempli(e)
+      present: doit être vide
+      confirmation: ne concorde pas avec %{attribute}
+      empty: doit être rempli(e)
+      equal_to: doit être égal à %{count}
+      even: doit être pair
+      exclusion: n'est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n'est pas inclus(e) dans la liste
+      invalid: n'est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      model_invalid: "Validation échouée : %{errors}"
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      odd: doit être impair
+      required: doit exister
+      taken: n'est pas disponible
       too_long:
-        one: is too long (maximum is 1 character)
-        other: is too long (maximum is %{count} characters)
+        one: est trop long (pas plus d'un caractère)
+        other: est trop long (pas plus de %{count} caractères)
       too_short:
-        one: is too short (minimum is 1 character)
-        other: is too short (minimum is %{count} characters)
+        one: est trop court (au moins un caractère)
+        other: est trop court (au moins %{count} caractères)
       wrong_length:
-        one: is the wrong length (should be 1 character)
-        other: is the wrong length (should be %{count} characters)
-      other_than: "must be other than %{count}"
+        one: ne fait pas la bonne longueur (doit comporter un seul caractère)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+      other_than: doit être différent de %{count}
     template:
-      body: 'There were problems with the following fields:'
+      body: 'Veuillez vérifier les champs suivants : '
       header:
-        one: 1 error prohibited this %{model} from being saved
-        other: '%{count} errors prohibited this %{model} from being saved'
+        one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
+        other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   helpers:
     select:
-      prompt: Please select
+      prompt: Veuillez sélectionner
     submit:
-      create: Create %{model}
-      submit: Save %{model}
-      update: Update %{model}
+      create: Créer un(e) %{model}
+      submit: Enregistrer ce(tte) %{model}
+      update: Modifier ce(tte) %{model}
   number:
     currency:
       format:
-        delimiter: ","
-        format: "%u%n"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: '$'
+        unit: "$"
     format:
-      delimiter: ","
+      delimiter: " "
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Billion
-          million: Million
-          quadrillion: Quadrillion
-          thousand: Thousand
-          trillion: Trillion
+          billion: milliard
+          million: million
+          quadrillion: million de milliards
+          thousand: millier
+          trillion: billion
           unit: ''
       format:
         delimiter: ''
         precision: 3
-        significant: false
-        strip_insignificant_zeros: false
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: octet
+            other: octets
+          gb: Go
+          kb: ko
+          mb: Mo
+          tb: To
+          pb: Po
+          eb: Eo
     percentage:
       format:
         delimiter: ''
@@ -200,13 +202,13 @@ en-US:
         delimiter: ''
   support:
     array:
-      last_word_connector: ', and '
-      two_words_connector: ' and '
+      last_word_connector: " et "
+      two_words_connector: " et "
       words_connector: ", "
   time:
     am: am
     formats:
-      default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
-      short: "%d %b %H:%M"
+      default: "%H h %M min %S s"
+      long: "%A %d %B %Y %H h %M"
+      short: "%H h %M"
     pm: pm
