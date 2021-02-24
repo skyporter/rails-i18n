@@ -2,154 +2,151 @@ en:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Validering het misluk: %{errors}'
+        record_invalid: "Validation failed: %{errors}"
         restrict_dependent_destroy:
-          has_one: "Kan rekord nie skrap nie omdat 'n afhanklike %{record} bestaan"
-          has_many: 'Kan rekord nie skrap nie omdat afhanklike %{record} bestaan'
+          has_one: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
+          has_many: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
   date:
     abbr_day_names:
-      - Son
-      - Maan
-      - Dins
-      - Woe
-      - Don
-      - Vry
-      - Sat
+      - ഞാ.
+      - തി.
+      - ചൊ.
+      - ബു.
+      - വ്യാ.
+      - വെ.
+      - ശ.
     abbr_month_names:
       -
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - Mei
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Okt
-      - Nov
-      - Des
+      - ജനു.
+      - ഫെബ്ര.
+      - മാർ.
+      - എപ്രി.
+      - മെയ്.
+      - ജൂണ്‍.
+      - ജൂലൈ.
+      - ആഗ.
+      - സെപ്തം.
+      - ഒക്ടോ.
+      - നവം.
+      - ഡിസം.
     day_names:
-      - Sondag
-      - Maandag
-      - Dinsdag
-      - Woensdag
-      - Donderdag
-      - Vrydag
-      - Saterdag
+      - ഞായര്‍
+      - തിങ്കള്‍
+      - ചൊവ്വ
+      - ബുധൻ
+      - വ്യാഴം
+      - വെള്ളി
+      - ശനി
     formats:
-      default: "%Y-%m-%d"
-      long: "%B %d, %Y"
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
       short: "%b %d"
     month_names:
       -
-      - Januarie
-      - Februarie
-      - Maart
-      - April
-      - Mai
-      - Junie
-      - Julie
-      - Augustus
-      - September
-      - Oktober
-      - November
-      - Desember
+      - ജനുവരി
+      - ഫെബ്രുവരി
+      - മാർച്ച്
+      - ഏപ്രിൽ
+      - മെയ്
+      - ജൂണ്‍
+      - ജൂലൈ
+      - ഓഗസ്റ്റ്‌
+      - സെപ്റ്റംബർ
+      - ഒക്ടോബർ
+      - നവംബർ
+      - ഡിസംബർ
     order:
-      - :year
-      - :month
       - :day
+      - :month
+      - :year
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ongeveer 1 uur
-        other: ongeveer %{count} ure
+        one: എകദേശം 1 മണിക്കൂർ
+        other: "എകദേശം %{count} മണിക്കൂർ"
       about_x_months:
-        one: ongeveer 1 maand
-        other: ongeveer %{count} maande
+        one: എകദേശം 1 മാസം
+        other: "എകദേശം %{count} മാസം"
       about_x_years:
-        one: ongeveer 1 jaar
-        other: ongeveer %{count} jaar
+        one: എകദേശം 1 വർഷം
+        other: "എകദേശം %{count} വർഷം"
       almost_x_years:
-        one: sowat 1 jaar
-        other: sowat %{count} jaar
-      half_a_minute: halfminuut
+        one: ഏതാണ്ട്  1 വർഷം
+        other: "ഏതാണ്ട്  %{count} വർഷം"
+      half_a_minute: അര സൂക്ഷ്മ
       less_than_x_minutes:
-        one: minder as 1 minuut
-        other: minder as %{count} minute
+        one: ഒരു മിനുറ്റിനു ഉള്ളിൽ
+        other: "%{count} മിനുറ്റിനു ഉള്ളിൽ"
       less_than_x_seconds:
-        one: minder as 1 sekonde
-        other: minder as %{count} sekondes
+        one: ഒരു നിമിഷത്തിനു ഉള്ളിൽ
+        other: "%{count} നിമിഷത്തിനു ഉള്ളിൽ"
       over_x_years:
-        one: meer as 1 jaar
-        other: meer as %{count} jaar
+        one: ഒരു വര്ഷത്തിനു മേലെ
+        other: "%{count} വര്ഷത്തിനു മേലെ"
       x_days:
-        one: 1 dag
-        other: "%{count} days"
+        one: 1 ദിവസം
+        other: "%{count} ദിവസങ്ങൾ"
       x_minutes:
-        one: 1 minuut
-        other: "%{count} minute"
+        one: 1 മിനിറ്റ്
+        other: "%{count} മിനിറ്റ്"
       x_months:
-        one: 1 maand
-        other: "%{count} maande"
-      x_years:
-        one: 1 jaar
-        other: "%{count} jare"
+        one: 1 മാസം
+        other: "%{count} മാസം"
       x_seconds:
-        one: 1 sekonde
-        other: "%{count} sekondes"
+        one: 1 നിമിഷം
+        other: "%{count} നിമിഷം"
     prompts:
-      day: Dag
-      hour: Uur
-      minute: Minuut
-      month: Maand
-      second: Sekondes
-      year: Jaar
+      day: ദിവസം
+      hour: മണിക്കൂർ
+      minute: സുക്ഷ്മ
+      month: സുക്ഷ്മ
+      second: നിമിഷം
+      year: വർഷം
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: moet aanvaar word
-      blank: mag nie leeg wees nie
-      present: moet leeg wees
-      confirmation: pas nie by bevestiging nie
-      empty: mag nie leeg wees nie
-      equal_to: moet gelyk wees aan %{count}
-      even: moet ewe wees
-      exclusion: is bespreek
-      greater_than: moet meer wees as %{count}
-      greater_than_or_equal_to: moet meer of gelykstaande wees aan %{count}
-      inclusion: is nie by die lys ingesluit nie
-      invalid: is ongeldig
-      less_than: moet minder wees as %{count}
-      less_than_or_equal_to: moet minder of gelykstaande wees aan %{count}
-      model_invalid: 'Validering het misluk: %{errors}'
-      not_a_number: is nie 'n getal nie
-      not_an_integer: moet 'n heelgetal wees
-      odd: moet onewe wees
-      required: moet bestaan
-      taken: is reeds geneem
+      accepted: സ്വീകരികേണ്ടത്  അത്യാവശ്യം ആണ്
+      blank: ഒഴിവായി കിടക്കുവാൻ പാടുള്ളതല്ല
+      present: ഒഴിവായി ഇരിക്കണം
+      confirmation: "%{attribute} ആയി സാമ്യം ഇല്ല"
+      empty: ഒഴിവായി കിടക്കുവാൻ പാടുള്ളതല്ല
+      equal_to: "%{count} ആയി സാമ്യം വേണം"
+      even: ഇരട്ട സംഖ്യ ആയിരിക്കണം
+      exclusion: കരുതിവെച്ചിരികുന്നതാണ്
+      greater_than: "%{count} നേകാൾ വലുതായിരിക്കണം"
+      greater_than_or_equal_to: "%{count} നു തുല്യമോ അല്ലെങ്കിൽ വലുതോ ആയിരിക്കണം"
+      inclusion: ഇതിൽ ഉള്ട്പെട്ടിട്ടില്ല
+      invalid: അസാധുവാണ്
+      less_than: "%{count} നേകാൾ ചെറുതായിരിക്കണം"
+      less_than_or_equal_to: "%{count} നു തുല്യമോ അല്ലെങ്കിൽ ചെറുതോ ആയിരിക്കണം"
+      model_invalid: "മൂല്യനിർണ്ണയം പരാജയപ്പെട്ടു: %{errors}"
+      not_a_number: ഒരു അക്കം അല്ല
+      not_an_integer: ഒരു അക്കം ആയിരിക്കണം
+      odd: ഒട്ടസന്ഘ്യ ആയിരിക്കണം
+      required: എന്തായാലും ഉണ്ടായിരിക്കണം
+      taken: ഇതിനു മുൻപേ ഉപയോഗിച്ചിരിക്കുന്നു
       too_long:
-        one: is te lank (maksimum is 1 karakter)
-        other: is te lank (maksimum is %{count} karakters)
+        one: വളരെ വലുതാണ് (പരമാവധി 1 പ്രതീകം)
+        other: "വളരെ വലുതാണ് (പരമാവധി %{count} പ്രതീകങ്ങൾ)"
       too_short:
-        one: is te kort (minimum is 1 karakter)
-        other: is te kort (minimum is %{count} karakters)
+        one: വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌  1 പ്രതീകം)
+        other: "വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌ %{count} പ്രതീകങ്ങൾ)"
       wrong_length:
-        one: is die verkeerde lengte (moet 1 karakter wees)
-        other: is die verkeerde lengte (moet %{count} karakters wees)
-      other_than: moet anders wees as %{count}
+        one: തെറ്റായ നീളം ആണ്  (1 പ്രതീകം ആയിരിക്കണം)
+        other: "തെറ്റായ നീളം ആണ്  (%{count} പ്രതീകങ്ങൾ ആയിരിക്കണം)"
+      other_than: "must be other than %{count}"
     template:
-      body: 'There were problems with the following fields:'
+      body: 'താഴെ പറഞ്ഞവയിൽ തെറ്റുകൾ ഉണ്ട്:'
       header:
-        one: 1 fout het verhoed dat hierdie %{model} gestoor kon word
-        other: "%{count} foute het verhoed dat hierdie %{model} gestoor kon word"
+        one: "%{model} സേവ് ചെയ്യുനത്തിൽ നിന്നും ഒരു തെറ്റ് വിലക്കിയിരിക്കുന്നു"
+        other: "%{model} സേവ് ചെയ്യുനത്തിൽ നിന്നും %{count} തെറ്റുകൾ വിലക്കിയിരിക്കുന്നു"
   helpers:
     select:
-      prompt: Kies asseblief
+      prompt: ദയവായി തിരഞ്ഞെടുക്കുക
     submit:
-      create: Skep %{model}
-      submit: Stoor %{model}
-      update: Dateer %{model} op
+      create: "%{model} സൃഷ്ടിക്കുക"
+      submit: "%{model} സേവ് ചെയ്യുക"
+      update: "%{model} തിരുത്തുക്ക"
   number:
     currency:
       format:
@@ -159,7 +156,7 @@ en:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: R
+        unit: "$"
     format:
       delimiter: ","
       precision: 3
@@ -170,11 +167,11 @@ en:
       decimal_units:
         format: "%n %u"
         units:
-          billion: miljard
-          million: miljoen
-          quadrillion: biljard
-          thousand: duisend
-          trillion: biljoen
+          billion: നൂറുകോടി
+          million: ദശലക്ഷം
+          quadrillion: ക്വാഡ്രില്യൺ
+          thousand: ആയിരം
+          trillion: ട്രില്യൺ
           unit: ''
       format:
         delimiter: ''
@@ -185,28 +182,28 @@ en:
         format: "%n %u"
         units:
           byte:
-            one: Greep
-            other: Grepe
-          gb: GG
-          kb: kG
-          mb: MG
-          tb: TG
+            one: ബൈറ്റ്
+            other: ബൈറ്റുകൾ
+          gb: ജി.ബി
+          kb: കെ.ബി.
+          mb: എം.ബി.
+          tb: ടി.ബി
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
+        format: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", en "
-      two_words_connector: " en "
+      last_word_connector: ", ഒപ്പം "
+      two_words_connector: " ഒപ്പം "
       words_connector: ", "
   time:
-    am: vm
+    am: രാവിലെ
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: nm
+    pm: വൈകിട്ട്
